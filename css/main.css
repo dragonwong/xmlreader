@@ -1,0 +1,209 @@
+/* base */
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	font-family: Arial, "SimHei";
+}
+a{
+	text-decoration: none;
+}
+p{
+	margin: 0;
+}
+hr{
+	margin: 20px 0;
+}
+h1{
+	color: #fff;
+	margin: 0;
+}
+
+/* main */
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background: #333;
+	height: 50px;
+	line-height: 50px;
+	z-index: 10;
+	text-align: center;
+}
+	#bt-list{
+		float: left;
+		cursor: pointer;
+		font-size: 30px;
+		color: #fff;
+		width: 45px;
+		background: #222;
+		transition: .3s ease;
+	}
+	.hide-menu #bt-list{
+		background: #333;
+	}
+
+.body{
+
+}
+	.menu{
+		position: fixed;
+		width: 30%;
+		top: 50px;
+		bottom: 0;
+		background: #222;
+		font-size: 18px;
+		color: #fff;
+		z-index: 10;
+		transition: .5s ease;
+	}
+	.hide-menu .menu{
+		-webkit-transform: translateX(-100%);
+	}
+		.fun{
+			display: flex;
+			text-align: center;
+		}
+			.fun .bt{
+				height: 45px;
+				line-height: 45px;
+				flex: 1;
+				color: #ccc;
+				background: #333;
+				cursor: pointer;
+				border-top: 4px solid #999;
+				transition: .3s ease;
+			}
+			.fun .h{
+				background: #222;
+				color: #fff;
+				cursor: default;
+			}
+		
+		.pn{
+			padding: 40px 10px 0;
+		}
+			.cnt .pn{
+				display: none;
+			}
+			.cnt .h{
+				display: block;
+			}
+
+				/* local */
+					#upload p{
+						margin-bottom: 20px;
+					}
+						#upload .bt{
+							position: relative;
+							overflow: hidden;
+							display: inline-block;
+							width: 80px;
+							height: 35px;
+							line-height: 35px;
+							text-align: center;
+							cursor: pointer;
+							background: #3498db;
+							color: #fff;
+							margin-right: 20px;
+						}
+						#upload .bt:hover, #upload .bt:focus{
+							background: #2980b9;
+						}
+						#upload .bt.disabled{
+							background: #aaa;
+						}
+						#upload .bt.disabled:hover, #upload .bt.disabled:focus{
+							background: #aaa;
+						}
+							#upload .bt.disabled #submit{
+								cursor: default;
+							}
+							#ip_file, #submit{
+								width: 200px;
+								height: 35px;
+								position: absolute;
+								right: 0;
+								top: 0;
+								opacity: 0;
+								cursor: pointer;
+							}
+						.prompt{
+							display: inline-block;
+							height: 35px;
+							line-height: 35px;
+							vertical-align: top;
+							color: #ccc;
+						}
+
+
+	
+	.main{
+		display: flex;
+		padding-top: 50px;
+	}
+		.holder{
+			width: 30%;
+			transition: .5s ease;
+		}
+		.hide-menu .holder{
+			width: 0;
+		}
+		.stage{
+			flex: 1;
+			padding: 20px 10px 0;
+		}
+
+
+
+
+
+/* xmlTree */
+ul.tree{
+	margin-left: 10px;
+	padding: 10px 0 0 20px;
+	border-left: 1px solid red;
+}
+	li.tree{
+		padding-bottom: 10px;
+		position: relative;
+	}
+
+	li.tree:before{
+		display: block;
+		height: 100%;
+		width: 20px;
+		border: 1px solid;
+		border-color: red  transparent  transparent transparent;
+		content: "";
+		position: absolute;
+		left: -21px;
+		top: 10px;
+	}
+	ul.tree>li.tree:last-child:before{
+		border-left-color: #fff;
+	}
+		.self{
+			display: inline-block;
+		}
+		.self:hover .nodeInfo{
+			display: block;
+		}
+			.nodeName{
+				border: 1px solid #000;
+				padding: 0px 10px;
+				display: inline-block;
+				height: 20px;
+				line-height: 20px;
+				cursor: pointer;
+			}
+			.nodeInfo{
+				position: absolute;
+				border: 1px solid #000;
+				display: none;
+				background: #fff;
+				z-index: 10;
+			}

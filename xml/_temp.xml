@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<title>Emergency Neurological Life Support</title>
+	<version>1.1</version>
+	<lastupdate>5/23/2013</lastupdate>
+	<comments><![CDATA[This is the first version of ENLS]]></comments>
+	<topic name="Ischemic Stroke" abbreviation="AIS">
+		<node index="Begin" shortTitle="Begin">
+			<title><![CDATA[Acute Ischemic Stroke]]></title>
+			<options>TIA,Less4.5hrs,Less8hrs,Nott-Pacandidate</options>
+			<body><![CDATA[Based on imaging and symptoms]]></body>
+			<explanation><![CDATA[The diagnosis of acute ischemic stroke is based on new onset focal neurological findings with an imaging study (CT or MRI of the brain) that shows no hemorrhage, or shows evidence of ischemic infarction.In some centers, patients may be screened at the door when EMS arrives and then is taken directly to CT (or MRI) based on symptoms of facial droop, dysarthria, gaze preference, motor weakness or other focal findings.If not completed already:<li>STAT vital signs, capillary glucose, CBC with platelets, PT/PTT, EKG, and beta-HCG for women</li><li>IV access</li><li>Supplemental oxygen to maintain saturation &gt;94% (hyperoxia may be detrimental in stroke, so no need for high flow oxygen)</li><li>Activate stroke code system (if available)</li><li>Stroke MD/team to evaluate patient with 5 minutes</li><li>Determine NIHSS score</li><i>Topic Co-Chairs:</i><br>Hartmut Gross, MD<br>Gene Sung, MD<br>]]></explanation>
+		</node>
+		<node index="LowriskTIA" shortTitle="Low risk TIA">
+			<title><![CDATA[Low Risk TIA]]></title>
+			<options></options>
+			<body><![CDATA[ABCD2 Score 0-3]]></body>
+			<explanation><![CDATA[Outpatient workup:<br><li>Start on antithrombotic agent (ASA, clopidogrel 75 mg/day, or ASA/ extended release dipyridamole)</li><li>Carotid imaging: ultrasound, CTA or MRA</li><li>Consider echocardiography</li><li>Consider long-term cardiac monitor*</li><li>Smoking cessation</li><li>Initiate statin</li>*- if ECG or rhythm strip shows atrial fibrillation consider starting anticoagulation (oral anticoagulant or low molecular weight heparin) or ASA depending on CHAD2 score.]]></explanation>
+		</node>
+		<node index="TIA" shortTitle="TIA">
+			<title><![CDATA[TIA]]></title>
+			<options>ABCD2</options>
+			<body><![CDATA[Symptoms have completely resolved]]></body>
+			<explanation><![CDATA[Diagnosis of TIA (transient ischemic attack) is based on new onset of focal neurological symptoms that are explainable by a vascular cause (i.e. arterial occlusion of a single or group of arteries adequately explain the patient's signs and symptoms) and these signs and symptoms resolve within 24 hours.]]></explanation>
+		</node>
+	</topic>
+</module>

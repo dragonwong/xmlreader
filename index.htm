@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>upload</title>
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/font.css" />
+</head>
+<body>
+	<header>
+		<div id="bt-list">
+			<span class="icon-list"></span>
+		</div>
+		<h1>xmlReader</h1>
+	</header>
+	<div class="body">
+		<div class="menu">
+			<div class="fun">
+				<div class="bt local h">local</div>
+				<div class="bt online">online</div>
+			</div>
+			<div class="cnt">
+				<div class="pn local h">
+					<form id="upload" action="upload_result.htm" metho="post">
+						<p>
+							<span class="bt">select<input id="ip_file" type="file" accept="text/xml" /></span>
+							<span class="prompt" id="prompt_file">no file selected</span>
+						</p>
+						<p>
+							<span class="bt disabled">save<input id="submit" type="submit" /></span>
+							<span class="prompt">save this file online</span>
+						</p>
+					</form>
+				</div>
+				<div class="pn online">
+					
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="holder"></div>
+			<div class="stage" id="show">
+				
+			</div>
+			
+		</div>
+		<script src="js/main.js"></script>
+	</div>
+</body>
+</html>
