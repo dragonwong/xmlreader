@@ -70,7 +70,7 @@ header{
 }
 	.menu{
 		position: fixed;
-		width: 30%;
+		width: 33%;
 		top: 53px;
 		bottom: 0;
 		background: #222;
@@ -79,7 +79,9 @@ header{
 		z-index: 10;
 		transition: .5s ease;
 		display: flex;
+		display: -webkit-flex;		/* safari */
 		flex-flow: column;
+		-webkit-flex-flow: column;	/* safari */
 		flex-direction: column;		/* ff */
 	}
 	.hide-menu .menu{
@@ -88,12 +90,14 @@ header{
 	}
 		.fun{
 			display: flex;
+			display: -webkit-flex;
 			text-align: center;
 		}
 			.fun .bt{
 				height: 45px;
 				line-height: 45px;
 				flex: 1;
+				-webkit-flex: 1;
 				color: #ccc;
 				background: #333;
 			}
@@ -105,16 +109,20 @@ header{
 		
 		.cnt{
 			display: flex;
+			display: -webkit-flex;
 			height: 100%;
 			flex: 1;
+			-webkit-flex: 1;
 		}
 			.cnt .pn{
 				display: none;
 				padding: 40px 10px;
 				flex: 1;
+				-webkit-flex: 1;
 			}
 			.cnt .pn.h{
 				display: flex;
+				display: -webkit-flex;
 			}
 
 				/* local */
@@ -179,6 +187,7 @@ header{
 						}
 						.upper{
 							display: flex;
+							display: -webkit-flex;
 							background: #e7e7e7;
 							height: 45px;
 							line-height: 45px;
@@ -186,6 +195,7 @@ header{
 						}
 							.name{
 								flex: 1;
+								-webkit-flex: 1;
 								padding-left: 20px;
 								cursor: pointer;
 								transition: .3s ease;
@@ -225,6 +235,7 @@ header{
 	
 	.main{
 		display: flex;
+		display: -webkit-flex;
 		padding-top: 50px;
 	}
 		.holder{
@@ -236,6 +247,7 @@ header{
 		}
 		#stage{
 			flex: 1;
+			-webkit-flex: 1;
 			padding: 20px 10px 0;
 		}
 
