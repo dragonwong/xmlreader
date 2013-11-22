@@ -58,8 +58,28 @@
 	})();
 	/* bt-menu click end */
 
+	/* name click start */
+	(function(){
+		var names = Array.prototype.slice.call(document.querySelectorAll('.item .name')),
+			cur = -1,
+			class_name = 'h';
 
-	//upload
+		names.forEach(function(item, index){
+			item.onclick = function(){
+				if(index != cur){
+					if(cur != -1){
+						names[cur].removeClass(class_name);
+					}
+					cur = index;
+					item.addClass(class_name);
+				}
+			};
+		});
+	})();
+	/* name click end */
+
+
+//upload
 	(function(){
 		var	ip_file = document.getElementById("ip_file"),
 			prompt_file = document.getElementById("prompt_file"),

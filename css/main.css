@@ -21,7 +21,10 @@ h1{
 	color: #fff;
 	margin: 0;
 }
-
+.bt{
+	transition: .3s ease;
+	cursor: pointer;
+}
 /* main */
 header{
 	position: fixed;
@@ -75,9 +78,7 @@ header{
 				flex: 1;
 				color: #ccc;
 				background: #333;
-				cursor: pointer;
 				border-top: 4px solid #999;
-				transition: .3s ease;
 			}
 			.fun .h{
 				background: #222;
@@ -111,8 +112,7 @@ header{
 						height: 35px;
 						line-height: 35px;
 						text-align: center;
-						cursor: pointer;
-						background: #3498db;
+						background: #75b9e7;
 						color: #fff;
 						margin-right: 20px;
 					}
@@ -159,8 +159,6 @@ header{
 							width: 45px;
 							text-align: center;
 							font-size: 25px;
-							cursor: pointer;
-							transition: .3s ease;
 						}
 						.upper{
 							display: flex;
@@ -173,11 +171,15 @@ header{
 								flex: 1;
 								padding-left: 20px;
 								cursor: pointer;
+								transition: .3s ease;
 							}
-							
+							.name.h{
+								background: #75b9e7;
+							}
 							.show-menu .bt-menu{
 								background: #666;
 								color: #fff;
+								text-shadow: 1px 1px 3px #000;
 							}
 
 						.lower{
@@ -191,6 +193,13 @@ header{
 							.lower .bt{
 								float: right;
 								font-size: 20px;
+								text-shadow: 1px 1px 3px #000;
+							}
+							.lower .bt:hover{
+								color: #75b9e7;
+							}
+							.lower .bt:active{
+								text-shadow: none;
 							}
 						.show-menu .lower{
 							height: 45px;
