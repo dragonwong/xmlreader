@@ -59,23 +59,31 @@
 	/* bt-menu click end */
 
 	/* name click start */
-	(function(){
-		var names = Array.prototype.slice.call(document.querySelectorAll('.item .name')),
-			cur = -1,
-			class_name = 'h';
+	var online_file_names = Array.prototype.slice.call(document.querySelectorAll('.item .name')),
+		online_file_names_cur = -1;
 
-		names.forEach(function(item, index){
+	(function(){
+		var class_name = 'h';
+
+		online_file_names.forEach(function(item, index){
 			item.onclick = function(){
-				if(index != cur){
-					if(cur != -1){
-						names[cur].removeClass(class_name);
+				if(index != online_file_names_cur){
+					if(online_file_names_cur != -1){
+						online_file_names[online_file_names_cur].removeClass(class_name);
 					}
-					cur = index;
+					online_file_names_cur = index;
 					item.addClass(class_name);
 				}
 			};
 		});
 	})();
+
+	function resetOnlineFileName(){
+		if(online_file_names_cur != -1){
+			online_file_names[online_file_names_cur].removeClass('h');
+			online_file_names_cur = -1;
+		}
+	}
 	/* name click end */
 
 
@@ -132,6 +140,9 @@
 						//parse xml
 						var xml = parseXml(reader.result);
 						show.innerHTML = xmlTree(xml);
+
+						//reset online file name in online function of menu
+						resetOnlineFileName();
 					}
 				}
 			}else{						//no file
