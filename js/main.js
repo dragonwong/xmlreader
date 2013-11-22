@@ -218,7 +218,7 @@
 	}
 
 
-
+var out_node;
 
 
 	function xmlTree(back_data){
@@ -231,9 +231,32 @@
 
 		//main
 		(function main(node){
+			//console.log(node);
+			//out_node = node;
 
-			var children = node.children,
+
+			if(children in node){
+				var children = node.children,
+					children_len = children.length;
+			}else{
+				var child_nodes = node.childNodes,
+					child_nodes_len = child_nodes.length,
+					children = [];
+
+				for(var i=0; i<child_nodes_len; i++){
+					var this_node = child_nodes[i];
+					if(this_node.nodeType == 1){
+						children.push(this_node);
+					}
+				}
+
 				children_len = children.length;
+			}
+
+
+
+
+			
 
 			//开始构建该节点
 			output += '<li class="tree">';
