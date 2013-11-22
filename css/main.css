@@ -64,9 +64,11 @@ header{
 		transition: .5s ease;
 		display: flex;
 		flex-flow: column;
+		flex-direction: column;		/* ff */
 	}
 	.hide-menu .menu{
 		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
 	}
 		.fun{
 			display: flex;
@@ -217,7 +219,7 @@ header{
 		.hide-menu .holder{
 			width: 0;
 		}
-		.stage{
+		#stage{
 			flex: 1;
 			padding: 20px 10px 0;
 		}

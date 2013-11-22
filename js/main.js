@@ -1,3 +1,4 @@
+	var stage = document.getElementById("stage");
 	
 	/* bt_list click start */
 	(function(){
@@ -26,6 +27,11 @@
 					cur = index;
 					item.addClass("h");
 					menu_pns[cur].addClass("h");
+
+					//online
+					if(index == 1){
+						createOnlineFileList();
+					}
 				}
 			};
 		});
@@ -35,56 +41,58 @@
 
 //menu
 
-	/* bt-menu click start */
-	(function(){
-		var items = Array.prototype.slice.call(document.querySelectorAll('.item')),
-			bt_menus = Array.prototype.slice.call(document.querySelectorAll('.item .bt-menu')),
-			cur = -1,
-			class_name = 'show-menu';
+	function addOnlineFileListEvent(){
+		/* bt-menu click start */
+		(function(){
+			var items = Array.prototype.slice.call(document.querySelectorAll('.item')),
+				bt_menus = Array.prototype.slice.call(document.querySelectorAll('.item .bt-menu')),
+				cur = -1,
+				class_name = 'show-menu';
+		console.log(bt_menus);
 
-		bt_menus.forEach(function(item, index){
-			item.onclick = function(){
-				if(index != cur){
-					if(cur != -1){
-						items[cur].removeClass(class_name);
+			bt_menus.forEach(function(item, index){
+				item.onclick = function(){
+					if(index != cur){
+						if(cur != -1){
+							items[cur].removeClass(class_name);
+						}
+						cur = index;
+						items[cur].addClass(class_name);
+					}else{
+						items[cur].toggleClass(class_name);
 					}
-					cur = index;
-					items[cur].addClass(class_name);
-				}else{
-					items[cur].toggleClass(class_name);
-				}
-			};
-		});
-	})();
-	/* bt-menu click end */
+				};
+			});
+		})();
+		/* bt-menu click end */
 
-	/* name click start */
-	var online_file_names = Array.prototype.slice.call(document.querySelectorAll('.item .name')),
-		online_file_names_cur = -1;
+		/* name click start */
+		(function(){
+			var online_file_names = Array.prototype.slice.call(document.querySelectorAll('.item .name')),
+				online_file_names_cur = -1,
+				class_name = 'h';
 
-	(function(){
-		var class_name = 'h';
+			online_file_names.forEach(function(item, index){
+				item.onclick = function(){
+					if(index != online_file_names_cur){
+						if(online_file_names_cur != -1){
+							online_file_names[online_file_names_cur].removeClass(class_name);
+						}
+						online_file_names_cur = index;
+						item.addClass(class_name);
 
-		online_file_names.forEach(function(item, index){
-			item.onclick = function(){
-				if(index != online_file_names_cur){
-					if(online_file_names_cur != -1){
-						online_file_names[online_file_names_cur].removeClass(class_name);
+						//xmltree
+						getXML(arr_list[index].url, asynParseXml);
 					}
-					online_file_names_cur = index;
-					item.addClass(class_name);
-				}
-			};
-		});
-	})();
-
-	function resetOnlineFileName(){
-		if(online_file_names_cur != -1){
-			online_file_names[online_file_names_cur].removeClass('h');
-			online_file_names_cur = -1;
-		}
+				};
+			});
+		})();
+		/* name click end */
 	}
-	/* name click end */
+
+	function asynParseXml(back_data){
+		stage.innerHTML = xmlTree(back_data);
+	}
 
 
 //upload
@@ -93,7 +101,6 @@
 			prompt_file = document.getElementById("prompt_file"),
 			submit = document.getElementById("submit"),
 			submit_span = submit.parentElement;
-			show = document.getElementById("show");
 
 		submit.onclick = function(){
 			console.log('submit');
@@ -139,10 +146,8 @@
 
 						//parse xml
 						var xml = parseXml(reader.result);
-						show.innerHTML = xmlTree(xml);
+						stage.innerHTML = xmlTree(xml);
 
-						//reset online file name in online function of menu
-						resetOnlineFileName();
 					}
 				}
 			}else{						//no file
@@ -151,18 +156,40 @@
 				//disable submit function
 				//code...
 
-				show.innerHTML = '';
+				stage.innerHTML = '';
 			}
 		};
 	})();
 
-/*
-    //getXML("xml/AIS.xml", doLoadBack);
 
-    function doLoadBack(back_data){
-		document.getElementById("show").innerHTML = xmlTree(back_data);
-    }
-*/
+
+//get list asyn
+	var arr_list;
+
+	function createOnlineFileList(){
+		ajaxGet("json/file_list.json", '', onlineFileListCallBack);
+	}
+	function onlineFileListCallBack(back_data){
+		arr_list = JSON.parse(back_data);
+		var html = '';
+
+		if(arr_list.length == 0){
+			html = "No file online, you can upload some :)";
+		}else{
+			arr_list.forEach(function(item){
+				html += '<div class="item"><div class="upper"><div class="name">' + item.name + '</div><div class="bt bt-menu"><span class="icon-list"></span></div></div><div class="lower"><div class="bt bt-download"><span class="icon-download"></span></div><div class="bt bt-info"><span class="icon-info"></span></div><div class="bt bt-rename"><span class="icon-pencil"></span></div><div class="bt bt-delete"><span class="icon-trash"></span></div></div></div>';
+			});
+		}
+
+		document.querySelector('.online .list').innerHTML = html;
+		addOnlineFileListEvent();
+
+	}
+
+
+
+
+
 	function xmlTree(back_data){
 
 		//根节点
@@ -330,6 +357,24 @@
                 }
             }
         };
+    }
+    function ajaxGet(url, data, callback){
+        var xhr = new XMLHttpRequest();
+
+        url = url + "?" + data;
+
+        xhr.open("get", url, true);
+        xhr.send(null);
+
+        xhr.onreadystatechange = function(){
+        	if(xhr.readyState == 4){
+		        if((xhr.status>=200 && xhr.status<300) || xhr.status == 304){
+		            callback(xhr.responseText);
+		        }else{
+		            console.log("failed: " + xhr.status);
+		        }
+		    }
+		};
     }
 
     Element.prototype.hasClass = function(name){
