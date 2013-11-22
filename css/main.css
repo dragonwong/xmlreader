@@ -59,6 +59,8 @@ header{
 		color: #fff;
 		z-index: 10;
 		transition: .5s ease;
+		display: flex;
+		flex-flow: column;
 	}
 	.hide-menu .menu{
 		-webkit-transform: translateX(-100%);
@@ -83,62 +85,116 @@ header{
 				cursor: default;
 			}
 		
-		.pn{
-			padding: 40px 10px 0;
+		.cnt{
+			display: flex;
+			height: 100%;
+			flex: 1;
 		}
 			.cnt .pn{
 				display: none;
+				padding: 40px 10px;
+				flex: 1;
 			}
-			.cnt .h{
-				display: block;
+			.cnt .pn.h{
+				display: flex;
 			}
 
 				/* local */
-					#upload p{
-						margin-bottom: 20px;
+				#upload p{
+					margin-bottom: 20px;
+				}
+					#upload .bt{
+						position: relative;
+						overflow: hidden;
+						display: inline-block;
+						width: 80px;
+						height: 35px;
+						line-height: 35px;
+						text-align: center;
+						cursor: pointer;
+						background: #3498db;
+						color: #fff;
+						margin-right: 20px;
 					}
-						#upload .bt{
-							position: relative;
-							overflow: hidden;
-							display: inline-block;
-							width: 80px;
+					#upload .bt:hover, #upload .bt:focus{
+						background: #2980b9;
+					}
+					#upload .bt.disabled{
+						background: #aaa;
+					}
+					#upload .bt.disabled:hover, #upload .bt.disabled:focus{
+						background: #aaa;
+					}
+						#upload .bt.disabled #submit{
+							cursor: default;
+						}
+						#ip_file, #submit{
+							width: 200px;
 							height: 35px;
-							line-height: 35px;
-							text-align: center;
+							position: absolute;
+							right: 0;
+							top: 0;
+							opacity: 0;
 							cursor: pointer;
-							background: #3498db;
-							color: #fff;
-							margin-right: 20px;
 						}
-						#upload .bt:hover, #upload .bt:focus{
-							background: #2980b9;
+					.prompt{
+						display: inline-block;
+						height: 35px;
+						line-height: 35px;
+						vertical-align: top;
+						color: #ccc;
+					}
+
+				/* online */
+			.online{
+			}
+				.list{
+					overflow-y: auto;
+					width: 100%;
+				}
+					.item{
+						margin-bottom: 1px;
+					}
+						.item .bt{
+							width: 45px;
+							text-align: center;
+							font-size: 25px;
+							cursor: pointer;
+							transition: .3s ease;
 						}
-						#upload .bt.disabled{
-							background: #aaa;
+						.upper{
+							display: flex;
+							background: #e7e7e7;
+							height: 45px;
+							line-height: 45px;
+							color: #000;
 						}
-						#upload .bt.disabled:hover, #upload .bt.disabled:focus{
-							background: #aaa;
-						}
-							#upload .bt.disabled #submit{
-								cursor: default;
-							}
-							#ip_file, #submit{
-								width: 200px;
-								height: 35px;
-								position: absolute;
-								right: 0;
-								top: 0;
-								opacity: 0;
+							.name{
+								flex: 1;
+								padding-left: 20px;
 								cursor: pointer;
 							}
-						.prompt{
-							display: inline-block;
-							height: 35px;
-							line-height: 35px;
-							vertical-align: top;
-							color: #ccc;
-						}
+							
+							.show-menu .bt-menu{
+								background: #666;
+								color: #fff;
+							}
 
+						.lower{
+							height: 0;
+							overflow: hidden;
+							background: #666;
+							color: #fff;
+							line-height: 45px;
+							transition: .3s ease;
+						}
+							.lower .bt{
+								float: right;
+								font-size: 20px;
+							}
+						.show-menu .lower{
+							height: 45px;
+						}
 
 	
 	.main{

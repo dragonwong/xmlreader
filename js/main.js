@@ -1,103 +1,129 @@
 	
-	//bt_list click
-	var	body = document.body,
-		bt_list = document.getElementById("bt-list"),
-		hide_menu = false;
+	/* bt_list click start */
+	(function(){
+		var	body = document.body,
+			bt_list = document.getElementById('bt-list');
 
-	bt_list.onclick = function(){
-		if(hide_menu){
-			body.removeClass('hide-menu');
-		}else{
-			body.addClass('hide-menu');
-		}
-		hide_menu = !hide_menu;
-	};
+		bt_list.onclick = function(){
+			body.toggleClass('hide-menu');
+		};
+	})();
+	/* bt_list click end */
 
 
 	
 	/* menu fun click start */
-	var menu_bts = Array.prototype.slice.call(document.querySelectorAll('.fun .bt')),
-		menu_pns = Array.prototype.slice.call(document.querySelectorAll(".cnt .pn")),
-		cur = 0;
+	(function(){
+		var menu_bts = Array.prototype.slice.call(document.querySelectorAll('.fun .bt')),
+			menu_pns = Array.prototype.slice.call(document.querySelectorAll('.cnt .pn')),
+			cur = 0;
 
-	menu_bts.forEach(function(item, index){
-		item.onclick = function(){
-			if(index != cur){
-				menu_bts[cur].removeClass("h");
-				menu_pns[cur].removeClass("h");
-				cur = index;
-				item.addClass("h");
-				menu_pns[cur].addClass("h");
-			}
-		};
-	});
+		menu_bts.forEach(function(item, index){
+			item.onclick = function(){
+				if(index != cur){
+					menu_bts[cur].removeClass("h");
+					menu_pns[cur].removeClass("h");
+					cur = index;
+					item.addClass("h");
+					menu_pns[cur].addClass("h");
+				}
+			};
+		});
+	})();
 	/* menu fun click end */
 
 
+//menu
+
+	/* bt-menu click start */
+	(function(){
+		var items = Array.prototype.slice.call(document.querySelectorAll('.item')),
+			bt_menus = Array.prototype.slice.call(document.querySelectorAll('.item .bt-menu')),
+			cur = -1,
+			class_name = 'show-menu';
+
+		bt_menus.forEach(function(item, index){
+			item.onclick = function(){
+				if(index != cur){
+					if(cur != -1){
+						items[cur].removeClass(class_name);
+					}
+					cur = index;
+					items[cur].addClass(class_name);
+				}else{
+					items[cur].toggleClass(class_name);
+				}
+			};
+		});
+	})();
+	/* bt-menu click end */
+
 
 	//upload
-	var	ip_file = document.getElementById("ip_file"),
-		prompt_file = document.getElementById("prompt_file"),
-		submit = document.getElementById("submit"),
-		submit_span = submit.parentElement;
-		show = document.getElementById("show");
+	(function(){
+		var	ip_file = document.getElementById("ip_file"),
+			prompt_file = document.getElementById("prompt_file"),
+			submit = document.getElementById("submit"),
+			submit_span = submit.parentElement;
+			show = document.getElementById("show");
 
-	submit.onclick = function(){
-		console.log('submit');
-		return false;
-	};
+		submit.onclick = function(){
+			console.log('submit');
+			return false;
+		};
 
-	ip_file.onchange = function(){
+		ip_file.onchange = function(){
 
-		if(this.files.length){		//has file
+			if(this.files.length){		//has file
 
-			var file = this.files[0],
-				type = 'default',
-				reader = new FileReader();
+				var file = this.files[0],
+					type = 'default',
+					reader = new FileReader();
 
-			console.log(file.type);
+				console.log(file.type);
 
-			if('text/xml' == file.type){
-				reader.readAsText(file);
-				type = 'xml';
-			}else{
-				console.log('not xml');
-			}
-
-			reader.onerror = function(){
-				console.log('cannot read: ' + reader.error.code);
-			};
-
-			reader.onprogress = function(){
-				if(event.lengthComputable){
-					console.log(event.loaded + '/' + event.total);
+				if('text/xml' == file.type){
+					reader.readAsText(file);
+					type = 'xml';
+				}else{
+					console.log('not xml');
 				}
-			};
 
-			reader.onload = function(){
+				reader.onerror = function(){
+					console.log('cannot read: ' + reader.error.code);
+				};
 
-				if(type == 'xml'){
-					//show file name
-					prompt_file.innerHTML = file.name;
-					//able submit button
-					submit_span.removeClass('disabled');
-					//able submit function
-					//code...
+				reader.onprogress = function(){
+					if(event.lengthComputable){
+						console.log(event.loaded + '/' + event.total);
+					}
+				};
 
-					//parse xml
-					var xml = parseXml(reader.result);
-					show.innerHTML = xmlTree(xml);
+				reader.onload = function(){
+
+					if(type == 'xml'){
+						//show file name
+						prompt_file.innerHTML = file.name;
+						//able submit button
+						submit_span.removeClass('disabled');
+						//able submit function
+						//code...
+
+						//parse xml
+						var xml = parseXml(reader.result);
+						show.innerHTML = xmlTree(xml);
+					}
 				}
-			}
-		}else{						//no file
-			prompt_file.innerHTML = 'no file selected';
-			submit_span.addClass('disabled');
-			//disable submit function
-			//code...
+			}else{						//no file
+				prompt_file.innerHTML = 'no file selected';
+				submit_span.addClass('disabled');
+				//disable submit function
+				//code...
 
-			show.innerHTML = '';
-		}
-	};
+				show.innerHTML = '';
+			}
+		};
+	})();
 
 /*
     //getXML("xml/AIS.xml", doLoadBack);
@@ -293,4 +319,11 @@
         }else{
             this.classList.remove(name);
         }
+    };
+    Element.prototype.toggleClass = function(name){
+    	if(this.hasClass(name)){
+    		this.removeClass(name);
+    	}else{
+    		this.addClass(name);
+    	}
     };
