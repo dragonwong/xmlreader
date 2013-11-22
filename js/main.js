@@ -1,6 +1,32 @@
 	var stage = document.getElementById("stage"),
-		progress_bar = document.getElementById("progress-bar");
+		test = document.getElementById("test"),
+		test1 = document.getElementById("test1");
+
+	var progress_bar = {
+		dom: document.getElementById("progress-bar"),
+		start: function(){
+			var dom = this.dom;
+			dom.removeClass('end');
+			setTimeout(function(){
+				dom.addClass('start');
+			}, 1);
+		},
+		end: function(){
+			var dom = this.dom;
+			dom.addClass('end');
+			dom.removeClass('start');
+		}
+	};
 	
+	test.onclick = function(){
+		progress_bar.start();
+	};
+
+	test1.onclick = function(){
+		
+		progress_bar.end();
+		
+	};
 
 	/* bt_list click start */
 	(function(){
@@ -50,7 +76,6 @@
 				bt_menus = Array.prototype.slice.call(document.querySelectorAll('.item .bt-menu')),
 				cur = -1,
 				class_name = 'show-menu';
-		console.log(bt_menus);
 
 			bt_menus.forEach(function(item, index){
 				item.onclick = function(){
@@ -84,6 +109,7 @@
 						item.addClass(class_name);
 
 						//xmltree
+						progress_bar.start();
 						getXML(arr_list[index].url, asynParseXml);
 					}
 				};
@@ -94,6 +120,7 @@
 
 	function asynParseXml(back_data){
 		stage.innerHTML = xmlTree(back_data);
+		progress_bar.end();
 	}
 
 
@@ -169,6 +196,7 @@
 	var arr_list;
 
 	function createOnlineFileList(){
+		progress_bar.start();
 		ajaxGet("json/file_list.json", '', onlineFileListCallBack);
 	}
 	function onlineFileListCallBack(back_data){
@@ -186,6 +214,7 @@
 		document.querySelector('.online .list').innerHTML = html;
 		addOnlineFileListEvent();
 
+		progress_bar.end();
 	}
 
 
@@ -397,6 +426,7 @@
         }else{
             this.classList.remove(name);
         }
+        return this;
     };
     Element.prototype.toggleClass = function(name){
     	if(this.hasClass(name)){
@@ -405,7 +435,3 @@
     		this.addClass(name);
     	}
     };
-
-
-
-	progress_bar.addClass('start');
