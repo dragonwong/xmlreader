@@ -1,5 +1,7 @@
-	var stage = document.getElementById("stage");
+	var stage = document.getElementById("stage"),
+		progress_bar = document.getElementById("progress-bar");
 	
+
 	/* bt_list click start */
 	(function(){
 		var	body = document.body,
@@ -403,3 +405,7 @@
     		this.addClass(name);
     	}
     };
+
+
+
+	progress_bar.addClass('start');
