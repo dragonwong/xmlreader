@@ -22,6 +22,7 @@ ul{
 body{
 	margin: 0;
 	font-family: Arial, "SimHei";
+	word-break: break-all;
 }
 a{
 	text-decoration: none;
@@ -180,7 +181,6 @@ header{
 						}
 					.prompt{
 						display: inline-block;
-						height: 35px;
 						line-height: 35px;
 						vertical-align: top;
 						color: #ccc;
