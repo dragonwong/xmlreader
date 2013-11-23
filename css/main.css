@@ -203,10 +203,14 @@ header{
 							.name.h{
 								background: #75b9e7;
 							}
+							.show-menu .name{
+								box-shadow: 1px 1px 1px #000;
+							}
 							.show-menu .bt-menu{
 								background: #666;
 								color: #fff;
 								text-shadow: 1px 1px 3px #000;
+								box-shadow: 1px 1px 1px #000 inset;
 							}
 
 						.lower{
