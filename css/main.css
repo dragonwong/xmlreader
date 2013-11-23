@@ -215,6 +215,9 @@ header{
 								padding-left: 20px;
 								cursor: pointer;
 								transition: .3s ease;
+				                overflow: hidden;
+				                text-overflow: ellipsis;
+				                white-space: nowrap;
 							}
 							.name.h{
 								background: #75b9e7;
