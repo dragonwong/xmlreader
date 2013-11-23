@@ -6,15 +6,11 @@
 		dom: document.getElementById("progress-bar"),
 		start: function(){
 			var dom = this.dom;
-			dom.removeClass('end');
-			setTimeout(function(){
-				dom.addClass('start');
-			}, 1);
+			dom.removeClass('end').addClass('start');
 		},
 		end: function(){
 			var dom = this.dom;
-			dom.addClass('end');
-			dom.removeClass('start');
+			dom.addClass('end').removeClass('start');
 		}
 	};
 	
@@ -442,6 +438,7 @@ var out_node;
         }else{
             this.classList.add(name);
         }
+        return this;
     };
     Element.prototype.removeClass = function(name){
         if(this.classList == undefined){

@@ -1,3 +1,18 @@
+@-webkit-keyframes start{
+	from{
+		width: 0;
+	}to{
+		width: 30%;
+	}
+}
+@-moz-keyframes start{
+	from{
+		width: 0;
+	}to{
+		width: 30%;
+	}
+}
+
 /* base */
 ul{
 	list-style: none;
@@ -57,11 +72,12 @@ header{
 		width: 0;
 	}
 	#progress-bar.start{
-		transition: 5s ease;
-		width: 60%;
+		-webkit-animation: start 3s ease;
+		-moz-animation: start 3s ease;
+		width: 30%;
 	}
 	#progress-bar.end{
-		transition: 1s ease;
+		transition: .5s ease;
 		width: 100%;
 	}
 
