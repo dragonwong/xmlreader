@@ -1,4 +1,36 @@
-	var stage = document.getElementById("stage");
+	var stage_stree = document.getElementById('stage-tree');
+
+
+
+	//test start
+	var test_children = [].slice.call(document.querySelectorAll('#stage-node .children'));
+
+	test_children.forEach(function(item){
+		item.onclick = function(){
+			this.addClass('h');
+		};
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//test end
 
 
 
@@ -107,7 +139,7 @@
 
 						//parse xml
 						var xml = parseXml(reader.result);
-						stage.innerHTML = xmlTree(xml);
+						stage_stree.innerHTML = xmlTree(xml);
 
 					}
 				}
@@ -117,7 +149,7 @@
 				//disable submit function
 				//code...
 
-				stage.innerHTML = '';
+				stage_stree.innerHTML = '';
 			}
 		};
 	})();
@@ -145,7 +177,7 @@
 			document.querySelector('.online .list').innerHTML = html;
 			addOnlineFileListEvent();
 
-			progress_bar.end();
+			//progress_bar.end();
 
 			//function
 			function addOnlineFileListEvent(){
@@ -197,7 +229,7 @@
 
 					//function
 					function asynParseXml(back_data){
-						stage.innerHTML = xmlTree(back_data);
+						stage_stree.innerHTML = xmlTree(back_data);
 						progress_bar.end();
 					}
 
