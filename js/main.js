@@ -1,6 +1,6 @@
-	var stage = document.getElementById("stage"),
-		test = document.getElementById("test"),
-		test1 = document.getElementById("test1");
+	var stage = document.getElementById("stage");
+
+
 
 	var progress_bar = {
 		dom: document.getElementById("progress-bar"),
@@ -14,15 +14,7 @@
 		}
 	};
 	
-	test.onclick = function(){
-		progress_bar.start();
-	};
 
-	test1.onclick = function(){
-		
-		progress_bar.end();
-		
-	};
 
 	/* bt_list click start */
 	(function(){
@@ -62,62 +54,6 @@
 	})();
 	/* menu fun click end */
 
-
-//menu
-
-	function addOnlineFileListEvent(){
-		/* bt-menu click start */
-		(function(){
-			var items = Array.prototype.slice.call(document.querySelectorAll('.item')),
-				bt_menus = Array.prototype.slice.call(document.querySelectorAll('.item .bt-menu')),
-				cur = -1,
-				class_name = 'show-menu';
-
-			bt_menus.forEach(function(item, index){
-				item.onclick = function(){
-					if(index != cur){
-						if(cur != -1){
-							items[cur].removeClass(class_name);
-						}
-						cur = index;
-						items[cur].addClass(class_name);
-					}else{
-						items[cur].toggleClass(class_name);
-					}
-				};
-			});
-		})();
-		/* bt-menu click end */
-
-		/* name click start */
-		(function(){
-			var online_file_names = Array.prototype.slice.call(document.querySelectorAll('.item .name')),
-				online_file_names_cur = -1,
-				class_name = 'h';
-
-			online_file_names.forEach(function(item, index){
-				item.onclick = function(){
-					if(index != online_file_names_cur){
-						if(online_file_names_cur != -1){
-							online_file_names[online_file_names_cur].removeClass(class_name);
-						}
-						online_file_names_cur = index;
-						item.addClass(class_name);
-
-						//xmltree
-						progress_bar.start();
-						getXML(arr_list[index].url, asynParseXml);
-					}
-				};
-			});
-		})();
-		/* name click end */
-	}
-
-	function asynParseXml(back_data){
-		stage.innerHTML = xmlTree(back_data);
-		progress_bar.end();
-	}
 
 
 //upload
@@ -189,32 +125,88 @@
 
 
 //get list asyn
-	var arr_list;
 
 	function createOnlineFileList(){
 		progress_bar.start();
 		ajaxGet("json/file_list.json", '', onlineFileListCallBack);
-	}
-	function onlineFileListCallBack(back_data){
-		arr_list = JSON.parse(back_data);
-		var html = '';
 
-		if(arr_list.length == 0){
-			html = "No file online, you can upload some :)";
-		}else{
-			arr_list.forEach(function(item){
-				html += '<div class="item"><div class="upper"><div class="name">' + item.name + '</div><div class="bt bt-menu"><span class="icon-list"></span></div></div><div class="lower"><div class="bt bt-download"><span class="icon-download"></span></div><div class="bt bt-info"><span class="icon-info"></span></div><div class="bt bt-rename"><span class="icon-pencil"></span></div><div class="bt bt-delete"><span class="icon-trash"></span></div></div></div>';
-			});
+		function onlineFileListCallBack(back_data){
+			var arr_list = JSON.parse(back_data);
+			var html = '';
+
+			if(arr_list.length == 0){
+				html = "No file online, you can upload some :)";
+			}else{
+				arr_list.forEach(function(item){
+					html += '<div class="item"><div class="upper"><div class="name">' + item.name + '</div><div class="bt bt-menu"><span class="icon-list"></span></div></div><div class="lower"><div class="bt bt-download"><span class="icon-download"></span></div><div class="bt bt-info"><span class="icon-info"></span></div><div class="bt bt-rename"><span class="icon-pencil"></span></div><div class="bt bt-delete"><span class="icon-trash"></span></div></div></div>';
+				});
+			}
+
+			document.querySelector('.online .list').innerHTML = html;
+			addOnlineFileListEvent();
+
+			progress_bar.end();
+
+			//function
+			function addOnlineFileListEvent(){
+				/* bt-menu click start */
+				(function(){
+					var items = Array.prototype.slice.call(document.querySelectorAll('.item')),
+						bt_menus = Array.prototype.slice.call(document.querySelectorAll('.item .bt-menu')),
+						cur = -1,
+						class_name = 'show-menu';
+
+					bt_menus.forEach(function(item, index){
+						item.onclick = function(){
+							if(index != cur){
+								if(cur != -1){
+									items[cur].removeClass(class_name);
+								}
+								cur = index;
+								items[cur].addClass(class_name);
+							}else{
+								items[cur].toggleClass(class_name);
+							}
+						};
+					});
+				})();
+				/* bt-menu click end */
+
+				/* name click start */
+				(function(){
+					var online_file_names = Array.prototype.slice.call(document.querySelectorAll('.item .name')),
+						online_file_names_cur = -1,
+						class_name = 'h';
+
+					online_file_names.forEach(function(item, index){
+						item.onclick = function(){
+							if(index != online_file_names_cur){
+								if(online_file_names_cur != -1){
+									online_file_names[online_file_names_cur].removeClass(class_name);
+								}
+								online_file_names_cur = index;
+								item.addClass(class_name);
+
+								//xmltree
+								progress_bar.start();
+								getXML(arr_list[index].url, asynParseXml);
+							}
+						};
+					});
+
+
+					//function
+					function asynParseXml(back_data){
+						stage.innerHTML = xmlTree(back_data);
+						progress_bar.end();
+					}
+
+				})();
+				/* name click end */
+			}
 		}
-
-		document.querySelector('.online .list').innerHTML = html;
-		addOnlineFileListEvent();
-
-		progress_bar.end();
 	}
 
-
-var out_node;
 
 
 	function xmlTree(back_data){
@@ -227,9 +219,6 @@ var out_node;
 
 		//main
 		(function main(node){
-			//console.log(node);
-			//out_node = node;
-
 
 			if(children in node){
 				var children = node.children,
