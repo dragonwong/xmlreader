@@ -333,9 +333,13 @@ header{
 						position: absolute;
 						left: 150px;
 					}
-					#stage-node .children.h{
-						-webkit-animation: nodeMoveLeft .5s ease, nodeMoveTop .5s ease .5s;
+					#stage-node .children.selected{
+						-webkit-animation: nodeMoveLeft .3s ease, nodeMoveTop .3s ease .3s;
 						-webkit-animation-fill-mode: forwards;
+					}
+					#stage-node .node.unselected{
+						transition: .3s ease;
+						opacity: 0;
 					}
 
 					#n1-1{

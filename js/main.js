@@ -2,16 +2,30 @@
 
 
 
-	//test start
-	var test_children = [].slice.call(document.querySelectorAll('#stage-node .children'));
 
-	test_children.forEach(function(item){
+
+
+
+	//test start
+	var test_children = [].slice.call(document.querySelectorAll('#stage-node .children')),
+		parent = document.querySelector('#stage-node .parent');
+
+	test_children.forEach(function(item, index){
 		item.onclick = function(){
-			this.addClass('h');
+			this.addClass('selected');
+			test_children.splice(index, 1);
+			othersHide(this);
+			//console.log(this);
 		};
 	});
 
-
+	function othersHide(selected_node){
+		test_children.push(parent);
+		//console.log(test_children);
+		test_children.forEach(function(item){
+			item.addClass('unselected');
+		});
+	}
 
 
 
