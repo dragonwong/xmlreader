@@ -177,7 +177,7 @@
 			document.querySelector('.online .list').innerHTML = html;
 			addOnlineFileListEvent();
 
-			//progress_bar.end();
+			progress_bar.end();
 
 			//function
 			function addOnlineFileListEvent(){
