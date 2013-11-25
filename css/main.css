@@ -411,3 +411,24 @@ ul.tree{
 	transition: .3s ease;
 	opacity: 0;
 }
+
+
+
+
+
+@media (max-width: 600px){
+	.menu{
+		width: 100%;
+	}
+	.holder{
+		width: 100%;
+	}
+}
+@media (min-width: 601px) and (max-width: 1200px){
+	.menu{
+		width: 50%;
+	}
+	.holder{
+		width: 50%;
+	}
+}
