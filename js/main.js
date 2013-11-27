@@ -31,9 +31,6 @@
 			children = this_node.children,
 			parent_id = this_node.parent_id;
 
-		// console.log(xr_id);
-		// console.log(xr_nodes);
-		// console.log(this_node);
 		xr_parend_id = parent_id;
 		if(parent_id == -1){
 			bt_show_back.addClass('h');
