@@ -39,14 +39,14 @@
 		}
 
 		//this_node
-		html += '<div class="node this" data-xr_id="' + xr_id + '">' + this_node.name + '</div>';
+		html += '<div class="node this" data-xr_id="' + xr_id + '"><p class="title">' + this_node.name + '</p></div>';
 
 		//this_node
 		children.forEach(function(item, index){
 			var xr_node = xr_nodes[item],
 				y = index * 75;
 
-			html += '<div class="node children" data-xr_id="' + xr_node.id + '"style="top: ' + y + 'px;">' + xr_node.name + '</div>';
+			html += '<div class="node children" data-xr_id="' + xr_node.id + '"style="top: ' + y + 'px;"><p class="title">' + xr_node.name + '</p></div>';
 		})
 
 		stage_node_show.innerHTML = html;

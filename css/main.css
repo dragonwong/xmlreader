@@ -400,15 +400,17 @@ ul.tree{
 	padding: 0 10px;
 	border: 5px solid #2980b9;
 	cursor: pointer;
-	font-weight: bold;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	transition: background .3s ease;
 }
 #stage-node .node:hover{
 	background: #a0cfef;
 }
+	#stage-node .node .title{
+		font-weight: bold;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
 #stage-node .this{
 	border-color: #75e7a3;
 }
@@ -417,25 +419,28 @@ ul.tree{
 	left: 180px;
 }
 #stage-node .children:before{
-	display: block;
-	height: 100%;
-	width: 20px;
-	content: "\e6a3";
-	position: absolute;
-	left: -21px;
-	top: 15px;
 	font-family: 'icomoon';
+	content: "\e6c4";
+	position: absolute;
+	left: -30px;
+	top: 50%;
+	height: 20px;
+	line-height: 20px;
+	margin-top: -10px;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
 #stage-node .children.selected{
 	-webkit-animation: nodeMoveLeft .3s ease, nodeMoveTop .3s ease .3s;
 	-webkit-animation-fill-mode: forwards;
+}
+#stage-node .children.selected:before{
+	opacity: 0;
+	transition: .3s ease;
 }
 #stage-node .node.unselected{
 	transition: .3s ease;
