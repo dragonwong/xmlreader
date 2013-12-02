@@ -153,49 +153,7 @@ header{
 				display: -webkit-flex;
 			}
 
-				/* local */
-				#upload p{
-					margin-bottom: 20px;
-				}
-					#upload .bt{
-						position: relative;
-						overflow: hidden;
-						display: inline-block;
-						width: 80px;
-						height: 35px;
-						line-height: 35px;
-						text-align: center;
-						background: #75b9e7;
-						color: #fff;
-						margin-right: 20px;
-					}
-					#upload .bt:hover, #upload .bt:focus{
-						background: #2980b9;
-					}
-					#upload .bt.disabled{
-						background: #aaa;
-					}
-					#upload .bt.disabled:hover, #upload .bt.disabled:focus{
-						background: #aaa;
-					}
-						#upload .bt.disabled #submit{
-							cursor: default;
-						}
-						#ip_file, #submit{
-							width: 200px;
-							height: 35px;
-							position: absolute;
-							right: 0;
-							top: 0;
-							opacity: 0;
-							cursor: pointer;
-						}
-					.prompt{
-						display: inline-block;
-						line-height: 35px;
-						vertical-align: top;
-						color: #ccc;
-					}
+				
 
 				/* online */
 			.online{
@@ -363,9 +321,6 @@ ul.tree{
 		.self:hover, .self:active{
 			background: #2980b9;
 		}
-		.self:hover .nodeInfo{
-			display: block;
-		}
 			.nodeName{
 				padding: 5px 10px;
 				display: inline-block;
@@ -380,16 +335,7 @@ ul.tree{
 	            text-overflow: ellipsis;
 	            white-space: nowrap;
 			}
-			.nodeInfo{
-				position: absolute;
-				border: 1px solid #000;
-				display: none;
-				background: #fff;
-				z-index: 10;
-			}
-				.nodeInfo{
 
-				}
 
 
 /* #stage-node */
