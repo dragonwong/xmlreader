@@ -133,9 +133,9 @@ header{
 		transform: translateX(-100%);
 	}
 		.fun{
+			display: -webkit-box;	/* safari iphone */
 			display: flex;
 			display: -webkit-flex;
-			display: -webkit-box;	/* safari iphone */
 			text-align: center;
 		}
 			.fun .bt{
@@ -154,9 +154,9 @@ header{
 			}
 		
 		.cnt{
+			display: -webkit-box;	/* safari iphone */
 			display: flex;
 			display: -webkit-flex;
-			display: -webkit-box;	/* safari iphone */
 			height: 100%;
 			flex: 1;
 			-webkit-flex: 1;
@@ -170,9 +170,9 @@ header{
 				-webkit-box-flex: 1;/* safari iphone */
 			}
 			.cnt .pn.h{
+				display: -webkit-box;	/* safari iphone */
 				display: flex;
 				display: -webkit-flex;
-				display: -webkit-box;	/* safari iphone */
 			}
 
 				
@@ -193,9 +193,9 @@ header{
 							font-size: 25px;
 						}
 						.upper{
+							display: -webkit-box;	/* safari iphone */
 							display: flex;
 							display: -webkit-flex;
-							display: -webkit-box;	/* safari iphone */
 							background: #e7e7e7;
 							height: 45px;
 							line-height: 45px;

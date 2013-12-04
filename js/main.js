@@ -54,6 +54,7 @@ document.addEventListener("touchstart",function(){}, true);
 //main
 	var xr = {
 
+		body: document.body,
 		online_file_list: document.querySelector('.online .list'),
 		stage_tree: document.getElementById('stage-tree'),
 		stage_node: document.getElementById('stage-node'),
@@ -73,6 +74,10 @@ document.addEventListener("touchstart",function(){}, true);
 				var dom = this.dom;
 				dom.addClass('end').removeClass('start');
 			}
+		},
+
+		menuToggle: function(){
+			xr.body.toggleClass('hide-menu');
 		},
 
 		createOnlineFileList: function(){
@@ -149,6 +154,11 @@ document.addEventListener("touchstart",function(){}, true);
 							xr.renderStageTree();
 							
 							xr.progress_bar.end();
+
+							//menu slide out in mobile
+							if(xr.body.scrollWidth <= 600){
+								xr.menuToggle();
+							}
 						}
 
 					})();
@@ -308,13 +318,7 @@ document.addEventListener("touchstart",function(){}, true);
 		init: function(){
 
 			//bt_list click
-			(function(){
-				var	body = document.body;
-				document.getElementById('bt-list').onclick = function(){
-					body.toggleClass('hide-menu');
-				};
-			})();
-
+			document.getElementById('bt-list').onclick = xr.menuToggle;
 			
 			// load online file
 			xr.createOnlineFileList();
