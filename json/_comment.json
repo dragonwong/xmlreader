@@ -1,31 +1,31 @@
 [
 	{
 		"id": 0,
-		"name": "root",
+		"title": "root",
 		"children": [1, 2],
 		"parent": -1
 	},
 	{
 		"id": 1,
-		"name": "lv-1",
+		"title": "lv-1",
 		"children": [3, 4],
 		"parent": 0
 	},
 	{
 		"id": 2,
-		"name": "lv-2",
+		"title": "lv-2",
 		"children": [],
 		"parent": 0
 	},
 	{
 		"id": 3,
-		"name": "lv-1-1",
+		"title": "lv-1-1",
 		"children": [],
 		"parent": 1
 	},
 	{
 		"id": 4,
-		"name": "lv-1-2",
+		"title": "lv-1-2",
 		"children": [],
 		"parent": 1
 	}

@@ -1,0 +1,43 @@
+[
+	{
+		"id": 0,
+		"shortTitle": "Begin",
+		"title": "Acute Ischemic Stroke",
+		"body": "Based on imaging and symptoms",
+		"children": [1, 2],
+		"parent": -1
+	},
+	{
+		"id": 1,
+		"shortTitle": "Low risk TIA",
+		"title": "Low risk TIA",
+		"body": "ABCD2 Score 0-3",
+		"children": [3, 4],
+		"parent": 0
+	},
+	{
+		"id": 2,
+		"shortTitle": "TIA",
+		"title": "TIA",
+		"body": "Symptoms have completely resolved",
+		"children": [],
+		"parent": 0
+	},
+	{
+		"id": 3,
+		"shortTitle": "Less 4.5 hrs",
+		"title": "Symptom onset is &lt;4.5 hours",
+		"body": "Time from stroke symptom onset is &lt; 4.5 hours",
+		"children": [],
+		"parent": 1
+	},
+	{
+		"id": 4,
+		"shortTitle": "Less 8 hrs",
+		"title": "Symptom onset between 4.5 and 8 hours",
+		"body": "Outside IV t-PA window",
+		"children": [],
+		"parent": 1
+	}
+]
+

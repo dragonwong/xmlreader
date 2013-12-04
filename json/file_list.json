@@ -1,10 +1,10 @@
 [
 	{
 		"id": 1,
-		"name": "xml_a",
+		"name": "Ischemic Stroke",
 		"size": "1kb",
 		"date": 100,
-		"url": "xml/AIS.xml"
+		"url": "json/AIS.json"
 	},
 	{
 		"id": 2,

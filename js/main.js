@@ -122,7 +122,7 @@
 						output += '<div class="self" data-xr_id="' + node.id + '">';
 
 							//取该节点名字
-							output += '<span class="nodeName">' + node.name + '</span>';
+							output += '<span class="nodeName">' + node.shortTitle + '</span>';
 
 
 						//结束构建该节点自身内容
@@ -171,14 +171,14 @@
 			}
 
 			//this_node
-			html += '<div class="node this" data-xr_id="' + xr_id + '"><p class="title">' + this_node.name + '</p></div>';
+			html += '<div class="node this" data-xr_id="' + xr_id + '"><p class="title">' + this_node.title + '</p><p class="body">' + this_node.body + '</p></div>';
 
 			//this_node
 			children.forEach(function(item, index){
 				var xr_node = xr.xr_nodes[item],
 					y = index * 75;
 
-				html += '<div class="node children" data-xr_id="' + xr_node.id + '"style="top: ' + y + 'px;"><p class="title">' + xr_node.name + '</p></div>';
+				html += '<div class="node children" data-xr_id="' + xr_node.id + '"style="top: ' + y + 'px;"><p class="title">' + xr_node.title + '</p></div>';
 			})
 
 			xr.stage_node_show.innerHTML = html;
