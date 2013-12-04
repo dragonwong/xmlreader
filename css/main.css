@@ -61,6 +61,7 @@ h1{
 }
 .bt{
 	transition: .3s ease;
+	-webkit-transition: .3s ease;
 	cursor: pointer;
 }
 /* main */
@@ -84,23 +85,26 @@ header{
 			width: 45px;
 			background: #222;
 			transition: .3s ease;
+			-webkit-transition: .3s ease;
 		}
 		.hide-menu #bt-list{
 			background: #333;
 		}
 	#progress-bar{
 		height: 3px;
-		background: -moz-linear-gradient(left, #7ff153, #f1537f, #2980b9);
 		background: -webkit-linear-gradient(left, #7ff153, #f1537f, #2980b9);
+		background: -moz-linear-gradient(left, #7ff153, #f1537f, #2980b9);
 		width: 0;
 	}
 	#progress-bar.start{
 		-webkit-animation: start 3s ease;
 		-moz-animation: start 3s ease;
+		animation-fill-mode: forwards;
 		-webkit-animation-fill-mode: forwards;
 	}
 	#progress-bar.end{
 		transition: .5s ease;
+		-webkit-transition: .5s ease;
 		width: 100%;
 	}
 
@@ -117,6 +121,7 @@ header{
 		color: #fff;
 		z-index: 10;
 		transition: .5s ease;
+		-webkit-transition: .5s ease;	/* safari iphone */
 		display: flex;
 		display: -webkit-flex;		/* safari */
 		flex-flow: column;
@@ -130,6 +135,7 @@ header{
 		.fun{
 			display: flex;
 			display: -webkit-flex;
+			display: -webkit-box;	/* safari iphone */
 			text-align: center;
 		}
 			.fun .bt{
@@ -137,6 +143,7 @@ header{
 				line-height: 45px;
 				flex: 1;
 				-webkit-flex: 1;
+				-webkit-box-flex: 1;/* safari iphone */
 				color: #ccc;
 				background: #333;
 			}
@@ -149,19 +156,23 @@ header{
 		.cnt{
 			display: flex;
 			display: -webkit-flex;
+			display: -webkit-box;	/* safari iphone */
 			height: 100%;
 			flex: 1;
 			-webkit-flex: 1;
+			-webkit-box-flex: 1;/* safari iphone */
 		}
 			.cnt .pn{
 				display: none;
 				padding: 40px 10px;
 				flex: 1;
 				-webkit-flex: 1;
+				-webkit-box-flex: 1;/* safari iphone */
 			}
 			.cnt .pn.h{
 				display: flex;
 				display: -webkit-flex;
+				display: -webkit-box;	/* safari iphone */
 			}
 
 				
@@ -184,6 +195,7 @@ header{
 						.upper{
 							display: flex;
 							display: -webkit-flex;
+							display: -webkit-box;	/* safari iphone */
 							background: #e7e7e7;
 							height: 45px;
 							line-height: 45px;
@@ -192,9 +204,11 @@ header{
 							.name{
 								flex: 1;
 								-webkit-flex: 1;
+								-webkit-box-flex: 1;/* safari iphone */
 								padding-left: 20px;
 								cursor: pointer;
 								transition: .3s ease;
+								-webkit-transition: .3s ease;	/* safari iphone */
 				                overflow: hidden;
 				                text-overflow: ellipsis;
 				                white-space: nowrap;
@@ -219,6 +233,7 @@ header{
 							color: #fff;
 							line-height: 45px;
 							transition: .3s ease;
+							-webkit-transition: .3s ease;	/* safari iphone */
 						}
 							.lower .bt{
 								float: right;
@@ -244,6 +259,7 @@ header{
 		.holder{
 			width: 30%;
 			transition: .5s ease;
+			-webkit-transition: .5s ease;	/* safari iphone */
 		}
 		.hide-menu .holder{
 			width: 0;
@@ -308,6 +324,7 @@ header{
 							border: 5px solid #2980b9;
 							cursor: pointer;
 							transition: background .3s ease;
+							-webkit-transition: background .3s ease;
 							position: relative;
 						}
 						#stage-node .node:hover{
@@ -357,9 +374,11 @@ header{
 							#stage-node .children .selected:before{
 								opacity: 0;
 								transition: .3s ease;
+								-webkit-transition: .3s ease;
 							}
 							#stage-node .node.unselected{
 								transition: .3s ease;
+								-webkit-transition: .3s ease;
 								opacity: 0;
 							}
 
@@ -395,6 +414,7 @@ ul.tree{
 			display: inline-block;
 			background: #75b9e7;
 			transition: .3s ease;
+			-webkit-transition: .3s ease;
 		}
 		.self:hover, .self:active{
 			background: #2980b9;

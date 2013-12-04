@@ -7,13 +7,6 @@
 		"url": "json/AIS.json"
 	},
 	{
-		"id": 2,
-		"name": "xml_b_has_a_very_lonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnng_name",
-		"size": "2kb",
-		"date": 200,
-		"url": "xml/_temp.xml"
-	},
-	{
 		"id": 3,
 		"name": "xml_c",
 		"size": "3kb",

@@ -1,3 +1,6 @@
+//add state for touching in mobile
+document.addEventListener("touchstart",function(){}, true);
+
 //lib
     function ajaxGet(url, data, callback){
         var xhr = new XMLHttpRequest();
@@ -51,6 +54,7 @@
 //main
 	var xr = {
 
+		online_file_list: document.querySelector('.online .list'),
 		stage_tree: document.getElementById('stage-tree'),
 		stage_node: document.getElementById('stage-node'),
 		bt_show_back: document.getElementById('bt-show-back'),
@@ -68,6 +72,88 @@
 			end: function(){
 				var dom = this.dom;
 				dom.addClass('end').removeClass('start');
+			}
+		},
+
+		createOnlineFileList: function(){
+
+			xr.progress_bar.start();
+			ajaxGet("json/file_list.json", '', onlineFileListCallBack);
+
+			function onlineFileListCallBack(back_data){
+				var arr_list = JSON.parse(back_data);
+				var html = '';
+
+				if(arr_list.length == 0){
+					html = "No file online, you can upload some :)";
+				}else{
+					arr_list.forEach(function(item){
+						html += '<div class="item"><div class="upper"><div class="name">' + item.name + '</div><div class="bt bt-menu"><span class="icon-list"></span></div></div><div class="lower"><div class="bt bt-download"><span class="icon-download"></span></div><div class="bt bt-info"><span class="icon-info"></span></div><div class="bt bt-rename"><span class="icon-pencil"></span></div><div class="bt bt-delete"><span class="icon-trash"></span></div></div></div>';
+					});
+				}
+
+				xr.online_file_list.innerHTML = html;
+				addOnlineFileListEvent();
+
+				xr.progress_bar.end();
+
+				//function
+				function addOnlineFileListEvent(){
+					// bt-menu click
+					(function(){
+						var items = Array.prototype.slice.call(document.querySelectorAll('.item')),
+							bt_menus = Array.prototype.slice.call(document.querySelectorAll('.item .bt-menu')),
+							cur = -1,
+							class_name = 'show-menu';
+
+						bt_menus.forEach(function(item, index){
+							item.onclick = function(){
+								if(index != cur){
+									if(cur != -1){
+										items[cur].removeClass(class_name);
+									}
+									cur = index;
+									items[cur].addClass(class_name);
+								}else{
+									items[cur].toggleClass(class_name);
+								}
+							};
+						});
+					})();
+
+					// name click
+					(function(){
+						var online_file_names = Array.prototype.slice.call(document.querySelectorAll('.item .name')),
+							online_file_names_cur = -1,
+							class_name = 'h';
+
+						online_file_names.forEach(function(item, index){
+							item.onclick = function(){
+								if(index != online_file_names_cur){
+									if(online_file_names_cur != -1){
+										online_file_names[online_file_names_cur].removeClass(class_name);
+									}
+									online_file_names_cur = index;
+									item.addClass(class_name);
+
+									//asyn
+									xr.progress_bar.start();
+									ajaxGet(arr_list[index].url, '', callback);
+								}
+							};
+						});
+
+						function callback(back_data){
+							
+							xr.xr_nodes = JSON.parse(back_data);
+							xr.renderStageTree();
+							
+							xr.progress_bar.end();
+						}
+
+					})();
+
+				}
 			}
 		},
 
@@ -229,13 +315,15 @@
 				};
 			})();
 
+			
+			// load online file
+			xr.createOnlineFileList();
+
 			// menu fun click
 			(function(){
 				var menu_bts = Array.prototype.slice.call(document.querySelectorAll('.fun .bt')),
 					menu_pns = Array.prototype.slice.call(document.querySelectorAll('.cnt .pn')),
-					cur = 0,
-
-					online_file_list = document.querySelector('.online .list');
+					cur = 0;
 
 				menu_bts.forEach(function(item, index){
 					item.onclick = function(){
@@ -248,95 +336,11 @@
 
 							//online
 							if(index == 0){
-								createOnlineFileList();
+								xr.createOnlineFileList();
 							}
 						}
 					};
 				});
-
-				createOnlineFileList();
-
-				/* function */
-				function createOnlineFileList(){
-					xr.progress_bar.start();
-					ajaxGet("json/file_list.json", '', onlineFileListCallBack);
-
-					function onlineFileListCallBack(back_data){
-						var arr_list = JSON.parse(back_data);
-						var html = '';
-
-						if(arr_list.length == 0){
-							html = "No file online, you can upload some :)";
-						}else{
-							arr_list.forEach(function(item){
-								html += '<div class="item"><div class="upper"><div class="name">' + item.name + '</div><div class="bt bt-menu"><span class="icon-list"></span></div></div><div class="lower"><div class="bt bt-download"><span class="icon-download"></span></div><div class="bt bt-info"><span class="icon-info"></span></div><div class="bt bt-rename"><span class="icon-pencil"></span></div><div class="bt bt-delete"><span class="icon-trash"></span></div></div></div>';
-							});
-						}
-
-						online_file_list.innerHTML = html;
-						addOnlineFileListEvent();
-
-						xr.progress_bar.end();
-
-						//function
-						function addOnlineFileListEvent(){
-							// bt-menu click
-							(function(){
-								var items = Array.prototype.slice.call(document.querySelectorAll('.item')),
-									bt_menus = Array.prototype.slice.call(document.querySelectorAll('.item .bt-menu')),
-									cur = -1,
-									class_name = 'show-menu';
-
-								bt_menus.forEach(function(item, index){
-									item.onclick = function(){
-										if(index != cur){
-											if(cur != -1){
-												items[cur].removeClass(class_name);
-											}
-											cur = index;
-											items[cur].addClass(class_name);
-										}else{
-											items[cur].toggleClass(class_name);
-										}
-									};
-								});
-							})();
-
-							// name click
-							(function(){
-								var online_file_names = Array.prototype.slice.call(document.querySelectorAll('.item .name')),
-									online_file_names_cur = -1,
-									class_name = 'h';
-
-								online_file_names.forEach(function(item, index){
-									item.onclick = function(){
-										if(index != online_file_names_cur){
-											if(online_file_names_cur != -1){
-												online_file_names[online_file_names_cur].removeClass(class_name);
-											}
-											online_file_names_cur = index;
-											item.addClass(class_name);
-
-											//asyn
-											xr.progress_bar.start();
-											ajaxGet(arr_list[index].url, '', callback);
-										}
-									};
-								});
-
-								function callback(back_data){
-									
-									xr.xr_nodes = JSON.parse(back_data);
-									xr.renderStageTree();
-									
-									xr.progress_bar.end();
-								}
-
-							})();
-
-						}
-					}
-				}
 
 			})();
 
