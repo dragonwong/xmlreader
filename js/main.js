@@ -173,34 +173,34 @@
 			//this_node
 			html += '<div class="node this" data-xr_id="' + xr_id + '"><p class="title">' + this_node.title + '</p><p class="body">' + this_node.body + '</p></div>';
 
-			//this_node
+			//children
+			html += '<div class="children">';
 			children.forEach(function(item, index){
-				var xr_node = xr.xr_nodes[item],
-					y = index * 75;
+				var xr_node = xr.xr_nodes[item];
 
-				html += '<div class="node children" data-xr_id="' + xr_node.id + '"style="top: ' + y + 'px;"><p class="title">' + xr_node.title + '</p></div>';
+				html += '<div class="node" data-xr_id="' + xr_node.id + '"><p class="title">' + xr_node.title + '</p><p class="body">' + xr_node.body + '</p></div>';
 			})
+			html += '</div>';
 
 			xr.stage_node_show.innerHTML = html;
 
 
 			//add event
 
-			var dom_children = [].slice.call(document.querySelectorAll('#stage-node .children')),
+			var dom_children = Array.prototype.slice.call(document.querySelectorAll('#stage-node .children .node')),
 				dom_this_node = document.querySelector('#stage-node .this');
 
 			dom_children.forEach(function(item, index){
 				item.onclick = function(){
+					item.style.top = item.offsetTop + 'px';
 					this.addClass('selected');
 					dom_children.splice(index, 1);
 					select(this.dataset['xr_id']);
-					//console.log(this);
 				};
 			});
 
 			function select(selected_node_id){
 				dom_children.push(dom_this_node);
-				//console.log(test_children);
 				dom_children.forEach(function(item){
 					item.addClass('unselected');
 				});
