@@ -53,8 +53,9 @@
 
 		stage_tree: document.getElementById('stage-tree'),
 		stage_node: document.getElementById('stage-node'),
-		stage_node_show: document.getElementById('stage-node-show'),
 		bt_show_back: document.getElementById('bt-show-back'),
+		stage_node_show: document.getElementById('stage-node-show'),
+		stage_node_info: document.getElementById('stage-node-info'),
 		xr_nodes: [],		/* xmlreader nodes */
 		xr_parend_id: -1,	/* parent's id of selected node in stage-node */
 
@@ -192,12 +193,18 @@
 
 			dom_children.forEach(function(item, index){
 				item.onclick = function(){
+					xr.stage_node_show.style.minHeight = xr.stage_node_show.scrollHeight + 'px';
 					item.style.top = item.offsetTop + 'px';
+					item.style.left = item.offsetLeft + 'px';
 					this.addClass('selected');
 					dom_children.splice(index, 1);
 					select(this.dataset['xr_id']);
 				};
 			});
+
+			//info
+
+			xr.stage_node_info.innerHTML = this_node.explanation;
 
 			function select(selected_node_id){
 				dom_children.push(dom_this_node);
@@ -205,6 +212,7 @@
 					item.addClass('unselected');
 				});
 				setTimeout(function(){
+					xr.stage_node_show.style.minHeight = '0px';
 					xr.renderStageNode(selected_node_id);
 				},600);
 			}
