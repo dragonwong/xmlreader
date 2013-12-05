@@ -55,7 +55,6 @@
 	var xr = {
 
 		body: document.body,
-		online_file_list: document.querySelector('.online .list'),
 		stage_tree: document.getElementById('stage-tree'),
 		stage_node: document.getElementById('stage-node'),
 		bt_show_back: document.getElementById('bt-show-back'),
@@ -83,31 +82,40 @@
 		createOnlineFileList: function(){
 
 			xr.progress_bar.start();
-			ajaxGet("json/file_list.json", '', onlineFileListCallBack);
+			ajaxGet("json/_list.json", '', _onlineFileListCallBack);
 
-			function onlineFileListCallBack(back_data){
-				var arr_list = JSON.parse(back_data);
-				var html = '';
+			function _onlineFileListCallBack(back_data){
+				var _list = JSON.parse(back_data),
+					cnt = document.querySelector('#menu .cnt'),
+					_dom = cnt.querySelectorAll('.pn .list');
 
-				if(arr_list.length == 0){
-					html = "No file online, you can upload some :)";
-				}else{
-					arr_list.forEach(function(item){
-						html += '<div class="item"><div class="upper"><div class="name">' + item.name + '</div><div class="bt bt-menu"><span class="icon-list"></span></div></div><div class="lower"><div class="bt bt-download"><span class="icon-download"></span></div><div class="bt bt-info"><span class="icon-info"></span></div><div class="bt bt-rename"><span class="icon-pencil"></span></div><div class="bt bt-delete"><span class="icon-trash"></span></div></div></div>';
-					});
-				}
 
-				xr.online_file_list.innerHTML = html;
-				addOnlineFileListEvent();
+				_eachPane(_list.topics, _dom[0]);
+				_eachPane(_list.sub_topics, _dom[1]);
 
+				_addOnlineFileListEvent();
 				xr.progress_bar.end();
 
 				//function
-				function addOnlineFileListEvent(){
+				function _eachPane(arr_list, dom){
+					var _html = '';
+
+					if(arr_list.length == 0){
+						_html = "No file online, you can upload some :)";
+					}else{
+						arr_list.forEach(function(item){
+							_html += '<div class="item"><div class="upper"><div class="name">' + item.name + '</div><div class="bt bt-menu"><span class="icon-list"></span></div></div><div class="lower"><div class="bt bt-download"><span class="icon-download"></span></div><div class="bt bt-info"><span class="icon-info"></span></div><div class="bt bt-rename"><span class="icon-pencil"></span></div><div class="bt bt-delete"><span class="icon-trash"></span></div></div></div>';
+						});
+					}
+
+					dom.innerHTML = _html;
+				}
+
+				function _addOnlineFileListEvent(){
 					// bt-menu click
 					(function(){
-						var items = Array.prototype.slice.call(document.querySelectorAll('.item')),
-							bt_menus = Array.prototype.slice.call(document.querySelectorAll('.item .bt-menu')),
+						var items = Array.prototype.slice.call(cnt.querySelectorAll('.pn .list .item')),
+							bt_menus = Array.prototype.slice.call(document.querySelectorAll('.pn .list .item .bt-menu')),
 							cur = -1,
 							class_name = 'show-menu';
 
@@ -325,8 +333,8 @@
 
 			// menu fun click
 			(function(){
-				var menu_bts = Array.prototype.slice.call(document.querySelectorAll('.fun .bt')),
-					menu_pns = Array.prototype.slice.call(document.querySelectorAll('.cnt .pn')),
+				var menu_bts = Array.prototype.slice.call(document.querySelectorAll('#menu .fun .bt')),
+					menu_pns = Array.prototype.slice.call(document.querySelectorAll('#menu .cnt .pn')),
 					cur = 0;
 
 				menu_bts.forEach(function(item, index){
@@ -337,11 +345,6 @@
 							cur = index;
 							item.addClass("h");
 							menu_pns[cur].addClass("h");
-
-							//online
-							if(index == 0){
-								xr.createOnlineFileList();
-							}
 						}
 					};
 				});

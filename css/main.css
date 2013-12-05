@@ -111,7 +111,7 @@ header{
 .body{
 
 }
-	.menu{
+	#menu{
 		position: fixed;
 		width: 30%;
 		top: 53px;
@@ -128,7 +128,7 @@ header{
 		-webkit-flex-flow: column;	/* safari */
 		flex-direction: column;		/* ff */
 	}
-	.hide-menu .menu{
+	.hide-menu #menu{
 		-webkit-transform: translateX(-100%);
 		transform: translateX(-100%);
 	}
@@ -178,8 +178,6 @@ header{
 				
 
 				/* online */
-			.online{
-			}
 				.list{
 					overflow-y: auto;
 					width: 100%;
@@ -438,7 +436,7 @@ ul.tree{
 /* media query */
 
 @media (max-width: 600px){
-	.menu{
+	#menu{
 		width: 100%;
 	}
 	.holder{
@@ -446,7 +444,7 @@ ul.tree{
 	}
 }
 @media (min-width: 601px) and (max-width: 1200px){
-	.menu{
+	#menu{
 		width: 50%;
 	}
 	.holder{
