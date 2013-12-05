@@ -1,5 +1,5 @@
 //add state for touching in mobile
-document.addEventListener("touchstart",function(){}, true);
+	document.addEventListener("touchstart",function(){}, true);
 
 //lib
     function ajaxGet(url, data, callback){
