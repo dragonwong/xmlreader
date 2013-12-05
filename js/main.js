@@ -82,9 +82,9 @@
 		createOnlineFileList: function(){
 
 			xr.progress_bar.start();
-			ajaxGet("json/_list.json", '', _onlineFileListCallBack);
+			ajaxGet("json/_list.json", '', callback);
 
-			function _onlineFileListCallBack(back_data){
+			function callback(back_data){
 				var _list = JSON.parse(back_data),
 					cnt = document.querySelector('#menu .cnt'),
 					_dom = cnt.querySelectorAll('.pn .list');
@@ -104,7 +104,7 @@
 						_html = "No file online, you can upload some :)";
 					}else{
 						arr_list.forEach(function(item){
-							_html += '<div class="item"><div class="upper"><div class="name">' + item.name + '</div><div class="bt bt-menu"><span class="icon-list"></span></div></div><div class="lower"><div class="bt bt-download"><span class="icon-download"></span></div><div class="bt bt-info"><span class="icon-info"></span></div><div class="bt bt-rename"><span class="icon-pencil"></span></div><div class="bt bt-delete"><span class="icon-trash"></span></div></div></div>';
+							_html += '<div class="item"><div class="upper"><div class="name" data-url="' + item.url + '">' + item.name + '</div><div class="bt bt-menu"><span class="icon-list"></span></div></div><div class="lower"><div class="bt bt-download"><span class="icon-download"></span></div><div class="bt bt-info"><span class="icon-info"></span></div><div class="bt bt-rename"><span class="icon-pencil"></span></div><div class="bt bt-delete"><span class="icon-trash"></span></div></div></div>';
 						});
 					}
 
@@ -147,18 +147,18 @@
 										online_file_names[online_file_names_cur].removeClass(class_name);
 									}
 									online_file_names_cur = index;
-									item.addClass(class_name);
+									this.addClass(class_name);
 
 									//asyn
 									xr.progress_bar.start();
-									ajaxGet(arr_list[index].url, '', callback);
+									ajaxGet(this.dataset['url'], '', callback);
 								}
 							};
 						});
 
 						function callback(back_data){
 							
-							xr.xr_nodes = JSON.parse(back_data);
+							xr.xr_nodes = JSON.parse(back_data).nodes;
 							xr.renderStageTree();
 							
 							xr.progress_bar.end();
