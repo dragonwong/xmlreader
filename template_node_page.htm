@@ -42,7 +42,7 @@ header{
 	top: 0;
 	z-index: 10;
 }
-	.header{
+	header .main{
 		height: 50px;
 		line-height: 50px;
 		background: #333;
@@ -67,11 +67,100 @@ header{
 		background: -moz-linear-gradient(left, #7ff153, #f1537f, #2980b9);
 	}
 
+
+.body{
+
+}
+	.body .main{
+		padding-top: 50px;
+	}
+
+		.holder{
+
+		}
+		.page{
+
+		}
+			#page_welcome{
+
+			}
+			.page_main{
+
+			}
+				.ctr{
+					overflow: hidden;
+					padding: 10px;
+				}
+					.ctr .bt{
+						height: 30px;
+						line-height: 30px;
+						float: left;
+						border: 1px solid #adadad;
+						border-left: none;
+						width: 30px;
+						text-align: center;
+					}
+					.ctr .bt.h{
+						background: #ebebeb;
+						box-shadow: 1px 1px 1px #ccc inset;
+						cursor: default;
+						color: #666;
+					}
+					.ctr .bt:active{
+						box-shadow: 1px 1px 1px #ccc inset;
+						background: #ebebeb;
+					}
+					.ctr .bt:first-child{
+						border-left: 1px solid #adadad;
+						border-radius: 4px 0 0 4px;
+					}
+					.ctr .bt:last-child{
+						border-radius: 0 4px 4px 0;
+					}
+				.stage{
+
+				}
+					#stage-tree{
+						display: none;
+					}
+					#stage-node{
+						border-top: 1px solid #aaa;
+					}
+						.header{
+							font-size: 14px;
+							color: #333;
+							padding: 4px 5px;
+							background: #ebebeb;
+							border-top: 1px solid #aaa;
+							border-bottom: 1px solid #aaa;
+						}
+						.node{
+							padding: 10px;
+						}
+						.node>.title{
+							font-weight: bold;
+							font-size: 15px
+						}
+						.node>.body{
+							font-size: 13px
+						}
+
+						.explanation .detail{
+							padding: 10px;
+							background: #f7f7f7;
+						}
+
+						.next .node{
+							border-bottom: 1px solid #ccc;
+							cursor: pointer;
+						}
+						
+
 </style>
 </head>
 <body class="hide-menu">
 	<header>
-		<div class="header">
+		<div class="main">
 			<div id="bt-list">
 				<span class="icon-list"></span>
 			</div>
@@ -80,45 +169,84 @@ header{
 		<div id="progress-bar"></div>
 	</header>
 	<div class="body">
-		<div class="main">
-			<div class="stage">
 
-				<div id="stage-welcome" class="h">
+		<div class="main">
+
+			<!-- <div class="holder"></div> -->
+
+			<div class="page">
+			
+				<!-- 
+				<div id="page_welcome" class="h">
 					<h2>Emergency Neurological Life Support</h2>
 					<p>What to do in the first critical hour of a neurological emergency</p>
 				</div>
+				 -->	
 
-				<div id="stage-tree"></div>
-
-				<div id="stage-node">
+				<div class="page_main">
 
 					<div class="ctr">
-						<div class="bt" id="bt-show-back">
+						<div class="bt" id="bt-back">
 							<span class="icon-arrow-left2"></span>
 						</div>
-						<div class="bt" id="bt-show-tree">
+						<div class="bt h" id="bt-node">
+							<span class="icon-text"></span>
+						</div>
+						<div class="bt" id="bt-tree">
 							<span class="icon-flow-cascade"></span>
 						</div>
 					</div>
+					
+					<div class="stage">
+						
+						<div id="stage-tree"></div>
 
-					<div class="pane">
-						<div id="stage-node-show">
-							<div class="node this" id="n1">1</div>
-							
-							<div class="children">
-								<div class="node">1-1</div>
-								<div class="node">1-2</div>
-								<div class="node">1-3</div>
+						<div id="stage-node">
+
+							<div class="this">
+								<div class="node">
+									<p class="title">Acute Ischemic Stroke</p>
+									<p class="body">Based on imaging and symptoms</p>
+								</div>
+							</div>
+
+							<div class="explanation">
+								<div class="header">
+									explanation
+								</div>
+								<div class="detail">
+									The diagnosis of acute ischemic stroke is based on new onset focal neurological findings with an imaging study (CT or MRI of the brain) that shows no hemorrhage, or shows evidence of ischemic infarction.In some centers, patients may be screened at the door when EMS arrives and then is taken directly to CT (or MRI) based on symptoms of facial droop, dysarthria, gaze preference, motor weakness or other focal findings.If not completed already:<li>STAT vital signs, capillary glucose, CBC with platelets, PT/PTT, EKG, and beta-HCG for women</li><li>IV access</li><li>Supplemental oxygen to maintain saturation &gt;94% (hyperoxia may be detrimental in stroke, so no need for high flow oxygen)</li><li>Activate stroke code system (if available)</li><li>Stroke MD/team to evaluate patient with 5 minutes</li><li>Determine NIHSS score</li><i>Topic Co-Chairs:</i><br>Hartmut Gross, MD<br>Gene Sung, MD<br>
+								</div>
+							</div>
+							<div class="next">
+								<div class="header">
+									next
+								</div>
+								<div class="detail">
+									<div class="node">
+										<p class="title">Acute Ischemic Stroke</p>
+										<p class="body">Based on imaging and symptoms</p>
+									</div>
+									<div class="node">
+										<p class="title">Acute Ischemic Stroke</p>
+										<p class="body">Based on imaging and symptoms</p>
+									</div>
+									<div class="node">
+										<p class="title">Acute Ischemic Stroke</p>
+										<p class="body">Based on imaging and symptoms</p>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div id="stage-node-info">
-							here is some info
-						</div>
-					</div>
 
+					</div>
+	
 				</div>
+				
 			</div>
+	
 		</div>
+	
 	</div>
 </body>
 </html>
