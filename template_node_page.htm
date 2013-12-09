@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>xmlreader</title>
+<link rel="stylesheet" href="css/font.css" />
+<style>
+/* base */
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	font-family: Arial, "SimHei";
+	word-break: break-all;
+}
+a{
+	text-decoration: none;
+}
+p{
+	margin: 0;
+}
+hr{
+	margin: 20px 0;
+}
+h1{
+	color: #fff;
+	margin: 0;
+}
+.bt{
+	transition: .3s ease;
+	-webkit-transition: .3s ease;
+	cursor: pointer;
+}
+/* main */
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
+	.header{
+		height: 50px;
+		line-height: 50px;
+		background: #333;
+		text-align: center;
+	}
+		#bt-list{
+			float: left;
+			cursor: pointer;
+			font-size: 30px;
+			color: #fff;
+			width: 45px;
+			background: #222;
+			transition: .3s ease;
+			-webkit-transition: .3s ease;
+		}
+		.hide-menu #bt-list{
+			background: #333;
+		}
+	#progress-bar{
+		height: 3px;
+		background: -webkit-linear-gradient(left, #7ff153, #f1537f, #2980b9);
+		background: -moz-linear-gradient(left, #7ff153, #f1537f, #2980b9);
+	}
+
+</style>
+</head>
+<body class="hide-menu">
+	<header>
+		<div class="header">
+			<div id="bt-list">
+				<span class="icon-list"></span>
+			</div>
+			<h1>ENLS</h1>
+		</div>
+		<div id="progress-bar"></div>
+	</header>
+	<div class="body">
+		<div class="main">
+			<div class="stage">
+
+				<div id="stage-welcome" class="h">
+					<h2>Emergency Neurological Life Support</h2>
+					<p>What to do in the first critical hour of a neurological emergency</p>
+				</div>
+
+				<div id="stage-tree"></div>
+
+				<div id="stage-node">
+
+					<div class="ctr">
+						<div class="bt" id="bt-show-back">
+							<span class="icon-arrow-left2"></span>
+						</div>
+						<div class="bt" id="bt-show-tree">
+							<span class="icon-flow-cascade"></span>
+						</div>
+					</div>
+
+					<div class="pane">
+						<div id="stage-node-show">
+							<div class="node this" id="n1">1</div>
+							
+							<div class="children">
+								<div class="node">1-1</div>
+								<div class="node">1-2</div>
+								<div class="node">1-3</div>
+							</div>
+						</div>
+						<div id="stage-node-info">
+							here is some info
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
