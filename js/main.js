@@ -51,12 +51,10 @@
 	var xr = {
 
 		body: document.body,
-		stage_welcome: document.getElementById('stage-welcome'),
+		page: document.getElementById('page'),
 		stage_tree: document.getElementById('stage-tree'),
 		stage_node: document.getElementById('stage-node'),
-		bt_show_back: document.getElementById('bt-show-back'),
-		stage_node_show: document.getElementById('stage-node-show'),
-		stage_node_info: document.getElementById('stage-node-info'),
+		bt_back: document.getElementById('bt-back'),
 		xr_nodes: [],		/* xmlreader nodes */
 		xr_parend_id: -1,	/* parent's id of selected node in stage-node */
 
@@ -156,7 +154,9 @@
 						function callback(back_data){
 							
 							xr.xr_nodes = JSON.parse(back_data).nodes;
+
 							xr.renderStageTree();
+							xr.renderStageNode(0);
 							
 							xr.progress_bar.end();
 
@@ -175,14 +175,12 @@
 		showStage: function(stage){
 			switch(stage){
 				case 'tree':
-					xr.stage_tree.addClass('h');
-					xr.stage_welcome.removeClass('h');
-					xr.stage_node.removeClass('h');
+					xr.page.removeClass('show-node');
+					xr.page.addClass('show-tree');
 					break;
 				case 'node':
-					xr.stage_node.addClass('h');
-					xr.stage_welcome.removeClass('h');
-					xr.stage_tree.removeClass('h');
+					xr.page.removeClass('show-tree');
+					xr.page.addClass('show-node');
 					break;
 			}
 		},
@@ -199,7 +197,6 @@
 
 			selfs.forEach(function(item){
 				item.onclick = function(){
-					showStage('node');
 					xr.renderStageNode(this.dataset['xr_id']);
 				};
 			});
@@ -267,58 +264,44 @@
 				children = this_node.children,
 				parent = this_node.parent;
 
+			xr.showStage('node');
+
 			xr.xr_parend_id = parent;
 			if(parent == -1){
-				xr.bt_show_back.addClass('h');
+				xr.bt_back.addClass('disable');
 			}else{
-				xr.bt_show_back.removeClass('h');
+				xr.bt_back.removeClass('disable');
 			}
 
-			//this_node
-			html += '<div class="node this" data-xr_id="' + xr_id + '"><p class="title">' + this_node.title + '</p><p class="body">' + this_node.body + '</p></div>';
+			//this self
+			html += '<div class="this" data-xr_id="' + xr_id + '"><div class="node"><p class="title">' + this_node.title + '</p><p class="body">' + this_node.body + '</p></div></div>';
 
-			//children
-			html += '<div class="children">';
-			children.forEach(function(item, index){
-				var xr_node = xr.xr_nodes[item];
-
-				html += '<div class="node" data-xr_id="' + xr_node.id + '"><p class="title">' + xr_node.title + '</p><p class="body">' + xr_node.body + '</p></div>';
-			})
+			//explanation
+			html += '<div class="explanation"><div class="header">explanation</div>';
+			html += '<div class="detail">' + this_node.explanation + '</div>';
 			html += '</div>';
 
-			xr.stage_node_show.innerHTML = html;
+			//children
+			if(children.length > 0){
+				html += '<div class="next"><div class="header">next</div><div class="detail">';
+				children.forEach(function(item, index){
+					var xr_node = xr.xr_nodes[item];
+
+					html += '<div class="node" data-xr_id="' + xr_node.id + '"><p class="title">' + xr_node.title + '</p><p class="body">' + xr_node.body + '</p></div>';
+				})
+				html += '</div></div>';
+			}
+			
+			xr.stage_node.innerHTML = html;
 
 
 			//add event
-
-			var dom_children = Array.prototype.slice.call(document.querySelectorAll('#stage-node .children .node')),
-				dom_this_node = document.querySelector('#stage-node .this');
-
+			var dom_children = Array.prototype.slice.call(document.querySelectorAll('#stage-node .next .node'));
 			dom_children.forEach(function(item, index){
 				item.onclick = function(){
-					xr.stage_node_show.style.minHeight = xr.stage_node_show.scrollHeight + 'px';
-					item.style.top = item.offsetTop + 'px';
-					item.style.left = item.offsetLeft + 'px';
-					this.addClass('selected');
-					dom_children.splice(index, 1);
-					select(this.dataset['xr_id']);
+					xr.renderStageNode(this.dataset['xr_id']);
 				};
 			});
-
-			//info
-
-			xr.stage_node_info.innerHTML = this_node.explanation;
-
-			function select(selected_node_id){
-				dom_children.push(dom_this_node);
-				dom_children.forEach(function(item){
-					item.addClass('unselected');
-				});
-				setTimeout(function(){
-					xr.stage_node_show.style.minHeight = '0px';
-					xr.renderStageNode(selected_node_id);
-				},600);
-			}
 
 		},
 
@@ -351,11 +334,15 @@
 			})();
 
 			//bt in stage_node
-			document.getElementById('bt-show-tree').onclick = function(){
+			document.getElementById('bt-node').onclick = function(){
+				xr.showStage('node');
+			};
+			document.getElementById('bt-tree').onclick = function(){
 				xr.showStage('tree');
 			};
-			xr.bt_show_back.onclick = function(){
-				if(xr.xr_parend_id != -1){
+			xr.bt_back.onclick = function(){
+				//只有当当前节点没有父节点且显示在node页面才可点击
+				if(xr.xr_parend_id != -1 && xr.page.hasClass('show-node')){
 					xr.renderStageNode(xr.xr_parend_id);
 				}
 			};

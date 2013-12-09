@@ -12,28 +12,6 @@
 		width: 30%;
 	}
 }
-@-webkit-keyframes nodeMoveLeft{
-	to{
-        left: 0;
-		border-color: #75e7a3;
-	}
-}
-@-webkit-keyframes nodeMoveTop{
-	to{
-		top: 0;
-	}
-}
-@-moz-keyframes nodeMoveLeft{
-	to{
-        left: 0;
-		border-color: #75e7a3;
-	}
-}
-@-moz-keyframes nodeMoveTop{
-	to{
-		top: 0;
-	}
-}
 
 /* base */
 ul{
@@ -71,7 +49,7 @@ header{
 	top: 0;
 	z-index: 10;
 }
-	.header{
+	header .header{
 		height: 50px;
 		line-height: 50px;
 		background: #333;
@@ -175,8 +153,6 @@ header{
 				display: -webkit-flex;
 			}
 
-				
-
 				/* online */
 				.list{
 					overflow-y: auto;
@@ -217,6 +193,9 @@ header{
 							.show-menu .name{
 								box-shadow: 1px 1px 1px #000;
 							}
+							.upper .bt-menu{
+								display: none;	/* disable this function */
+							}
 							.show-menu .bt-menu{
 								background: #666;
 								color: #fff;
@@ -252,8 +231,9 @@ header{
 	.main{
 		display: flex;
 		display: -webkit-flex;
-		padding-top: 50px;
+		padding-top: 53px;
 	}
+
 		.holder{
 			width: 30%;
 			transition: .5s ease;
@@ -262,28 +242,29 @@ header{
 		.hide-menu .holder{
 			width: 0;
 		}
-		.stage{
+
+		#page{
 			flex: 1;
-			-webkit-flex: 1;
-			padding: 20px 20px;
+            -webkit-flex: 1;
 		}
 
-			#stage-welcome.h, #stage-tree.h, #stage-node.h{
-				display: block;
-			}
-			#stage-welcome{
-				display: none;
+			#page_welcome{
 				text-align: center;
+				padding: 0 10px;
 			}
-			#stage-tree{
+			.show-tree #page_welcome, .show-node #page_welcome{
 				display: none;
 			}
-			#stage-node{
+
+			.page_main{
 				display: none;
+			}
+			.show-tree .page_main, .show-node .page_main{
+				display: block;
 			}
 				.ctr{
 					overflow: hidden;
-					margin-bottom: 20px;
+					padding: 10px;
 				}
 					.ctr .bt{
 						height: 30px;
@@ -295,10 +276,7 @@ header{
 						text-align: center;
 					}
 					.ctr .bt.h{
-						background: #ebebeb;
-						box-shadow: 1px 1px 1px #ccc inset;
-						cursor: default;
-						color: #666;
+						
 					}
 					.ctr .bt:active{
 						box-shadow: 1px 1px 1px #ccc inset;
@@ -311,77 +289,68 @@ header{
 					.ctr .bt:last-child{
 						border-radius: 0 4px 4px 0;
 					}
-				.pane{
+					.show-node #bt-node, .show-tree #bt-tree, .ctr .bt.disable{
+						background: #ebebeb;
+						box-shadow: 1px 1px 1px #ccc inset;
+						cursor: default;
+						color: #666;
+					}
+
+
+				.stage{
 
 				}
-					#stage-node-show{
-						position: relative;
-						overflow: hidden;
-						margin-bottom: 20px;
+					#stage-tree{
+						display: none;
+						padding: 0 10px;
 					}
-						/* #stage-node */
+					.show-tree #stage-tree{
+						display: block;
+					}
+
+					#stage-node{
+						border-top: 1px solid #aaa;
+						display: none;
+					}
+					.show-node #stage-node{
+						display: block;
+					}
+						#stage-node .header{
+							font-size: 14px;
+							color: #333;
+							padding: 4px 5px;
+							background: #ebebeb;
+							border-top: 1px solid #aaa;
+							border-bottom: 1px solid #aaa;
+						}
 						#stage-node .node{
-							width: 140px;
-							padding: 4px 6px;
-							border: 5px solid #2980b9;
+							padding: 10px;
+						}
+						#stage-node .node>.title{
+							font-weight: bold;
+						}
+						#stage-node .node>.body{
+						}
+
+						#stage-node .explanation .detail{
+							padding: 10px;
+							background: #f7f7f7;
+							line-height: 1.5em;
+						}
+						
+						#stage-node .this .node>.title{
+							font-size: 20px;
+						}
+
+						#stage-node .next .node{
+							border-bottom: 1px solid #ccc;
 							cursor: pointer;
-							transition: background .3s ease;
-							-webkit-transition: background .3s ease;
-							position: relative;
 						}
-						#stage-node .node:hover{
-							background: #a0cfef;
-						}
-							#stage-node .node .title{
-								font-weight: bold;
-								font-size: 15px
+							#stage-node .next .node>.title{
+								font-size: 15px;
 							}
-							#stage-node .node .body{
-								font-size: 13px
-							}
-						#stage-node .this{
-							border-color: #75e7a3;
-							float: left;
-						}
-						#stage-node .children{
-							float: left;
-							margin-left: 40px;
-						}
-							#stage-node .children .node{
-								margin-bottom: 10px;
-							}
-							#stage-node .children .node:before{
-								font-family: 'icomoon';
-								content: "\e6c4";
-								position: absolute;
-								left: -30px;
-								top: 50%;
-								height: 20px;
-								line-height: 20px;
-								margin-top: -10px;
-								speak: none;
-								font-style: normal;
-								font-weight: normal;
-								font-variant: normal;
-								text-transform: none;
-								-webkit-font-smoothing: antialiased;
-							}
-							#stage-node .children .selected{
-								-webkit-animation: nodeMoveLeft .3s ease, nodeMoveTop .3s ease .3s;
-								animation: nodeMoveLeft .3s ease, nodeMoveTop .3s ease .3s;
-								-webkit-animation-fill-mode: forwards;
-								animation-fill-mode: forwards;
-								position: absolute;
-							}
-							#stage-node .children .selected:before{
-								opacity: 0;
-								transition: .3s ease;
-								-webkit-transition: .3s ease;
-							}
-							#stage-node .node.unselected{
-								transition: .3s ease;
-								-webkit-transition: .3s ease;
-								opacity: 0;
+							#stage-node .next .node>.body{
+								font-size: 13px;
 							}
 
 
@@ -453,11 +422,5 @@ ul.tree{
 	}
 	.holder{
 		width: 50%;
-	}
-}
-
-@media (max-width: 405px){
-	#stage-node .node{
-		width: 90px;
 	}
 }
