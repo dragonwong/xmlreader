@@ -43,11 +43,7 @@
         return this;
     };
     Element.prototype.toggleClass = function(name){
-    	if(this.hasClass(name)){
-    		this.removeClass(name);
-    	}else{
-    		this.addClass(name);
-    	}
+		this.classList.toggle(name);
     };
 
 
@@ -55,6 +51,7 @@
 	var xr = {
 
 		body: document.body,
+		stage_welcome: document.getElementById('stage-welcome'),
 		stage_tree: document.getElementById('stage-tree'),
 		stage_node: document.getElementById('stage-node'),
 		bt_show_back: document.getElementById('bt-show-back'),
@@ -179,10 +176,12 @@
 			switch(stage){
 				case 'tree':
 					xr.stage_tree.addClass('h');
+					xr.stage_welcome.removeClass('h');
 					xr.stage_node.removeClass('h');
 					break;
 				case 'node':
 					xr.stage_node.addClass('h');
+					xr.stage_welcome.removeClass('h');
 					xr.stage_tree.removeClass('h');
 					break;
 			}

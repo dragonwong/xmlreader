@@ -268,11 +268,15 @@ header{
 			padding: 20px 20px;
 		}
 
-			#stage-tree.h, #stage-node.h{
+			#stage-welcome.h, #stage-tree.h, #stage-node.h{
 				display: block;
 			}
+			#stage-welcome{
+				display: none;
+				text-align: center;
+			}
 			#stage-tree{
-				display: none; 
+				display: none;
 			}
 			#stage-node{
 				display: none;
@@ -440,7 +444,7 @@ ul.tree{
 		width: 100%;
 	}
 	.holder{
-		width: 100%;
+		display: none;
 	}
 }
 @media (min-width: 601px) and (max-width: 1200px){
