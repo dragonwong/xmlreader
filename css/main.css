@@ -30,9 +30,6 @@ a{
 p{
 	margin: 0;
 }
-hr{
-	margin: 20px 0;
-}
 h1{
 	color: #fff;
 	margin: 0;
@@ -142,7 +139,7 @@ header{
 		}
 			.cnt .pn{
 				display: none;
-				padding: 40px 10px;
+				padding: 10px;
 				flex: 1;
 				-webkit-flex: 1;
 				-webkit-box-flex: 1;/* safari iphone */
@@ -409,8 +406,24 @@ ul.tree{
 /* media query */
 
 @media (max-width: 600px){
+	header .header{
+		height: 40px;
+		line-height: 40px;
+	}
+	h1{
+		font-size: 20px;
+	}
+	.main{
+		padding-top: 43px;
+	}
+		.fun .bt{
+			height: 40px;
+			line-height: 40px;
+		}
+
 	#menu{
 		width: 100%;
+		top: 43px;
 	}
 	.holder{
 		display: none;
