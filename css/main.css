@@ -312,14 +312,7 @@ header{
 					.show-node #stage-node{
 						display: block;
 					}
-						#stage-node .header{
-							font-size: 14px;
-							color: #333;
-							padding: 4px 5px;
-							background: #ebebeb;
-							border-top: 1px solid #aaa;
-							border-bottom: 1px solid #aaa;
-						}
+						
 						#stage-node .node{
 							padding: 10px;
 						}
@@ -339,6 +332,14 @@ header{
 							font-size: 20px;
 						}
 
+						#stage-node .next .header{
+							font-size: 14px;
+							color: #333;
+							padding: 4px 5px;
+							background: #ebebeb;
+							border-top: 1px solid #aaa;
+							border-bottom: 1px solid #aaa;
+						}
 						#stage-node .next .node{
 							border-bottom: 1px solid #ccc;
 							cursor: pointer;
@@ -411,7 +412,7 @@ ul.tree{
 		line-height: 40px;
 	}
 	h1{
-		font-size: 20px;
+		font-size: 12px;
 	}
 	.main{
 		padding-top: 43px;
@@ -430,6 +431,9 @@ ul.tree{
 	}
 }
 @media (min-width: 601px) and (max-width: 1200px){
+	h1{
+		font-size: 25px;
+	}
 	#menu{
 		width: 50%;
 	}

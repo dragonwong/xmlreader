@@ -277,7 +277,7 @@
 			html += '<div class="this" data-xr_id="' + xr_id + '"><div class="node"><p class="title">' + this_node.title + '</p><p class="body">' + this_node.body + '</p></div></div>';
 
 			//explanation
-			html += '<div class="explanation"><div class="header">explanation</div>';
+			html += '<div class="explanation">';
 			html += '<div class="detail">' + this_node.explanation + '</div>';
 			html += '</div>';
 
