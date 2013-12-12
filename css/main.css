@@ -353,6 +353,21 @@ header{
 						#stage-node .next .node{
 							border-bottom: 1px solid #ccc;
 							cursor: pointer;
+							position: relative;
+							padding-right: 35px;
+						}
+						#stage-node .next .node:after{
+							display: block;
+							font-family: 'icomoon';
+							content: "\e6d4";
+							font-size: 36px;
+							color: #999;
+							position: absolute;
+							height: 36px;
+							right: 0;
+							top: 50%;
+							line-height: 36px;
+							margin-top: -18px;
 						}
 							#stage-node .next .node>.title{
 								font-size: 15px;
