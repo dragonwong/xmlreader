@@ -309,7 +309,7 @@
 
 		renderStageNote: function(){
 
-			var html = '<div>',
+			var html = '',
 				len = arguments.length;
 			
 			for(var i=0; i<len; i++){
@@ -318,7 +318,6 @@
 				html += '<div><div class="header">' + item.title + '</div><div class="detail">' + item.content + '</div></div>';
 			}
 
-			html += '</div>';
 			xr.stage_note.innerHTML = html;
 		},
 
