@@ -410,6 +410,9 @@ ul.tree{
 			transition: .3s ease;
 			-webkit-transition: .3s ease;
 		}
+		.self.h{
+			background: #7ff153;
+		}
 		.self:hover, .self:active{
 			background: #2980b9;
 		}

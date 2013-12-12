@@ -199,6 +199,7 @@
 
 			selfs.forEach(function(item){
 				item.onclick = function(){
+					this.addClass('h');
 					xr.renderStageNode(this.dataset['xr_id']);
 				};
 			});
