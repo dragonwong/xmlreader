@@ -249,14 +249,14 @@ header{
 				text-align: center;
 				padding: 0 10px;
 			}
-			.show-tree #page_welcome, .show-node #page_welcome{
+			.show-tree #page_welcome, .show-node #page_welcome, .show-note #page_welcome{
 				display: none;
 			}
 
 			.page_main{
 				display: none;
 			}
-			.show-tree .page_main, .show-node .page_main{
+			.show-tree .page_main, .show-node .page_main, .show-note .page_main{
 				display: block;
 			}
 				.ctr{
@@ -286,7 +286,7 @@ header{
 					.ctr .bt:last-child{
 						border-radius: 0 4px 4px 0;
 					}
-					.show-node #bt-node, .show-tree #bt-tree, .ctr .bt.disable{
+					.show-node #bt-node, .show-tree #bt-tree, .show-note #bt-note, .ctr .bt.disable{
 						background: #ebebeb;
 						box-shadow: 1px 1px 1px #ccc inset;
 						cursor: default;
@@ -312,6 +312,13 @@ header{
 					.show-node #stage-node{
 						display: block;
 					}
+					#stage-note{
+						border-top: 1px solid #aaa;
+						display: none;
+					}
+					.show-note #stage-note{
+						display: block;
+					}
 						
 						#stage-node .node{
 							padding: 10px;
@@ -322,7 +329,7 @@ header{
 						#stage-node .node>.body{
 						}
 
-						#stage-node .explanation .detail{
+						#stage-node .explanation .detail, #stage-note .detail{
 							padding: 10px;
 							background: #f7f7f7;
 							line-height: 1.5em;
@@ -332,7 +339,7 @@ header{
 							font-size: 20px;
 						}
 
-						#stage-node .next .header{
+						.stage .header{
 							font-size: 14px;
 							color: #333;
 							padding: 4px 5px;

@@ -54,6 +54,7 @@
 		page: document.getElementById('page'),
 		stage_tree: document.getElementById('stage-tree'),
 		stage_node: document.getElementById('stage-node'),
+		stage_note: document.getElementById('stage-note'),
 		bt_back: document.getElementById('bt-back'),
 		xr_nodes: [],		/* xmlreader nodes */
 		xr_parend_id: -1,	/* parent's id of selected node in stage-node */
@@ -153,10 +154,12 @@
 
 						function callback(back_data){
 							
-							xr.xr_nodes = JSON.parse(back_data).nodes;
+							var data = JSON.parse(back_data);
+							xr.xr_nodes = data.nodes;
 
 							xr.renderStageTree();
 							xr.renderStageNode(0);
+							xr.renderStageNote(data.notes, data.checklist);
 							
 							xr.progress_bar.end();
 
@@ -175,21 +178,20 @@
 		showStage: function(stage){
 			switch(stage){
 				case 'tree':
-					xr.page.removeClass('show-node');
-					xr.page.addClass('show-tree');
+					xr.page.removeClass('show-node').removeClass('show-note').addClass('show-tree');
 					break;
 				case 'node':
-					xr.page.removeClass('show-tree');
-					xr.page.addClass('show-node');
+					xr.page.removeClass('show-tree').removeClass('show-note').addClass('show-node');
+					break;
+				case 'note':
+					xr.page.removeClass('show-tree').removeClass('show-node').addClass('show-note');
 					break;
 			}
 		},
 
 		renderStageTree: function(){
 
-			var showStage = this.showStage;
-			
-			showStage('tree');
+			xr.showStage('tree');
 			//create stage_tree dom
 			xr.stage_tree.innerHTML = xmlTree();
 			//add event
@@ -305,6 +307,21 @@
 
 		},
 
+		renderStageNote: function(){
+
+			var html = '<div>',
+				len = arguments.length;
+			
+			for(var i=0; i<len; i++){
+				var item = arguments[i];
+				console.log(item);
+				html += '<div><div class="header">' + item.title + '</div><div class="detail">' + item.content + '</div></div>';
+			}
+
+			html += '</div>';
+			xr.stage_note.innerHTML = html;
+		},
+
 		init: function(){
 
 			//bt_list click
@@ -333,12 +350,15 @@
 
 			})();
 
-			//bt in stage_node
+			//bt in stage
 			document.getElementById('bt-node').onclick = function(){
 				xr.showStage('node');
 			};
 			document.getElementById('bt-tree').onclick = function(){
 				xr.showStage('tree');
+			};
+			document.getElementById('bt-note').onclick = function(){
+				xr.showStage('note');
 			};
 			xr.bt_back.onclick = function(){
 				//只有当当前节点没有父节点且显示在node页面才可点击
