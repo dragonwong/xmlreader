@@ -291,11 +291,17 @@ header{
 					.ctr .bt:last-child{
 						border-radius: 0 4px 4px 0;
 					}
-					.show-node #bt-node, .show-tree #bt-tree, .show-note #bt-note, .ctr .bt.disable{
+					.show-node #bt-node, .show-tree #bt-tree, .show-note #bt-note, #bt-back{
 						background: #ebebeb;
 						box-shadow: 1px 1px 1px #ccc inset;
 						cursor: default;
 						color: #666;
+					}
+					.show-node #bt-back.able{
+						background: #fff;
+						box-shadow: none;
+						cursor: pointer;
+						color: #000;
 					}
 
 
