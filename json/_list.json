@@ -11,8 +11,8 @@
 	],
 	"sub_topics": [
 		{
-			"name": "Glasgow  Coma Scale (GCS)",
-			"url": "json/GCS.json"
+			"name": "test",
+			"url": "json/bjh.json"
 		},
 		{
 			"name": "Glasgow  Coma Scale (GCS)",

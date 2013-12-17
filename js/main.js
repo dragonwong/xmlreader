@@ -308,16 +308,35 @@
 
 		},
 
-		renderStageNote: function(){
+		renderStageNote: function(notes, checklist){
 
 			var html = '',
-				len = arguments.length;
+				items,
+				len;
 			
+			//notes
+			html += '<div><div class="header">' + notes.title + '</div><div class="detail"><ul>';
+			
+			items = notes.content;
+			len = items.length;
+
 			for(var i=0; i<len; i++){
-				var item = arguments[i];
-				console.log(item);
-				html += '<div><div class="header">' + item.title + '</div><div class="detail">' + item.content + '</div></div>';
+				html += '<li>' + items[i] + '</li>';
 			}
+
+			html += '</ul></div></div>';
+
+			//checklist
+			html += '<div><div class="header">' + checklist.title + '</div><div class="detail"><ul>';
+			
+			items = checklist.list;
+			len = items.length;
+
+			for(var i=0; i<len; i++){
+				html += '<li>' + items[i] + '</li>';
+			}
+
+			html += '</ul></div></div>';
 
 			xr.stage_note.innerHTML = html;
 		},

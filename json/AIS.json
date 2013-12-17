@@ -48,10 +48,22 @@
 	],
 	"notes": {
 		"title": "Key Points to Relay:",
-		"content": "<li>Age</li><li>Airway status</li><li>Time of symptom onset</li><li>NIHSS</li><li>CT or MRI results</li>"
+		"content": [
+			"Age",
+			"Airway status",
+			"Time of symptom onset",
+			"NIHSS",
+			"CT or MRI results"
+		]
 	},
 	"checklist": {
 		"title": "Checklist",
-		"content": "<li>Labs: capillary glucose, CBC with platelets, PT/PTT, EKG, and beta-HCG for women</li><li>IV access</li><li>Supplemental oxygen to maintain saturation > 94%</li><li>Activate stroke code system (if available)</li><li>Determine NIHSS score</li>"
+		"list": [
+			"Labs: capillary glucose, CBC with platelets, PT/PTT, EKG, and beta-HCG for women",
+			"IV access",
+			"Supplemental oxygen to maintain saturation > 94%",
+			"Activate stroke code system (if available)",
+			"Determine NIHSS score"
+		]
 	}
 }
