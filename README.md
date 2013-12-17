@@ -1,5 +1,7 @@
 xmlreader
 =========
-
 Here is the code of FE.
-Support: chrome, firefox, safari.
+
+-----
+版本信息：
+早期版本，主要特点是节点页面有动画效果，也因此甲方认为不适合移动端展示，所以改掉
