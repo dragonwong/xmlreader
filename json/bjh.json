@@ -1,0 +1,69 @@
+{
+	"nodes": [
+		{
+			"id": 0,
+			"parent": -1,
+			"children": [1, 2],
+			"shortTitle": "Begin",
+			"title": "Acute Ischemic Stroke",
+			"body": "Based on imaging and symptoms",
+			"explanation": "The diagnosis of acute ischemic stroke is based on new onset focal neurological findings with an imaging study (CT or MRI of the brain) that shows no hemorrhage, or shows evidence of ischemic infarction.In some centers, patients may be screened at the door when EMS arrives and then is taken directly to CT (or MRI) based on symptoms of facial droop, dysarthria, gaze preference, motor weakness or other focal findings.If not completed already:<li>STAT vital signs, capillary glucose, CBC with platelets, PT/PTT, EKG, and beta-HCG for women</li><li>IV access</li><li>Supplemental oxygen to maintain saturation &gt;94% (hyperoxia may be detrimental in stroke, so no need for high flow oxygen)</li><li>Activate stroke code system (if available)</li><li>Stroke MD/team to evaluate patient with 5 minutes</li><li>Determine NIHSS score</li><i>Topic Co-Chairs:</i><br>Hartmut Gross, MD<br>Gene Sung, MD<br>"
+		},
+		{
+			"id": 1,
+			"parent": 0,
+			"children": [3, 4],
+			"shortTitle": "Low risk TIA",
+			"title": "Low risk TIA",
+			"body": "ABCD2 Score 0-3",
+			"explanation": "Outpatient workup:<br><li>Start on antithrombotic agent (ASA, clopidogrel 75 mg/day, or ASA/ extended release dipyridamole)</li><li>Carotid imaging: ultrasound, CTA or MRA</li><li>Consider echocardiography</li><li>Consider long-term cardiac monitor*</li><li>Smoking cessation</li><li>Initiate statin</li>*- if ECG or rhythm strip shows atrial fibrillation consider starting anticoagulation (oral anticoagulant or low molecular weight heparin) or ASA depending on CHAD2 score."
+		},
+		{
+			"id": 2,
+			"parent": 0,
+			"children": [],
+			"shortTitle": "TIA",
+			"title": "TIA",
+			"body": "Symptoms have completely resolved",
+			"explanation": "Diagnosis of TIA (transient ischemic attack) is based on new onset of focal neurological symptoms that are explainable by a vascular cause (i.e. arterial occlusion of a single or group of arteries adequately explain the patient's signs and symptoms) and these signs and symptoms resolve within 24 hours."
+		},
+		{
+			"id": 3,
+			"parent": 1,
+			"children": [],
+			"shortTitle": "Less 4.5 hrs",
+			"title": "Symptom onset is &lt;4.5 hours",
+			"body": "Time from stroke symptom onset is &lt; 4.5 hours",
+			"explanation": "Time of onset is when the patient was last seen normal.<li>If they can say when the first symptoms began, use that time</li><li>if an observer can say when they saw the symptoms begin (excluding wake up), use that time</li><li>If a patient awakens with a stroke, the time of onset is when they last went to bed</li>The time of onset is critical for using t-PA as the risk of intracerebral bleeding increases with increased time from stroke onset.  If you cannot establish the time with certainty, most physicians will not treat with t-PA.Advanced imaging techniques may be used to chose appropriate candidates for treatment beyond the 4.5 hour time window; such off-label use of t-PA is institutionally specific."
+		},
+		{
+			"id": 4,
+			"parent": 1,
+			"children": [],
+			"shortTitle": "Less 8 hrs",
+			"title": "Symptom onset between 4.5 and 8 hours",
+			"body": "Outside IV t-PA window",
+			"explanation": "Beyond 4.5 hours, IV t-PA is associated with intracerebral hemorrhage.  IA therapies may be helpful in this time window (and earlier as well)."
+		}
+	],
+	"notes": {
+		"title": "Key Points to Relay:",
+		"content": [
+			"Age",
+			"Airway status",
+			"Time of symptom onset",
+			"NIHSS",
+			"CT or MRI results"
+		]
+	},
+	"checklist": {
+		"title": "Checklist",
+		"list": [
+			"Labs: capillary glucose, CBC with platelets, PT/PTT, EKG, and beta-HCG for women",
+			"IV access",
+			"Supplemental oxygen to maintain saturation > 94%",
+			"Activate stroke code system (if available)",
+			"Determine NIHSS score"
+		]
+	}
+}
