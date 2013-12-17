@@ -271,9 +271,9 @@
 
 			xr.xr_parend_id = parent;
 			if(parent == -1){
-				xr.bt_back.addClass('disable');
+				xr.bt_back.removeClass('able');
 			}else{
-				xr.bt_back.removeClass('disable');
+				xr.bt_back.addClass('able');
 			}
 
 			//this self
