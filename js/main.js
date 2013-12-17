@@ -286,7 +286,7 @@
 
 			//children
 			if(children.length > 0){
-				html += '<div class="next"><div class="header">next</div><div class="detail">';
+				html += '<div class="next"><div class="detail">';
 				children.forEach(function(item, index){
 					var xr_node = xr.xr_nodes[item];
 
@@ -315,7 +315,7 @@
 				len;
 			
 			//notes
-			html += '<div><div class="header">' + notes.title + '</div><div class="detail"><ul>';
+			html += '<div class="notes"><div class="header">' + notes.title + '</div><div class="detail"><ul>';
 			
 			items = notes.content;
 			len = items.length;
@@ -327,13 +327,13 @@
 			html += '</ul></div></div>';
 
 			//checklist
-			html += '<div><div class="header">' + checklist.title + '</div><div class="detail"><ul>';
+			html += '<div class="checklist"><div class="header">' + checklist.title + '</div><div class="detail"><ul>';
 			
 			items = checklist.list;
 			len = items.length;
 
 			for(var i=0; i<len; i++){
-				html += '<li>' + items[i] + '</li>';
+				html += '<li><input type="checkbox" id="checkbox-' + i + '" /><label for="checkbox-' + i + '">' + items[i] + '</label></li>';
 			}
 
 			html += '</ul></div></div>';

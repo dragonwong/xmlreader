@@ -15,7 +15,6 @@
 
 /* base */
 ul{
-	list-style: none;
 	margin: 0;
 	padding: 0;
 }
@@ -264,7 +263,7 @@ header{
 					padding: 10px;
 					position: fixed;
 					background: #fff;
-					border-bottom: 1px solid #aaa;
+					border-bottom: 1px solid #888;
 					width: 100%;
 					z-index: 5;
 				}
@@ -328,36 +327,34 @@ header{
 					.show-note #stage-note{
 						display: block;
 					}
-						
+						/* stage-node */
 						#stage-node .node{
 							padding: 10px;
 						}
 						#stage-node .node>.title{
 							font-weight: bold;
 						}
-						#stage-node .node>.body{
-						}
+		
 
 						#stage-node .explanation .detail, #stage-note .detail{
 							padding: 10px;
 							background: #f7f7f7;
 							line-height: 1.5em;
 						}
-						
-						#stage-node .this .node>.title{
-							font-size: 20px;
+
+						#stage-node .this{
+							border-bottom: 1px solid #bbb;
+						}
+							#stage-node .this .node>.title{
+								font-size: 20px;
+							}
+
+						#stage-node .explanation{
+							border-bottom: 1px solid #bbb;
 						}
 
-						.stage .header{
-							font-size: 14px;
-							color: #333;
-							padding: 4px 5px;
-							background: #ebebeb;
-							border-top: 1px solid #aaa;
-							border-bottom: 1px solid #aaa;
-						}
 						#stage-node .next .node{
-							border-bottom: 1px solid #ccc;
+							border-bottom: 1px solid #bbb;
 							cursor: pointer;
 							position: relative;
 							padding-right: 35px;
@@ -382,10 +379,32 @@ header{
 								font-size: 13px;
 							}
 
+						/* stage-note */
+						#stage-note .header{
+							font-size: 14px;
+							color: #333;
+							padding: 4px 5px;
+							background: #ebebeb;
+							border-top: 1px solid #aaa;
+							border-bottom: 1px solid #aaa;
+						}
+						.notes ul{
+							padding-left: 20px;
+						}
+						.checklist ul{
+							list-style: none;
+						}
+							.checklist input{
+								margin: 0 6px 0 0;
+							}
+
 
 
 
 /* #stage-tree */
+#stage-tree ul{
+	list-style: none;
+}
 ul.tree{
 	margin-left: 20px;
 	padding: 10px 0 0 20px;

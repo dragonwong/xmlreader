@@ -8,9 +8,8 @@
 <style>
 /* base */
 ul{
-	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding-left: 0;
 }
 body{
 	margin: 0;
@@ -90,6 +89,11 @@ header{
 				.ctr{
 					overflow: hidden;
 					padding: 10px;
+					position: fixed;
+					background: #fff;
+					border-bottom: 1px solid #aaa;
+					width: 100%;
+					z-index: 5;
 				}
 					.ctr .bt{
 						height: 30px;
@@ -118,34 +122,52 @@ header{
 						border-radius: 0 4px 4px 0;
 					}
 				.stage{
-
+					padding-top: 52px;
 				}
 					#stage-tree{
 						display: none;
 					}
 					#stage-node{
-						border-top: 1px solid #aaa;
+						display: none;
 					}
-						.node{
+						#stage-node .node{
 							padding: 10px;
 						}
-						.node>.title{
+						#stage-node .node>.title{
 							font-weight: bold;
 						}
-						.node>.body{
+						#stage-node .node>.body{
 						}
 
-						.explanation .detail{
+						#stage-node .explanation .detail, #stage-note .detail{
 							padding: 10px;
 							background: #f7f7f7;
 							line-height: 1.5em;
 						}
 						
-						.this .node>.title{
+						#stage-node .this .node>.title{
 							font-size: 20px;
 						}
 
-						.next .node{
+						.notes ul{
+							padding-left: 20px;
+						}
+						.checklist ul{
+							list-style: none;
+						}
+							.checklist input{
+								margin: 0 6px 0 0;
+							}
+
+						.stage .header{
+							font-size: 14px;
+							color: #333;
+							padding: 4px 5px;
+							background: #ebebeb;
+							border-top: 1px solid #aaa;
+							border-bottom: 1px solid #aaa;
+						}
+						#stage-node .next .node{
 							border-bottom: 1px solid #ccc;
 							cursor: pointer;
 							position: relative;
@@ -153,29 +175,21 @@ header{
 						}
 						#stage-node .next .node:after{
 							display: block;
-							position: absolute;
 							font-family: 'icomoon';
 							content: "\e6d4";
 							font-size: 36px;
+							color: #999;
+							position: absolute;
 							height: 36px;
 							right: 0;
 							top: 50%;
 							line-height: 36px;
 							margin-top: -18px;
-							color: #999;
 						}
-							.next .header{
-								font-size: 14px;
-								color: #333;
-								padding: 4px 5px;
-								background: #ebebeb;
-								border-top: 1px solid #aaa;
-								border-bottom: 1px solid #aaa;
-							}
-							.next .node>.title{
+							#stage-node .next .node>.title{
 								font-size: 15px;
 							}
-							.next .node>.body{
+							#stage-node .next .node>.body{
 								font-size: 13px;
 							}
 						
@@ -196,8 +210,6 @@ header{
 
 		<div class="main">
 
-			<!-- <div class="holder"></div> -->
-
 			<div class="page">
 			
 				<!-- 
@@ -213,11 +225,14 @@ header{
 						<div class="bt" id="bt-back">
 							<span class="icon-arrow-left2"></span>
 						</div>
-						<div class="bt h" id="bt-node">
+						<div class="bt" id="bt-node">
 							<span class="icon-text"></span>
 						</div>
 						<div class="bt" id="bt-tree">
 							<span class="icon-flow-cascade"></span>
+						</div>
+						<div class="bt" id="bt-note">
+							<span class="icon-book2"></span>
 						</div>
 					</div>
 					
@@ -256,6 +271,45 @@ header{
 										<p class="title">Acute Ischemic Stroke</p>
 										<p class="body">Based on imaging and symptoms</p>
 									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="stage-note">
+							<div class="notes">
+								<div class="header">Key Points to Relay:</div>
+								<div class="detail">
+									<ul>
+										<li>Age</li>
+										<li>Airway status</li>
+										<li>Time of symptom onset</li>
+										<li>NIHSS</li>
+										<li>CT or MRI results</li>
+									</ul>
+								</div>
+							</div>
+							<div class="checklist">
+								<div class="header">Checklist</div>
+								<div class="detail">
+									<ul>
+										<li>
+											<input type="checkbox" id="test1" />
+											<label for="test1">Labs: capillary glucose, CBC with platelets, PT/PTT, EKG, and beta-HCG for women
+											</label>
+										</li>
+										<li>
+											<input type="checkbox" id="test2" />
+											<label for="test2">IV access</label>
+										</li>
+										<li>
+											<input type="checkbox" id="test3" />
+											<label for="test3">Supplemental oxygen to maintain saturation &gt; 94%</label>
+										</li>
+										<li>
+											<input type="checkbox" id="test4" />
+											<label for="test4">Determine NIHSS score</label>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
