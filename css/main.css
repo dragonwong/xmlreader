@@ -184,7 +184,7 @@ header{
 				                white-space: nowrap;
 							}
 							.name.h{
-								background: #75b9e7;
+								background: #b6daf2;
 							}
 							.show-menu .name{
 								box-shadow: 1px 1px 1px #000;
@@ -372,6 +372,9 @@ header{
 							line-height: 36px;
 							margin-top: -18px;
 						}
+						#stage-node .next .node:nth-child(even){
+							background: #F5FAFD;
+						}
 							#stage-node .next .node>.title{
 								font-size: 15px;
 							}
@@ -384,7 +387,6 @@ header{
 							font-size: 14px;
 							color: #333;
 							padding: 4px 5px;
-							background: #ebebeb;
 							border-top: 1px solid #aaa;
 							border-bottom: 1px solid #aaa;
 						}
