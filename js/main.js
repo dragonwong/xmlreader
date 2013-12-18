@@ -82,8 +82,7 @@
 
 			function callback(back_data){
 				var _list = JSON.parse(back_data),
-					cnt = document.querySelector('#menu .cnt'),
-					_dom = cnt.querySelectorAll('.pn .list');
+					_dom = document.querySelectorAll('#menu .pn .list');
 
 
 				_eachPane(_list.topics, _dom[0]);
@@ -100,7 +99,7 @@
 						_html = "No file online, you can upload some :)";
 					}else{
 						arr_list.forEach(function(item){
-							_html += '<div class="item"><div class="upper"><div class="name" data-url="' + item.url + '">' + item.name + '</div><div class="bt bt-menu"><span class="icon-list"></span></div></div><div class="lower"><div class="bt bt-download"><span class="icon-download"></span></div><div class="bt bt-info"><span class="icon-info"></span></div><div class="bt bt-rename"><span class="icon-pencil"></span></div><div class="bt bt-delete"><span class="icon-trash"></span></div></div></div>';
+							_html += '<div class="item"><div class="name" data-url="' + item.url + '">' + item.name + '</div></div>';
 						});
 					}
 
@@ -108,31 +107,10 @@
 				}
 
 				function _addOnlineFileListEvent(){
-					// bt-menu click
-					(function(){
-						var items = Array.prototype.slice.call(cnt.querySelectorAll('.pn .list .item')),
-							bt_menus = Array.prototype.slice.call(document.querySelectorAll('.pn .list .item .bt-menu')),
-							cur = -1,
-							class_name = 'show-menu';
-
-						bt_menus.forEach(function(item, index){
-							item.onclick = function(){
-								if(index != cur){
-									if(cur != -1){
-										items[cur].removeClass(class_name);
-									}
-									cur = index;
-									items[cur].addClass(class_name);
-								}else{
-									items[cur].toggleClass(class_name);
-								}
-							};
-						});
-					})();
 
 					// name click
 					(function(){
-						var online_file_names = Array.prototype.slice.call(document.querySelectorAll('.item .name')),
+						var online_file_names = Array.prototype.slice.call(document.querySelectorAll('#menu .item .name')),
 							online_file_names_cur = -1,
 							class_name = 'h';
 

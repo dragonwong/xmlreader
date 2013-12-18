@@ -96,134 +96,53 @@ header{
 		z-index: 10;
 		transition: .5s ease;
 		-webkit-transition: .5s ease;	/* safari iphone */
-		display: flex;
-		display: -webkit-flex;		/* safari */
-		flex-flow: column;
-		-webkit-flex-flow: column;	/* safari */
-		flex-direction: column;		/* ff */
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		padding: 0 20px;
 	}
 	.hide-menu #menu{
 		-webkit-transform: translateX(-100%);
 		transform: translateX(-100%);
 	}
-		.fun{
-			display: -webkit-box;	/* safari iphone */
-			display: flex;
-			display: -webkit-flex;
-			text-align: center;
-		}
-			.fun .bt{
-				height: 45px;
-				line-height: 45px;
-				flex: 1;
-				-webkit-flex: 1;
-				-webkit-box-flex: 1;/* safari iphone */
-				color: #ccc;
-				background: #333;
-			}
-			.fun .h{
-				background: #222;
-				color: #fff;
-				cursor: default;
-			}
-		
-		.cnt{
-			display: -webkit-box;	/* safari iphone */
-			display: flex;
-			display: -webkit-flex;
+		#menu .cnt{
 			height: 100%;
-			flex: 1;
-			-webkit-flex: 1;
-			-webkit-box-flex: 1;/* safari iphone */
+			overflow-y: auto;
 		}
-			.cnt .pn{
-				display: none;
-				padding: 10px;
-				flex: 1;
-				-webkit-flex: 1;
-				-webkit-box-flex: 1;/* safari iphone */
+			.pn{
 			}
-			.cnt .pn.h{
-				display: -webkit-box;	/* safari iphone */
-				display: flex;
-				display: -webkit-flex;
-			}
-
-				/* online */
-				.list{
+				#menu .header{
+					height: 40px;
+                    line-height: 40px;
+				}
+				#menu .list{
 					overflow-y: auto;
 					width: 100%;
 				}
-					.item{
+					#menu .item{
 						margin-bottom: 1px;
+		                background: #fff;
 					}
-						.item .bt{
-							width: 45px;
-							text-align: center;
-							font-size: 25px;
-						}
-						.upper{
-							display: -webkit-box;	/* safari iphone */
-							display: flex;
-							display: -webkit-flex;
-							background: #e7e7e7;
-							height: 45px;
-							line-height: 45px;
-							color: #000;
-						}
-							.name{
-								flex: 1;
-								-webkit-flex: 1;
-								-webkit-box-flex: 1;/* safari iphone */
-								padding-left: 20px;
-								cursor: pointer;
-								transition: .3s ease;
-								-webkit-transition: .3s ease;	/* safari iphone */
-				                overflow: hidden;
-				                text-overflow: ellipsis;
-				                white-space: nowrap;
-							}
-							.name.h{
-								background: #b6daf2;
-							}
-							.show-menu .name{
-								box-shadow: 1px 1px 1px #000;
-							}
-							.upper .bt-menu{
-								display: none;	/* disable this function */
-							}
-							.show-menu .bt-menu{
-								background: #666;
-								color: #fff;
-								text-shadow: 1px 1px 3px #000;
-								box-shadow: 1px 1px 1px #000 inset;
-							}
-
-						.lower{
-							height: 0;
-							overflow: hidden;
-							background: #666;
-							color: #fff;
-							line-height: 45px;
+					#menu .item:nth-child(even){
+						background: #F5FAFD;
+					}
+						#menu .name{
+							padding-left: 20px;
+							cursor: pointer;
 							transition: .3s ease;
 							-webkit-transition: .3s ease;	/* safari iphone */
-						}
-							.lower .bt{
-								float: right;
-								font-size: 20px;
-								text-shadow: 1px 1px 3px #000;
-							}
-							.lower .bt:hover{
-								color: #75b9e7;
-							}
-							.lower .bt:active{
-								text-shadow: none;
-							}
-						.show-menu .lower{
-							height: 45px;
+			                overflow: hidden;
+			                text-overflow: ellipsis;
+			                white-space: nowrap;
+			                color: #000;
+                            height: 40px;
+                            line-height: 40px;
 						}
 
-	
+						#menu .name.h{
+							background: #b6daf2;
+						}
+							
+
 	.main{
 		display: flex;
 		display: -webkit-flex;
@@ -354,7 +273,7 @@ header{
 						}
 
 						#stage-node .next .node{
-							border-bottom: 1px solid #bbb;
+							border-bottom: 1px solid #eee;
 							cursor: pointer;
 							position: relative;
 							padding-right: 35px;
