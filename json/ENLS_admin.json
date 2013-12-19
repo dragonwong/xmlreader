@@ -45,7 +45,7 @@
 			"url": "json/ME.json"
 		}
 	],
-	"sub_topics": [
+	"subtopics": [
 		{
 			"name": "test",
 			"url": "json/bjh.json"

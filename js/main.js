@@ -78,7 +78,7 @@
 		createOnlineFileList: function(){
 
 			xr.progress_bar.start();
-			ajaxGet("json/_list.json", '', callback);
+			ajaxGet("json/ENLS_admin.json", '', callback);
 
 			function callback(back_data){
 				var _list = JSON.parse(back_data),
