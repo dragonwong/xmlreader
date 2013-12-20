@@ -86,7 +86,7 @@
 
 
 				_eachPane(_list.topics, _dom[0]);
-				_eachPane(_list.sub_topics, _dom[1]);
+				_eachPane(_list.subtopics, _dom[1]);
 
 				_addOnlineFileListEvent();
 				xr.progress_bar.end();
