@@ -195,9 +195,6 @@ header{
 						width: 30px;
 						text-align: center;
 					}
-					.ctr .bt.h{
-						
-					}
 					.ctr .bt:active{
 						box-shadow: 1px 1px 1px #ccc inset;
 						background: #ebebeb;
@@ -209,7 +206,7 @@ header{
 					.ctr .bt:last-child{
 						border-radius: 0 4px 4px 0;
 					}
-					.show-node #bt-node, .show-tree #bt-tree, .show-note #bt-note, #bt-back{
+					.show-node #bt-node, .show-tree #bt-tree, .show-note #bt-note, #bt-note.disable, #bt-back{
 						background: #ebebeb;
 						box-shadow: 1px 1px 1px #ccc inset;
 						cursor: default;
