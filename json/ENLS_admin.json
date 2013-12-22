@@ -2,7 +2,7 @@
 	"topics": [
 		{
 			"name": "Ischemic Stroke",
-			"url": "http://127.0.0.1:80/xmlreader/json/AIS.json"
+			"url": "json/AIS.json"
 		},
 		{
 			"name": "no notes",

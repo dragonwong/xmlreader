@@ -98,7 +98,7 @@
 					var _html = '';
 
 					if(arr_list.length == 0){
-						_html = "No file online, you can upload some :)";
+						_html = "No file.";
 					}else{
 						arr_list.forEach(function(item){
 							_html += '<div class="item"><div class="name" data-url="' + item.url + '">' + item.name + '</div></div>';
