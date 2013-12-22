@@ -118,7 +118,6 @@
 
 						online_file_names.forEach(function(item, index){
 							item.onclick = function(){
-								if(index != online_file_names_cur){
 									if(online_file_names_cur != -1){
 										online_file_names[online_file_names_cur].removeClass(class_name);
 									}
@@ -128,7 +127,6 @@
 									//asyn
 									xr.progress_bar.start();
 									ajaxGet(this.dataset['url'], '', callback);
-								}
 							};
 						});
 

@@ -260,6 +260,7 @@ header{
 
 						#stage-node .this{
 							border-bottom: 1px solid #bbb;
+							background: #b6daf2;
 						}
 							#stage-node .this .node>.title{
 								font-size: 20px;
@@ -305,6 +306,7 @@ header{
 							padding: 4px 5px;
 							border-top: 1px solid #aaa;
 							border-bottom: 1px solid #aaa;
+							background: #b6daf2;
 						}
 						.notes ul{
 							padding-left: 20px;
