@@ -56,7 +56,9 @@
 		stage_node: document.getElementById('stage-node'),
 		stage_note: document.getElementById('stage-note'),
 		bt_back: document.getElementById('bt-back'),
-		xr_nodes: [],		/* xmlreader nodes */
+		bt_note: document.getElementById('bt-note'),
+		bt_note_isable: true,
+		xr_nodes: [],
 		xr_parend_id: -1,	/* parent's id of selected node in stage-node */
 
 		progress_bar: {
@@ -96,7 +98,7 @@
 					var _html = '';
 
 					if(arr_list.length == 0){
-						_html = "No file online, you can upload some :)";
+						_html = "No file.";
 					}else{
 						arr_list.forEach(function(item){
 							_html += '<div class="item"><div class="name" data-url="' + item.url + '">' + item.name + '</div></div>';
@@ -116,7 +118,6 @@
 
 						online_file_names.forEach(function(item, index){
 							item.onclick = function(){
-								if(index != online_file_names_cur){
 									if(online_file_names_cur != -1){
 										online_file_names[online_file_names_cur].removeClass(class_name);
 									}
@@ -126,7 +127,6 @@
 									//asyn
 									xr.progress_bar.start();
 									ajaxGet(this.dataset['url'], '', callback);
-								}
 							};
 						});
 
@@ -290,32 +290,44 @@
 
 			var html = '',
 				items,
-				len;
+				len,
+				bt_isable = false;
 			
 			//notes
-			html += '<div class="notes"><div class="header">' + notes.title + '</div><div class="detail"><ul>';
-			
 			items = notes.content;
 			len = items.length;
 
-			for(var i=0; i<len; i++){
-				html += '<li>' + items[i] + '</li>';
+			if(len > 0){
+				bt_isable = true;
+
+				html += '<div class="notes"><div class="header">' + notes.title + '</div><div class="detail"><ul>';
+				for(var i=0; i<len; i++){
+					html += '<li>' + items[i] + '</li>';
+				}
+				html += '</ul></div></div>';
 			}
 
-			html += '</ul></div></div>';
-
 			//checklist
-			html += '<div class="checklist"><div class="header">' + checklist.title + '</div><div class="detail"><ul>';
-			
 			items = checklist.list;
 			len = items.length;
 
-			for(var i=0; i<len; i++){
-				html += '<li><input type="checkbox" id="checkbox-' + i + '" /><label for="checkbox-' + i + '">' + items[i] + '</label></li>';
+			if(len > 0){
+				bt_isable = true;
+
+				html += '<div class="checklist"><div class="header">' + checklist.title + '</div><div class="detail"><ul>';
+				for(var i=0; i<len; i++){
+					html += '<li><input type="checkbox" id="checkbox-' + i + '" /><label for="checkbox-' + i + '">' + items[i] + '</label></li>';
+				}
+				html += '</ul></div></div>';
 			}
 
-			html += '</ul></div></div>';
+			if(bt_isable){
+				xr.bt_note.removeClass('disable');
+			}else{
+				xr.bt_note.addClass('disable');
+			}
 
+			xr.bt_note_isable = bt_isable;
 			xr.stage_note.innerHTML = html;
 		},
 
@@ -354,8 +366,10 @@
 			document.getElementById('bt-tree').onclick = function(){
 				xr.showStage('tree');
 			};
-			document.getElementById('bt-note').onclick = function(){
-				xr.showStage('note');
+			xr.bt_note.onclick = function(){
+				if(xr.bt_note_isable){
+					xr.showStage('note');
+				}
 			};
 			xr.bt_back.onclick = function(){
 				//只有当当前节点没有父节点且显示在node页面才可点击

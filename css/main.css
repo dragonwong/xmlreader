@@ -195,9 +195,6 @@ header{
 						width: 30px;
 						text-align: center;
 					}
-					.ctr .bt.h{
-						
-					}
 					.ctr .bt:active{
 						box-shadow: 1px 1px 1px #ccc inset;
 						background: #ebebeb;
@@ -209,7 +206,7 @@ header{
 					.ctr .bt:last-child{
 						border-radius: 0 4px 4px 0;
 					}
-					.show-node #bt-node, .show-tree #bt-tree, .show-note #bt-note, #bt-back{
+					.show-node #bt-node, .show-tree #bt-tree, .show-note #bt-note, #bt-note.disable, #bt-back{
 						background: #ebebeb;
 						box-shadow: 1px 1px 1px #ccc inset;
 						cursor: default;
@@ -263,6 +260,7 @@ header{
 
 						#stage-node .this{
 							border-bottom: 1px solid #bbb;
+							background: #b6daf2;
 						}
 							#stage-node .this .node>.title{
 								font-size: 20px;
@@ -308,6 +306,7 @@ header{
 							padding: 4px 5px;
 							border-top: 1px solid #aaa;
 							border-bottom: 1px solid #aaa;
+							background: #b6daf2;
 						}
 						.notes ul{
 							padding-left: 20px;

@@ -2,19 +2,19 @@
 	"topics": [
 		{
 			"name": "Ischemic Stroke",
-			"url": "http://127.0.0.1:80/xmlreader/json/AIS.json"
-		},
-		{
-			"name": "Ischemic Stroke",
 			"url": "json/AIS.json"
 		},
 		{
-			"name": "Ischemic Stroke",
-			"url": "json/AIS.json"
+			"name": "no notes",
+			"url": "json/no_notes.json"
 		},
 		{
-			"name": "Ischemic Stroke",
-			"url": "json/AIS.json"
+			"name": "no checklist",
+			"url": "json/no_checklist.json"
+		},
+		{
+			"name": "no notes or checklist",
+			"url": "json/no_notes_or_checklist.json"
 		},
 		{
 			"name": "Ischemic Stroke",
