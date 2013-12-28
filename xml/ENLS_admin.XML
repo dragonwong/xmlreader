@@ -1,0 +1,22 @@
+<module name="ENLS- Emergency Neurological Life Support">
+	<version>1.0</version>
+	<lastupdate>9/2/2010</lastupdate>
+<comments>Comment text</comments>
+<disclaimer><![CDATA[Legal disclaimer in regular HTML]]></disclaimer>
+	<topics>
+		<topic>
+      <name>Ischemic Stroke</name>
+      <xml>ENLS_AIS.XML</xml>
+    </topic>
+<topic>
+    <name>Meningitis/Encephalitis</name>
+    <xml>ENLS_ME.XML</xml>
+</topic>
+	</topics>
+	<subtopics>
+		<subtopic>
+      <name>Glasgow  Coma Scale (GCS)</name>
+      <xml>ENLS_GCS.XML</xml>
+    </subtopic>
+	</subtopics>
+</module>
