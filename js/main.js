@@ -125,30 +125,35 @@
 									this.addClass(class_name);
 
 									//asyn
-									xr.progress_bar.start();
-									ajaxGet(this.dataset['url'], '', callback);
+									xr.asynLoadJson(this.dataset['url']);
 							};
 						});
 
-						function callback(back_data){
-							
-							var data = JSON.parse(back_data);
-							xr.xr_nodes = data.nodes;
-
-							xr.renderStageTree();
-							xr.renderStageNode(0);
-							xr.renderStageNote(data.notes, data.checklist);
-							
-							xr.progress_bar.end();
-
-							//menu slide out in mobile
-							if(xr.body.scrollWidth <= 600){
-								xr.menuToggle();
-							}
-						}
-
 					})();
 
+				}
+			}
+		},
+
+		asynLoadJson: function(url){
+
+			xr.progress_bar.start();
+			ajaxGet(url, '', callback);
+
+			function callback(back_data){
+							
+				var data = JSON.parse(back_data);
+				xr.xr_nodes = data.nodes;
+
+				xr.renderStageTree();
+				xr.renderStageNode(0);
+				xr.renderStageNote(data.notes, data.checklist);
+				
+				xr.progress_bar.end();
+
+				//menu slide out in mobile
+				if(xr.body.scrollWidth <= 600){
+					xr.menuToggle();
 				}
 			}
 		},
@@ -286,32 +291,7 @@
 						var url = 'json/' + href.slice(0, -4) + '.json';
 
 						//asyn
-						xr.progress_bar.start();
-						ajaxGet(url, '', callback);
-
-						function callback(back_data){
-							
-							var data = JSON.parse(back_data);
-							xr.xr_nodes = data.nodes;
-
-							xr.renderStageTree();
-							xr.renderStageNode(0);
-							xr.renderStageNote(data.notes, data.checklist);
-							
-							xr.progress_bar.end();
-
-							//menu slide out in mobile
-							if(xr.body.scrollWidth <= 600){
-								xr.menuToggle();
-							}
-						}
-
-
-
-
-
-
-
+						xr.asynLoadJson(url);
 
 						return false;
 					};
