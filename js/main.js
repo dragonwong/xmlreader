@@ -277,6 +277,48 @@
 
 
 			//add event
+			var dom_a = Array.prototype.slice.call(document.querySelectorAll('#stage-node .explanation .detail a'));
+
+			dom_a.forEach(function(item, index, arr){
+				var href = item.getAttribute('href');
+				if(href.substr(-4) == '.xml'){
+					item.onclick = function(){
+						var url = 'json/' + href.slice(0, -4) + '.json';
+
+						//asyn
+						xr.progress_bar.start();
+						ajaxGet(url, '', callback);
+
+						function callback(back_data){
+							
+							var data = JSON.parse(back_data);
+							xr.xr_nodes = data.nodes;
+
+							xr.renderStageTree();
+							xr.renderStageNode(0);
+							xr.renderStageNote(data.notes, data.checklist);
+							
+							xr.progress_bar.end();
+
+							//menu slide out in mobile
+							if(xr.body.scrollWidth <= 600){
+								xr.menuToggle();
+							}
+						}
+
+
+
+
+
+
+
+
+						return false;
+					};
+				}
+			});
+
+
 			var dom_children = Array.prototype.slice.call(document.querySelectorAll('#stage-node .next .node'));
 			dom_children.forEach(function(item, index){
 				item.onclick = function(){
