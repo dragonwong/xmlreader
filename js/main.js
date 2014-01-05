@@ -47,6 +47,9 @@
     };
 
 
+
+
+
 //main
 	var xr = {
 
@@ -118,6 +121,8 @@
 
 						online_file_names.forEach(function(item, index){
 							item.onclick = function(){
+
+									//switch class
 									if(online_file_names_cur != -1){
 										online_file_names[online_file_names_cur].removeClass(class_name);
 									}
@@ -288,10 +293,11 @@
 				var href = item.getAttribute('href');
 				if(href.substr(-4) == '.xml'){
 					item.onclick = function(){
-						var url = 'json/' + href.slice(0, -4) + '.json';
-
+						//var url = 'json/' + href.slice(0, -4) + '.json';
 						//asyn
-						xr.asynLoadJson(url);
+						//xr.asynLoadJson(url);
+
+						window.open('#' + href.slice(0, -4));
 
 						return false;
 					};
@@ -400,6 +406,14 @@
 				}
 			};
 
+
+			//router
+			if(location.hash){
+				var url = 'json/' + location.hash.substr(1) + '.json';
+
+				//asyn
+				xr.asynLoadJson(url);
+			}
 		}
 	}
 
