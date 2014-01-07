@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<title>Emergency Neurological Life Support</title>
+<version>
+1.0
+</version>
+<lastupdate>
+5/23/2013
+</lastupdate>
+<comments><![CDATA[This is the first version of ENLS]]></comments>
+	<topic name="Resuscitation following Cardiac Arrest" abbreviation="RCA">
+		<node index="Begin" shortTitle="Begin">
+			<title><![CDATA[Resuscitation following Cardiac Arrest]]></title>
+			<options>Eligible</options>
+			<body><![CDATA[Institution of hypothermia for comatose survivors]]></body>
+			<explanation><![CDATA[Resuscitation following Cardiac Arrest:
+A patient who remains comatose following return of spontaneous circulation may benefit from induced hypothermia.  This protocol addresses the initiation of hypothermia for such patients.  This protocol does not address the standard ACLS protocols for cardiac resuscitation.
+<i>Topic Co-Chairs:</i><br>Jon Rittenberger, MD<br>Kees Polderman, MD<br>]]></explanation>
+		</node>
+		<node index="Monitoring" shortTitle="Monitoring">
+			<title><![CDATA[Monitoring]]></title>
+			<options></options>
+			<body><![CDATA[Consider these monitors]]></body>
+			<explanation><![CDATA[<li>Continuous EEG</li><li>Esophageal Doppler</li><li>CVP monitoring</li>]]></explanation>
+		</node>
+		<node index="Eligibleabsolute" shortTitle="Absolute Contraindications">
+			<title><![CDATA[Absolute Contraindications]]></title>
+			<options>Yesabsolute</options>
+			<body><![CDATA[Any absolute contraindications?]]></body>
+			<explanation><![CDATA[Do not induce hypothermia if any of the following is true:
+<li>Rapid neurologic recovery (patient is following commands; squeezes fingers/lets go, wiggles toes on command)</li><li>Illness that precludes meaningful recovery</li><li>Prior advanced directive or do-not-resuscitate wishes</li><li>Other preclusion to ICU admission</li>]]></explanation>
+		</node>
+		<node index="Norelativecontraindication" shortTitle="No-  relative contraindication">
+			<title><![CDATA[Eligibility for Induced Hypothermia]]></title>
+			<options>Yesrelative,Nominorcontraindication</options>
+			<body><![CDATA[Any relative contraindications?]]></body>
+			<explanation><![CDATA[Consider the following conditions relative contraindications to the institution of hypothermia:
+<li>Active bleeding with the cause not (yet) under control</li><li>Greatly increased risk of bleeding (e.g. injury of the spleen or liver)</li><li>Cardiac arrest more than 12 hours ago (consider fever prevention rather than hypothermia)</li>]]></explanation>
+		</node>
+		<node index="Nominorcontraindication" shortTitle="No- minor contraindication">
+			<title><![CDATA[Eligibility for Induced Hypothermia]]></title>
+			<options>Yesminor,Nocontraindications</options>
+			<body><![CDATA[Is there a minor contraindication?]]></body>
+			<explanation><![CDATA[Consider the following conditions minor contraindications to the institution of hypothermia:
+<li>Known presence of cold agglutinins (usually only if temp &lt; 31&#176;C)</li>]]></explanation>
+		</node>
+		<node index="Yesabsolute" shortTitle="Do Not Cool">
+			<title><![CDATA[Absolute contraindication]]></title>
+			<options></options>
+			<body><![CDATA[One or more absolute contraindication is present]]></body>
+			<explanation><![CDATA[Maintain 37&#176;C for 48 hours.]]></explanation>
+		</node>
+		<node index="Yesrelative" shortTitle="Yes- relative">
+			<title><![CDATA[Relative Contraindication]]></title>
+			<options></options>
+			<body><![CDATA[One or more relative contraindications exist]]></body>
+			<explanation><![CDATA[Consider cooling to 35&#176;C for 24-48 hours OR fever suppression alone.]]></explanation>
+		</node>
+		<node index="Yesminor" shortTitle="Yes- minor">
+			<title><![CDATA[Minor Contraindication Exists]]></title>
+			<options></options>
+			<body><![CDATA[Patient has history of cold agglutinins]]></body>
+			<explanation><![CDATA[Consider cooling to 33-35&#176;C.
+<li>If possible avoid surface cooling, especially of the extremities (as local blood temperature may drop below 31&#176;C).  Apply core cooling and skin counter-warming especially of the extremities.</li>]]></explanation>
+		</node>
+		<node index="Nocontraindications" shortTitle="No contraindications">
+			<title><![CDATA[Start Cooling Protocol]]></title>
+			<options>Checklist1</options>
+			<body><![CDATA[No contraindications were found]]></body>
+			<explanation><![CDATA[Start standard protocol for therapeutic hypothermia.
+<li>Cool to 32-33&#176;C for 24 hours.</li><li>Perform checklists 1 and 2, then proceed to hypothermia induction.</li>]]></explanation>
+		</node>
+		<node index="Checklist1" shortTitle="Checklist 1">
+			<title><![CDATA[Checklist 1- Preinduction]]></title>
+			<options>Checklist2</options>
+			<body><![CDATA[Make sure of the following before hypothermia induction]]></body>
+			<explanation><![CDATA[Checklist 1:
+<li>Patient is intubated</li><li>Patient is comatose and/or sedated.</li><li>Patient does not meet any exclusion criteria</li><li>A probe for core temperature measurement is in place (in order of preference): endovascular, esophageal, bladder, rectal.  Peripheral temperature measurements during hypothermia are unreliable).</li>]]></explanation>
+		</node>
+		<node index="Checklist2" shortTitle="Checklist 2">
+			<title><![CDATA[Checklist 2- Preinduction]]></title>
+			<options>StartHypothermia</options>
+			<body><![CDATA[Make sure of the following before hypothermia induction]]></body>
+			<explanation><![CDATA[Checklist 2:
+<li>Sedation: propofol if patient is hemodynamically stable; midazolam if hemodynamically unstable </li><li>Analgesia: fentanyl or remifentanyl infusion</li><li>Consider 4 gms magnesium over 15 minutes IV</li><li>Avoid continuous paralysis unless EEG is in place</li>]]></explanation>
+		</node>
+		<node index="CoronaryIntervention" shortTitle="Coronary Intervention">
+			<title><![CDATA[Coronary Intervention]]></title>
+			<options></options>
+			<body><![CDATA[Does the patient need coronary intervention?]]></body>
+			<explanation><![CDATA[Coronary angiography can be safely performed during mild hypothermia. Hypothermia is not a contraindication for anticoagulants or anti-platelet agents. Mild to
+moderate hypothermia (32-34&#176;C) does not increase the risk of arrhythmias.]]></explanation>
+		</node>
+		<node index="Proceed" shortTitle="Proceed">
+			<title><![CDATA[Proceed with Therapeutic Hypothermia]]></title>
+			<options>Checklist1</options>
+			<body></body>
+			<explanation><![CDATA[Start standard protocol for therapeutic hypothermia.
+<li>Perform checklists 1 and 2, then proceed to hypothermia induction.</li>]]></explanation>
+		</node>
+		<node index="MaintenancePhase" shortTitle="Maintenance Phase">
+			<title><![CDATA[Maintenance Phase]]></title>
+			<options>ABGCorrection,Tempbelow31C,SideEffects,Physiology,ShiveringProtocol,Rewarming</options>
+			<body><![CDATA[Temp is now<u>&lt;</u> 34&#176;C]]></body>
+			<explanation><![CDATA[<li>Duration of maintenance phase: usually 24 hours</li><li>Keep target temperature within narrow range (32.0 &#177; 0.5&#176;C, 33.0 &#177; 0.5&#176;C or 34.0 &#177; 0.5&#176;C)</li><li>With paralysis, temperature may overshoot target temperature immediately following induction phase by about 1.0&#176;C</li><li>Use cooling device with controlled feedback system, set at target temperature</li><li>Temperature should never decrease below 30&#176;C</li><li>If temperature increases to 1 degree or more above target temperature: cause is usually shivering, carefully screen patient, give (extra) anti-shivering medication</li><li>In general: target MAP =80 mm Hg, heart rate 36-100 BPM</li>
+Checklist:
+<li>Continuous monitoring of blood pressure and heart rhythm</li><li>Lab: Glucose (conform insulin protocol);  ABG, K, Mg, Phos, lactate every 6 hours;  PT, CBC every 12 hours</li><li>Target electrolyte levels: (normal/high normal) K <u>&gt;</u> 4.0 mmol, Mg <u>&gt;</u> 2.0 mg/dl (1.0 mmol/l), P <u>&gt;</u> 3.0 mg/dl</li>]]></explanation>
+		</node>
+		<node index="ABGCorrection" shortTitle="ABG Correction">
+			<title><![CDATA[Correction of ABG]]></title>
+			<options></options>
+			<body><![CDATA[Correct ABG for temperature]]></body>
+			<explanation><![CDATA[Correction of blood gas values:
+<li>PO2: for every &#176;C below 37 C: subtract 5 mm Hg from the value as measured in the lab. Example: Lab value pO2 90 mm Hg; patient core temp = 32&#176;C; corrected pO2 level = 65 mm Hg</li><li>PCO2: for every &#176;C below 37&#176;C subtract 2 mm Hg from the value as measured in the lab. Example: Lab value pCO2 35 mm Hg; patient core temp = 32&#176;C; corrected PCO2 level = 25 mm Hg.</li><li>pH: for every &#176;C below 37 degrees C add 0.012 units to the value as determined by the lab. Example: Lab pH 7.20, patient core temp = 32&#176;C, corrected pH value = 7.26.</li>]]></explanation>
+		</node>
+		<node index="Tempbelow31C" shortTitle="Temp below 31 C">
+			<title><![CDATA[Temperature below 31&#176;C]]></title>
+			<options></options>
+			<body><![CDATA[Did the temperature fall below target?]]></body>
+			<explanation><![CDATA[In cases of over-cooling:
+<li>Temporarily increase the target temperature of the cooling device to 34.0&#176;C until core temp <u>&gt;</u> 31.5&#176;C.</li>]]></explanation>
+		</node>
+		<node index="SideEffects" shortTitle="Side Effects">
+			<title><![CDATA[Side Effects]]></title>
+			<options></options>
+			<body><![CDATA[Hypothermia induced complications]]></body>
+			<explanation><![CDATA[Most important side effects:
+<li>Bradycardia: usually no treatment necessary. Normal heart rate at a core temperature of 32&#176;C is 34-40 BPM. If treatment is deemed necessary use Isoproterenol or dopamine infusion. Atropine is INEFFECTIVE for hypothermia-induced bradycardia.</li><li>Shivering: Fentanyl 50-100 mcg; Mg 2-4 grams;  Skin counterwarming, especially of hands, feet and face. </li><li>Cold diuresis: replace lost fluids.</li><li>Electrolyte disorders: replace, target normal levels, high Mg levels.</li><li>Arrhythmias. Arrhythmias due to hypothermia occur ONLY if core temperature decreases&nbsp;&nbsp;<b>below 30&#176;C</b>. If this occurs re-warm rapidly to temp &gt; 30&#176;C, and then slowly to target temp. If core temp is &gt; 30&#176;C arrhythmias do NOT require any change in cooling therapy. Treat arrhythmias with standard antiarrhythmic medications. Beware of possible decrease in clearance of amiodarone during hypothermia. Beware of decubiti due to skin vasoconstriction and immobilization.</li>]]></explanation>
+		</node>
+		<node index="Physiology" shortTitle="Physiology">
+			<title><![CDATA[Physiological Parameters]]></title>
+			<options></options>
+			<body><![CDATA[Maintain]]></body>
+			<explanation><![CDATA[Maintain the following physiological parameters:
+<li>MAP <u>&gt;</u> 80 mm Hg</li><li>HR 36-100 BPM</li><li>Sedation: Ramsay score 4-5; Sedation-agitation scale 2-3; Motor activity assessment scale 0-1</li><li>PO2 corrected for temperature: <u>&gt;</u>65 mm Hg</li><li>PCO2 corrected for temperature: 32-40 mm Hg</li><li>K <u>&gt;</u>4.0; Mg <u>&gt;</u> 2.0; P <u>&gt;</u>3.0; Glucose 80-200 mg/dL; Hb<u>&gt;</u>9.0; Platelets <u>&gt;</u> 30</li>]]></explanation>
+		</node>
+		<node index="Rewarming" shortTitle="Rewarming">
+			<title><![CDATA[Rewarming]]></title>
+			<options>Finish</options>
+			<body><![CDATA[Warming the patient to euthermia]]></body>
+			<explanation><![CDATA[After 24 hours of cooling, begin re-warming.
+<li>Duration of re-warming phase usually 12-24 hours.</li><li>Warming speed 0.1-0.3 &#176;C/hour. Absolute maximum 0.5 &#176;C/hour; avoid more rapid warming.</li><li>Perform controlled re-warming using a cooling device with a feedback mechanism.</li><li>Points of attention: beware of hyperkalemia (in particular in case of rapid warming); hypoglycemia (due to increase in insulin sensitivity during re-warming).</li><li>Hypotension may occur during re-warming, usually due to hypovolemia</li>
+Checklist during rewarming:
+<li>Monitor blood pressure and heart rhythm</li><li>Lab: ABG, K, glucose every 3 hours;  Mg, P every 6 hours</li><li>Target electrolyte levels: (normal/high normal) K <u>&gt;</u> 4.0 mmol, Mg <u>&gt;</u> 2.0 mg/dl (1.0 mmol/l), Phos <u>&gt;</u> 3.0 mg/dl</li>]]></explanation>
+		</node>
+		<node index="Finish" shortTitle="Finish">
+			<title><![CDATA[End of Hypothermia]]></title>
+			<options></options>
+			<body><![CDATA[Finished rewarming at 36.5&#176;C]]></body>
+			<explanation><![CDATA[Rewarming is completed when core temperature reaches 36.5&#176;C.  
+<li>Begin controlled euthermia</li><li>Switch off cooling device; if temperature increases to &gt;37.5&#176;C re-start cooling, set target temperature at 36.5&#176;C. If temp &gt;37.8&#176;C infuse 500-1000 ml of cold fluids.</li><li>Combat shivering as described above.</li>]]></explanation>
+		</node>
+		<node index="ShiveringProtocol" shortTitle="Shivering Protocol">
+			<title><![CDATA[Shivering Protocol]]></title>
+			<options></options>
+			<body><![CDATA[Methods to stop shivering]]></body>
+			<explanation><![CDATA[Shivering can be suppressed by several techniques:
+
+During Induction:
+<li>Check ventilator settings such that sedation or chemical paralysis will not worsen PaCO2</li><li>Propofol infusion 20-50 mcg/kg/min IV (as BP tolerates)</li><li>Then add Fentanyl infusion 25-100 mcg/hr.</li><li>If not successful, add Diazepam 10-20 mg IVP</li><li>Consider magnesium sulfate 4 gm IV over 15 minutes and single dose vecuronium 0.1 mg/kg IVP for induction</li>
+
+Maintenance:
+<li>See above and consider midazolam 2-6 mg/hr</li>
+
+Avoid continuous paralysis unless continuous EEG in place]]></explanation>
+		</node>
+		<node index="Eligible" shortTitle="Eligible">
+			<title><![CDATA[Eligible for Hypothermia?]]></title>
+			<options>Eligibleabsolute,Proceed</options>
+			<body><![CDATA[Establish Target Temperature and Method]]></body>
+			<explanation><![CDATA[Eligible patients should be comatose (eyes closed, unresponsive), have spontaneous circulation restored, and not have any contraindications.  These contraindications range from minor to absolute.
+
+If no absolute contraindications, consider the following when determining what Target Temperature to which you should cool the patient:<br>
+<u>Relative contraindications</u> to the institution of hypothermia:
+<li>Active bleeding with the cause not (yet) under control</li><li>Greatly increased risk of bleeding (e.g. injury of the spleen or liver)</li><li>Cardiac arrest more than 12 hours ago (consider fever prevention rather than hypothermia)</li><li>Weigh Risks and set Target Temperature to 32-34&#176;C, or to 35&#176;C if bleeding or bleeding risk</li><br>
+<u>Minor contraindications:</u><li>Known presence of cold agglutinins (usually only if temp &lt; 31&#176;C)</li><li>Set Target Temperature to 32-34&#176;C, and consider using endovascular cooling as the preferred method</li><br>
+<u>No contraindications</u><li>Set Target Temperature to 32-33&#176;C</li>]]></explanation>
+		</node>
+		<node index="Euthermia" shortTitle="Maintain Euthermia">
+			<title><![CDATA[Maintain Euthermia]]></title>
+			<options></options>
+			<body><![CDATA[Patient is contraindicated from cooling]]></body>
+			<explanation></explanation>
+		</node>
+		<node index="StartHypothermia" shortTitle="Start Hypothermia">
+			<title><![CDATA[Start Hypothermia]]></title>
+			<options>CoronaryIntervention,Monitoring,ShiveringProtocol,MaintenancePhase</options>
+			<body><![CDATA[Induction Phase]]></body>
+			<explanation><![CDATA[Start hypothermia induction; normal duration of induction phase is 60-120 minutes.
+
+<li>Start infusion of cold fluids (4&#176;C) WITH A PRESSURE BAG as rapidly as possible.
+Type of fluid: saline 0.9%. Volume required usually 2,000-2,500 ml, but may require up to 4,000 ml.</li><li>In case of cardiogenic shock/left ventricle failure: reduce bolus infusion to 1,000 ml per hour.</li><li>Options to control shivering: fentanyl 1 mcg/kg/hr IV; remifentanyl continuous infusion; midazolam 2-5 mg IV; propofol infusion; diazepam 10-20mg IV; magnesium 2-4 grams IV (up to a serum level of 6 mg/dl (3 mmol/l); consider single-dose paralysis in case of refractory shivering.</li><li>In general: avoid hypotension during hypothermia treatment. Target MAP =80 mm Hg</li>]]></explanation>
+		</node>
+	</topic>
+		<notes>
+			<title><![CDATA[Tell the Consultant:]]></title>
+			<content><li>Duration of cardiac arrest</li>
+<li>Neurological examination on first assessment in the Emergency Department</li>
+<li>When hypothermia was induced</li>
+<li>Any relative or minor contraindications to hypothermia</li>
+<li>Current core temperature</li></content>
+		</notes>
+		<checklist>
+				<title><![CDATA[Checklist]]></title>
+				<list><li>Eligibility for hypothermia assessed</li>
+<li>Target temperature decided</li>
+<li>Complete checklists 1 and 2</li>
+<li>Induction of hypothermia started</li>
+<li>Anti-shivering plan in place</li></list>
+		</checklist>
+</module>

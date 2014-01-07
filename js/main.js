@@ -76,8 +76,12 @@
 			}
 		},
 
-		menuToggle: function(){
-			xr.body.toggleClass('hide-menu');
+		menuToggle: function(act){
+			if(act == 'hide'){
+				xr.body.addClass('hide-menu');
+			}else{
+				xr.body.toggleClass('hide-menu');
+			}
 		},
 
 		createOnlineFileList: function(){
@@ -104,7 +108,7 @@
 						_html = "No file.";
 					}else{
 						arr_list.forEach(function(item){
-							_html += '<div class="item"><div class="name" data-url="' + item.url + '">' + item.name + '</div></div>';
+							_html += '<div class="item"><div class="name" data-json="' + item.json + '">' + item.name + '</div></div>';
 						});
 					}
 
@@ -130,7 +134,11 @@
 									this.addClass(class_name);
 
 									//asyn
-									xr.asynLoadJson(this.dataset['url']);
+									xr.asynLoadJson(this.dataset['json']);
+									//hide menu in mobile
+									if(xr.body.scrollWidth <= 600){
+										xr.menuToggle('hide');
+									}
 							};
 						});
 
@@ -140,9 +148,13 @@
 			}
 		},
 
-		asynLoadJson: function(url){
+		asynLoadJson: function(json){
+
+			location.hash = json;
 
 			xr.progress_bar.start();
+
+			var url = 'json/' + json + '.json';
 			ajaxGet(url, '', callback);
 
 			function callback(back_data){
@@ -156,10 +168,6 @@
 				
 				xr.progress_bar.end();
 
-				//menu slide out in mobile
-				if(xr.body.scrollWidth <= 600){
-					xr.menuToggle();
-				}
 			}
 		},
 
@@ -293,9 +301,6 @@
 				var href = item.getAttribute('href');
 				if(href.substr(-4) == '.xml'){
 					item.onclick = function(){
-						//var url = 'json/' + href.slice(0, -4) + '.json';
-						//asyn
-						//xr.asynLoadJson(url);
 
 						window.open('#' + href.slice(0, -4));
 
@@ -409,10 +414,9 @@
 
 			//router
 			if(location.hash){
-				var url = 'json/' + location.hash.substr(1) + '.json';
-
 				//asyn
-				xr.asynLoadJson(url);
+				var json = location.hash.substr(1);
+				xr.asynLoadJson(json);
 			}
 		}
 	}
