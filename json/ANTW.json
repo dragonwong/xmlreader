@@ -2,7 +2,6 @@
 	"nodes": {
 		
 		"Begin": {
-			"parent": "",
 			"children": [
 				"Ventilation",
 				"EmergencyEtiologies",
@@ -11,11 +10,10 @@
 			"shortTitle": "Begin",
 			"title": "Acute Weakness",
 			"body": "Patients presenting with any form of new weakness",
-			"explanation": "Acute non-Traumatic Weakness:\nThis topic provides an organized approach to the patient with new weakness not associated with or caused by trauma.  If the patient has experienced trauma follow the links to <a href=\"TBI.xml\" target=\"_blank\">Traumatic Brain Injury<\/a> and <a href=\"TSI.xml\" target=\"_blank\">Traumatic Spine Injury<\/a> where appropriate.  \nBased on the pattern of weakness one can decide the degree of urgency, the need for ventilatory support and whether there are time-sensitive treatments necessary to consider.\n<i>Topic Co-Chairs:<\/i><br>Michael Cadogan, MD<br>Eelco Wijdicks, MD<br><br>Contributors:<br>Chris Nickson, MD<br>Oliver Flower, MD"
+			"explanation": "Acute non-Traumatic Weakness:\nThis topic provides an organized approach to the patient with new weakness not associated with or caused by trauma.  If the patient has experienced trauma follow the links to <a href=\"#/ANTW/AorticDissection\" target=\"_blank\">Traumatic Brain Injury<\/a> and <a href=\"TSI.xml\" target=\"_blank\">Traumatic Spine Injury<\/a> where appropriate.  \nBased on the pattern of weakness one can decide the degree of urgency, the need for ventilatory support and whether there are time-sensitive treatments necessary to consider.\n<i>Topic Co-Chairs:<\/i><br>Michael Cadogan, MD<br>Eelco Wijdicks, MD<br><br>Contributors:<br>Chris Nickson, MD<br>Oliver Flower, MD"
 		},
 
 		"Ventilation": {
-			"parent": "Begin",
 			"children": [
 				"Intubate"
 			],
@@ -26,7 +24,6 @@
 		},
 
 		"EmergencyEtiologies": {
-			"parent": "Begin",
 			"children": [
 				"AcuteStroke",
 				"Infection",
@@ -44,7 +41,6 @@
 		},
 
 		"Localization": {
-			"parent": "Begin",
 			"children": [
 				"Clinicallocal",
 				"Anatomicalloc"
@@ -56,7 +52,6 @@
 		},
 
 		"Intubate": {
-			"parent": "Ventilation",
 			"children": [],
 			"shortTitle": "Intubate",
 			"title": "Special considerations for Intubation",
@@ -65,7 +60,6 @@
 		},
 
 		"AcuteStroke": {
-			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Acute Stroke",
 			"title": "Acute Stroke",
@@ -74,7 +68,6 @@
 		},
 
 		"Infection": {
-			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Infection",
 			"title": "CNS Infection",
@@ -83,7 +76,6 @@
 		},
 
 		"Spinalcord": {
-			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Spinal Cord",
 			"title": "Spinal Cord Compression",
@@ -92,7 +84,6 @@
 		},
 
 		"StatusEpilepticus": {
-			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Status Epilepticus",
 			"title": "Status Epilepticus or Seizure",
@@ -101,7 +92,6 @@
 		},
 
 		"Electrolytes": {
-			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Electrolytes",
 			"title": "Electrolyte Disturbance",
@@ -110,7 +100,6 @@
 		},
 
 		"Toxic": {
-			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Toxic",
 			"title": "Toxic Cause",
@@ -119,7 +108,6 @@
 		},
 
 		"AorticDissection": {
-			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Aortic Dissection",
 			"title": "Paraplegia from Aortic Dissection",
@@ -128,7 +116,6 @@
 		},
 
 		"Other": {
-			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Other",
 			"title": "Other Urgent Causes",
@@ -137,7 +124,6 @@
 		},
 
 		"Clinicallocal": {
-			"parent": "Localization",
 			"children": [
 				"Quadpara",
 				"Hemiparesis",
@@ -154,7 +140,6 @@
 		},
 
 		"Anatomicalloc": {
-			"parent": "Localization",
 			"children": [
 				"Brain",
 				"Peripheralnerve",
@@ -171,7 +156,6 @@
 		},
 
 		"Quadpara": {
-			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Quad Para",
 			"title": "Quadriparesis or Paraparesis with or without Sensory Level",
@@ -180,7 +164,6 @@
 		},
 
 		"Hemiparesis": {
-			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Hemiparesis",
 			"title": "Hemiparesis",
@@ -189,7 +172,6 @@
 		},
 
 		"Distal": {
-			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Distal",
 			"title": "Distal Weakness",
@@ -198,7 +180,6 @@
 		},
 
 		"Proximal": {
-			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Proximal",
 			"title": "Proximal Weakness",
@@ -207,7 +188,6 @@
 		},
 
 		"Monoparesis": {
-			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Monoparesis",
 			"title": "Monoparesis",
@@ -216,7 +196,6 @@
 		},
 
 		"Sigfind": {
-			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Significant Findings",
 			"title": "Significant Associated Findings",
@@ -225,7 +204,6 @@
 		},
 
 		"NotNeuromuscular": {
-			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Not Neuromuscular",
 			"title": "Not Neuromuscular Weakness",
@@ -234,7 +212,6 @@
 		},
 
 		"Brain": {
-			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "Brain",
 			"title": "Brain",
@@ -243,7 +220,6 @@
 		},
 
 		"Peripheralnerve": {
-			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "Peripheral Nerve",
 			"title": "Peripheral Nerve",
@@ -252,7 +228,6 @@
 		},
 
 		"Spinalcord": {
-			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "Spinal Cord",
 			"title": "Spinal Cord Compression",
@@ -261,7 +236,6 @@
 		},
 
 		"Nmj": {
-			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "NMJ",
 			"title": "Neuromuscular Junction",
@@ -270,7 +244,6 @@
 		},
 
 		"Ahc": {
-			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "Anterior Horn",
 			"title": "Anterior Horn Cell",
@@ -279,7 +252,6 @@
 		},
 
 		"Muscle": {
-			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "Muscle",
 			"title": "Muscle",

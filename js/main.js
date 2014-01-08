@@ -291,7 +291,7 @@
 				return;
 			}
 
-			location.hash = xr.xr_json + '/' + this_index;
+			location.hash = '/' + xr.xr_json + '/' + this_index;
 			xr.showStage('node');
 
 			//this self
@@ -317,21 +317,6 @@
 
 
 			//add event
-			var dom_a = Array.prototype.slice.call(document.querySelectorAll('#stage-node .explanation .detail a'));
-
-			dom_a.forEach(function(item, index, arr){
-				var href = item.getAttribute('href');
-				if(href.substr(-4) == '.xml'){
-					item.onclick = function(){
-
-						window.open('#' + href.slice(0, -4));
-
-						return false;
-					};
-				}
-			});
-
-
 			var dom_children = Array.prototype.slice.call(document.querySelectorAll('#stage-node .next .node'));
 			dom_children.forEach(function(item, index){
 				item.onclick = function(){
@@ -418,7 +403,7 @@
 			if(location.hash){
 				//asyn
 				var url_arr = location.hash.substr(1).split('/');
-				xr.asynLoadJson(url_arr[0], url_arr[1]);
+				xr.asynLoadJson(url_arr[1], url_arr[2]);
 			}
 		}
 	}
