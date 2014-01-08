@@ -1,5 +1,6 @@
 {
 	"nodes": {
+		
 		"Begin": {
 			"parent": "",
 			"children": [
@@ -14,7 +15,6 @@
 		},
 
 		"Ventilation": {
-			"id": 1,
 			"parent": "Begin",
 			"children": [
 				"Intubate"
@@ -26,7 +26,6 @@
 		},
 
 		"EmergencyEtiologies": {
-			"id": 2,
 			"parent": "Begin",
 			"children": [
 				"AcuteStroke",
@@ -45,7 +44,6 @@
 		},
 
 		"Localization": {
-			"id": 3,
 			"parent": "Begin",
 			"children": [
 				"Clinicallocal",
@@ -58,7 +56,6 @@
 		},
 
 		"Intubate": {
-			"id": 4,
 			"parent": "Ventilation",
 			"children": [],
 			"shortTitle": "Intubate",
@@ -68,7 +65,6 @@
 		},
 
 		"AcuteStroke": {
-			"id": 5,
 			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Acute Stroke",
@@ -78,7 +74,6 @@
 		},
 
 		"Infection": {
-			"id": 6,
 			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Infection",
@@ -88,7 +83,6 @@
 		},
 
 		"Spinalcord": {
-			"id": 7,
 			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Spinal Cord",
@@ -98,7 +92,6 @@
 		},
 
 		"StatusEpilepticus": {
-			"id": 8,
 			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Status Epilepticus",
@@ -108,7 +101,6 @@
 		},
 
 		"Electrolytes": {
-			"id": 9,
 			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Electrolytes",
@@ -118,7 +110,6 @@
 		},
 
 		"Toxic": {
-			"id": 10,
 			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Toxic",
@@ -128,7 +119,6 @@
 		},
 
 		"AorticDissection": {
-			"id": 11,
 			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Aortic Dissection",
@@ -138,7 +128,6 @@
 		},
 
 		"Other": {
-			"id": 12,
 			"parent": "EmergencyEtiologies",
 			"children": [],
 			"shortTitle": "Other",
@@ -148,7 +137,6 @@
 		},
 
 		"Clinicallocal": {
-			"id": 13,
 			"parent": "Localization",
 			"children": [
 				"Quadpara",
@@ -156,7 +144,7 @@
 				"Distal",
 				"Proximal",
 				"Monoparesis",
-				"Clinicallocal",
+				"Sigfind",
 				"NotNeuromuscular"
 			],
 			"shortTitle": "Clinical Local",
@@ -166,7 +154,6 @@
 		},
 
 		"Anatomicalloc": {
-			"id": 14,
 			"parent": "Localization",
 			"children": [
 				"Brain",
@@ -175,7 +162,7 @@
 				"Nmj",
 				"Ahc",
 				"Muscle",
-				28
+				"NotNeuromuscular"
 			],
 			"shortTitle": "Anatomical Loc",
 			"title": "Anatomical Localization",
@@ -184,7 +171,6 @@
 		},
 
 		"Quadpara": {
-			"id": 15,
 			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Quad Para",
@@ -194,7 +180,6 @@
 		},
 
 		"Hemiparesis": {
-			"id": 16,
 			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Hemiparesis",
@@ -204,7 +189,6 @@
 		},
 
 		"Distal": {
-			"id": 17,
 			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Distal",
@@ -214,7 +198,6 @@
 		},
 
 		"Proximal": {
-			"id": 18,
 			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Proximal",
@@ -224,7 +207,6 @@
 		},
 
 		"Monoparesis": {
-			"id": 19,
 			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Monoparesis",
@@ -233,8 +215,7 @@
 			"explanation": "<li><a href=\"AS.xml\" target=\"_blank\">Acute stroke<\/a><\/li><li>Intracranial mass<\/li><li>Postictal Todd's paresis<\/li><li>Nerve compression syndromes<\/li><li>Diabetic lumbosacral radiculoplexus neuropathy<\/li><li>Acute poliomyelitis<\/li><br>Monoparesis refers to paralysis of a single muscle, muscle group, or limb. Acute paralysis involving a single limb may be caused by a central or a peripheral lesion. Historical and examination factors may help to localize the lesion. For example, sudden onset right arm weakness with an associated dysphasia is most likely to result from a central lesion, whereas wrist drop in the right hand, with hypoesthesia on the back of the hand following falling asleep with the arm over the back of a chair, results from a peripheral nerve compression syndrome. Poliomyelitis is rare, but can occur in the unvaccinated."
 		},
 
-		"Clinicallocal": {
-			"id": 20,
+		"Sigfind": {
 			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Significant Findings",
@@ -244,7 +225,6 @@
 		},
 
 		"NotNeuromuscular": {
-			"id": 21,
 			"parent": "Clinicallocal",
 			"children": [],
 			"shortTitle": "Not Neuromuscular",
@@ -254,7 +234,6 @@
 		},
 
 		"Brain": {
-			"id": 22,
 			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "Brain",
@@ -264,7 +243,6 @@
 		},
 
 		"Peripheralnerve": {
-			"id": 23,
 			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "Peripheral Nerve",
@@ -274,7 +252,6 @@
 		},
 
 		"Spinalcord": {
-			"id": 24,
 			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "Spinal Cord",
@@ -284,7 +261,6 @@
 		},
 
 		"Nmj": {
-			"id": 25,
 			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "NMJ",
@@ -294,7 +270,6 @@
 		},
 
 		"Ahc": {
-			"id": 26,
 			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "Anterior Horn",
@@ -304,23 +279,12 @@
 		},
 
 		"Muscle": {
-			"id": 27,
 			"parent": "Anatomicalloc",
 			"children": [],
 			"shortTitle": "Muscle",
 			"title": "Muscle",
 			"body": "",
 			"explanation": "Pattern of Weakness<li>Proximal<\/li>Sensory Loss<li>Absent<\/li>Reflexes<li>Normal unless muscle severely weak<\/li>Acute Etiologies<li>Rhabdomyolysis<\/li>"
-		},
-
-		"NotNeuromuscular": {
-			"id": 28,
-			"parent": "Anatomicalloc",
-			"children": [],
-			"shortTitle": "Not Neuromuscular",
-			"title": "Not Neuromuscular Weakness",
-			"body": "Consider psychiatric cause",
-			"explanation": "Some disease states may produce symptoms of generalized weakness or fatigue that does not have a neuromuscular basis. These may be medical emergencies in their own right meriting urgent specific treatment. <br>Consider:<li>Any severe medical illness can have weakness as a symptom, but generally these will become clinically obvious during the patient's evaluation<\/li>Diagnoses of exclusion:<li>Malingering<\/li><li>Conversion disorder<\/li><li>Chronic fatigue syndrome<\/li><li>Anxiety disorders<\/li><li>Fibromyalgia<\/li>"
 		}
 	},
 

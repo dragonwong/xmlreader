@@ -16,6 +16,9 @@
 		            callback(xhr.responseText);
 		        }else{
 		            console.log("failed: " + xhr.status);
+		            if(xhr.status = 404){
+		            	alert('The address does not exist.');
+		            }
 		        }
 		    }
 		};
@@ -61,18 +64,35 @@
 		bt_back: document.getElementById('bt-back'),
 		bt_note: document.getElementById('bt-note'),
 		bt_note_isable: true,
-		xr_nodes: [],
-		xr_parend_id: -1,	/* parent's id of selected node in stage-node */
+		xr_json: '',
+		xr_nodes: {},
+		xr_history: {
+			_arr: [],
+			push: function(item){
+				if(this._arr.length == 0){
+					xr.bt_back.addClass('able');
+				}
+				this._arr.push(item);
+			},
+			pop: function(item){
+				if(this._arr.length == 1){
+					xr.bt_back.removeClass('able');
+				}
+				return this._arr.pop();
+			},
+			reset: function(item){
+				this._arr = [];
+				xr.bt_back.removeClass('able');
+			}
+		},
 
 		progress_bar: {
 			dom: document.getElementById("progress-bar"),
 			start: function(){
-				var dom = this.dom;
-				dom.removeClass('end').addClass('start');
+				this.dom.removeClass('end').addClass('start');
 			},
 			end: function(){
-				var dom = this.dom;
-				dom.addClass('end').removeClass('start');
+				this.dom.addClass('end').removeClass('start');
 			}
 		},
 
@@ -126,19 +146,19 @@
 						online_file_names.forEach(function(item, index){
 							item.onclick = function(){
 
-									//switch class
-									if(online_file_names_cur != -1){
-										online_file_names[online_file_names_cur].removeClass(class_name);
-									}
-									online_file_names_cur = index;
-									this.addClass(class_name);
+								//switch class
+								if(online_file_names_cur != -1){
+									online_file_names[online_file_names_cur].removeClass(class_name);
+								}
+								online_file_names_cur = index;
+								this.addClass(class_name);
 
-									//asyn
-									xr.asynLoadJson(this.dataset['json']);
-									//hide menu in mobile
-									if(xr.body.scrollWidth <= 600){
-										xr.menuToggle('hide');
-									}
+								//asyn
+								xr.asynLoadJson(this.dataset['json']);
+								//hide menu in mobile
+								if(xr.body.scrollWidth <= 600){
+									xr.menuToggle('hide');
+								}
 							};
 						});
 
@@ -148,9 +168,10 @@
 			}
 		},
 
-		asynLoadJson: function(json){
+		asynLoadJson: function(json, node){
 
-			location.hash = json;
+			xr.xr_json = json;
+			node = node ? node : 'Begin';
 
 			xr.progress_bar.start();
 
@@ -163,7 +184,7 @@
 				xr.xr_nodes = data.nodes;
 
 				xr.renderStageTree();
-				xr.renderStageNode(0);
+				xr.renderStageNode(node);
 				xr.renderStageNote(data.notes, data.checklist);
 				
 				xr.progress_bar.end();
@@ -196,20 +217,22 @@
 			selfs.forEach(function(item){
 				item.onclick = function(){
 					this.addClass('h');
-					xr.renderStageNode(this.dataset['xr_id']);
+					xr.renderStageNode(this.dataset['index']);
+					//从树状图进入，重置历史记录
+					xr.xr_history.reset();
 				};
 			});
 
 			function xmlTree(){
 
 				//根节点
-				var root = xr.xr_nodes[0];
+				var root = xr.xr_nodes["Begin"];
 
 				//开始构建输出
 				var output = '<ul>';
 
 				//main
-				(function main(node){
+				(function main(node, index){
 
 					var children = node.children,
 						children_len = children.length;
@@ -219,11 +242,10 @@
 					output += '<li class="tree">';
 
 						//开始构建自身内容
-						output += '<div class="self" data-xr_id="' + node.id + '">';
+						output += '<div class="self" data-index="' + index + '">';
 
 							//取该节点名字
 							output += '<span class="nodeName">' + node.shortTitle + '</span>';
-
 
 						//结束构建该节点自身内容
 						output += '</div>';
@@ -235,7 +257,8 @@
 							//递归子节点
 							output += '<ul class="tree">';
 							for(var i=0; i<children_len; i++){
-								arguments.callee(xr.xr_nodes[children[i]]);
+								var child = children[i];
+								arguments.callee(xr.xr_nodes[child], child);
 							}
 							output += '</ul>';
 
@@ -245,7 +268,7 @@
 					output += '</li>';
 
 
-				})(root);
+				})(root, "Begin");
 
 				//结束构建输出
 				output += '</ul>';
@@ -256,24 +279,23 @@
 
 		},
 
-		renderStageNode: function (xr_id){
+		renderStageNode: function (this_index){
 
 			var html = '',
-				this_node = xr.xr_nodes[xr_id],
-				children = this_node.children,
-				parent = this_node.parent;
+				this_node = xr.xr_nodes[this_index];
 
-			xr.showStage('node');
-
-			xr.xr_parend_id = parent;
-			if(parent == -1){
-				xr.bt_back.removeClass('able');
+			if(this_node && this_node.children){
+				var children = this_node.children;
 			}else{
-				xr.bt_back.addClass('able');
+				alert('This node dose not exist.');
+				return;
 			}
 
+			location.hash = xr.xr_json + '/' + this_index;
+			xr.showStage('node');
+
 			//this self
-			html += '<div class="this" data-xr_id="' + xr_id + '"><div class="node"><p class="title">' + this_node.title + '</p><p class="body">' + this_node.body + '</p></div></div>';
+			html += '<div class="this" data-index="' + this_index + '"><div class="node"><p class="title">' + this_node.title + '</p><p class="body">' + this_node.body + '</p></div></div>';
 
 			//explanation
 			html += '<div class="explanation">';
@@ -286,7 +308,7 @@
 				children.forEach(function(item, index){
 					var xr_node = xr.xr_nodes[item];
 
-					html += '<div class="node" data-xr_id="' + xr_node.id + '"><p class="title">' + xr_node.title + '</p><p class="body">' + xr_node.body + '</p></div>';
+					html += '<div class="node" data-index="' + item + '"><p class="title">' + xr_node.title + '</p><p class="body">' + xr_node.body + '</p></div>';
 				})
 				html += '</div></div>';
 			}
@@ -313,7 +335,8 @@
 			var dom_children = Array.prototype.slice.call(document.querySelectorAll('#stage-node .next .node'));
 			dom_children.forEach(function(item, index){
 				item.onclick = function(){
-					xr.renderStageNode(this.dataset['xr_id']);
+					xr.renderStageNode(this.dataset['index']);
+					xr.xr_history.push(this_index);
 				};
 			});
 
@@ -372,26 +395,6 @@
 			// load online file
 			xr.createOnlineFileList();
 
-			// menu fun click
-			(function(){
-				var menu_bts = Array.prototype.slice.call(document.querySelectorAll('#menu .fun .bt')),
-					menu_pns = Array.prototype.slice.call(document.querySelectorAll('#menu .cnt .pn')),
-					cur = 0;
-
-				menu_bts.forEach(function(item, index){
-					item.onclick = function(){
-						if(index != cur){
-							menu_bts[cur].removeClass("h");
-							menu_pns[cur].removeClass("h");
-							cur = index;
-							item.addClass("h");
-							menu_pns[cur].addClass("h");
-						}
-					};
-				});
-
-			})();
-
 			//bt in stage
 			document.getElementById('bt-node').onclick = function(){
 				xr.showStage('node');
@@ -405,18 +408,17 @@
 				}
 			};
 			xr.bt_back.onclick = function(){
-				//只有当当前节点没有父节点且显示在node页面才可点击
-				if(xr.xr_parend_id != -1 && xr.page.hasClass('show-node')){
-					xr.renderStageNode(xr.xr_parend_id);
+				//只有当有历史记录且显示在node页面才可点击
+				if(xr.xr_history._arr.length && xr.page.hasClass('show-node')){
+					xr.renderStageNode(xr.xr_history.pop());
 				}
 			};
 
-
-			//router
+			//router init
 			if(location.hash){
 				//asyn
-				var json = location.hash.substr(1);
-				xr.asynLoadJson(json);
+				var url_arr = location.hash.substr(1).split('/');
+				xr.asynLoadJson(url_arr[0], url_arr[1]);
 			}
 		}
 	}
