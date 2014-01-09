@@ -173,6 +173,8 @@
 		asynLoadJson: function(json, node){
 
 			xr.xr_json = json;
+			location.hash = '/' + xr.xr_json;
+
 			node = node ? node : 'Begin';
 
 			xr.progress_bar.start();
@@ -189,7 +191,9 @@
 					xr.renderStageTree();
 					xr.renderStageNode(node);
 				}else{
-					console.log('no nodes');
+					//no nodes
+					xr.stage_tree.innerHTML = 'no nodes';
+					xr.stage_node.innerHTML = '<div style="padding: 10px;">no nodes</div>';
 					xr.showStage('note');
 				}
 				xr.renderStageNote(data.notes, data.checklist);
