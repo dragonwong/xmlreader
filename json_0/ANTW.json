@@ -1,0 +1,27 @@
+{
+
+
+	"notes": {
+		"title": "Tell the consultant",
+		"content": [
+			"Cause of weakness if known; differential diagnosis if not known",
+			"Airway status and any respiratory issues",
+			"Salient history and exam findings",
+			"Relevant labs and imaging (if done)",
+			"Treatments provided"
+		]
+	},
+
+	"checklist": {
+		"title": "Checklist",
+		"list": [
+			"Assess airway, breathing, and circulation",
+			"Characterize the weakness by detailed exam",
+			"Build an initial differential diagnosis",
+			"Consider emergency causes",
+			"Initial labs: glucose, electrolytes, Ca, Mg, PO4, Bun, Cr, LFTs and coags",
+			"Special labs: TFTs, CPK, ESR",
+			"Relevant imaging"
+		]
+	}
+}

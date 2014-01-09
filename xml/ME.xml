@@ -32,7 +32,7 @@ The two conditions that are most important to recognize in the first hour are ba
 			<body><![CDATA[Management of SAH]]></body>
 			<explanation><![CDATA[Re-review the head CT to look for subarachnoid blood (this can be negative approximately 5% of the time).
 
-Follow the <a href="../ENLS/flash.html#/SAH" target="_blank"><font color='#0000AA'>Subarachnoid Hemorrhage Protocol</font></a> link.]]></explanation>
+Follow the <a href="#/SAH" target="_blank"><font color='#0000AA'>Subarachnoid Hemorrhage Protocol</font></a> link.]]></explanation>
 		</node>
 		<node index="ViralMeningitis" shortTitle="Viral Meningitis">
 			<title><![CDATA[Viral meningitis or Viral (not Herpes) Encephalitis]]></title>

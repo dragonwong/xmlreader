@@ -28,18 +28,18 @@ SAH is most commonly produced by trauma and next most common by a ruptured intra
 			<title><![CDATA[Prehospital Issues Regarding SAH]]></title>
 			<options></options>
 			<body><![CDATA[Prior to hospitalization]]></body>
-			<explanation><![CDATA[See <a href="../ENLS/flash.html#/AS" target="_blank"><font color='#0000AA'>Acute Stroke</font></a> for a prehospital protocol pertaining to SAH and other forms of stroke.]]></explanation>
+			<explanation><![CDATA[See <a href="#/AS" target="_blank"><font color='#0000AA'>Acute Stroke</font></a> for a prehospital protocol pertaining to SAH and other forms of stroke.]]></explanation>
 		</node>
 		<node index="ClinicalFeatures" shortTitle="Clinical Features">
 			<title><![CDATA[Clinical Diagnosis of SAH]]></title>
 			<options>Imaging</options>
 			<body><![CDATA[Clinical features]]></body>
-			<explanation><![CDATA[The diagnosis of traumatic SAH is based on history and brain imaging.  The protocol for management of traumatic SAH can be found under the <a href="../ENLS/flash.html#/TBI" target="_blank"><font color='#0000AA'>Traumatic Brain Injury Protocol</font></a>
+			<explanation><![CDATA[The diagnosis of traumatic SAH is based on history and brain imaging.  The protocol for management of traumatic SAH can be found under the <a href="#/TBI" target="_blank"><font color='#0000AA'>Traumatic Brain Injury Protocol</font></a>
 Aneurysmal SAH has a classic and not so classic presentation.  
 Classically:<li>Abrupt onset of a sudden, severe headache; onset is typically less than 1 second</li><li>The headache is a NEW, QUALITATIVELY DIFFERENT  headache for the patient</li><li>May have neck pain, nausea and vomiting</li><li>The patient may transiently lose consciousness, or present in coma</li><li>The nature and onset of the headache is the key distinguishing feature from other forms of stroke, syncope, and seizure.</li>A not-so-classic presentation:<li>Headache is not reported as abrupt (the patient may not remember the event well)</li><li>Headache responds well to non-narcotic analgesics</li><li>Headache goes away on its own within hours</li><li>Approximately 40% of patients with SAH will have a normal neurological examination. They may but may not have meningismus. They do not necessarily appear acutely ill.</li>
-Key Examination Features:<li><a href="../ENLS/flash.html#/sGCS" target="_blank">GCS</a></li><li>Pupil exam</li><li>Fundoscopic exam for retinal hemorrhages</li><li>Neck exam for meningismus</li>
+Key Examination Features:<li><a href="#/sGCS" target="_blank">GCS</a></li><li>Pupil exam</li><li>Fundoscopic exam for retinal hemorrhages</li><li>Neck exam for meningismus</li>
 Determine the clinical severity of the subarachnoid hemorrhage using one of the scales below:
-<a href="../ENLS/flash.html#/sWFNS" target="_blank">World Federation Neurological Scale (WFNS):</a><li>Grade 1: GCS 15</li><li>Grade 2: GCS 13-15 without neurological deficit</li><li>Grade 3: GCS 13-15 with neurological deficit</li><li>Grade 4: GCS 7-12</li><li>Grade 5: GCS 3-6</li><a href="../ENLS/flash.html#/sHHS" target="_blank">Hunt-Hess Grade:</a><li>Grade 1. Asymptomatic, mild headache, slight nuchal rigidity </li><li>Grade 2. Moderate to severe headache, nuchal rigidity, no neurologic deficit other than cranial nerve palsy </li><li>Grade 3. Drowsiness / confusion, mild focal neurologic deficit </li><li>Grade 4. Stupor, moderate-severe hemiparesis </li><li>Grade 5. Coma, decerebrate posturing</li>]]></explanation>
+<a href="#/sWFNS" target="_blank">World Federation Neurological Scale (WFNS):</a><li>Grade 1: GCS 15</li><li>Grade 2: GCS 13-15 without neurological deficit</li><li>Grade 3: GCS 13-15 with neurological deficit</li><li>Grade 4: GCS 7-12</li><li>Grade 5: GCS 3-6</li><a href="#/sHHS" target="_blank">Hunt-Hess Grade:</a><li>Grade 1. Asymptomatic, mild headache, slight nuchal rigidity </li><li>Grade 2. Moderate to severe headache, nuchal rigidity, no neurologic deficit other than cranial nerve palsy </li><li>Grade 3. Drowsiness / confusion, mild focal neurologic deficit </li><li>Grade 4. Stupor, moderate-severe hemiparesis </li><li>Grade 5. Coma, decerebrate posturing</li>]]></explanation>
 		</node>
 		<node index="Imaging" shortTitle="Imaging">
 			<title><![CDATA[Brain Imaging for SAH]]></title>
@@ -131,7 +131,7 @@ One strategy is to administer a loading dose of phenytoin in the ED, and continu
 			<body><![CDATA[Assess need for intubation]]></body>
 			<explanation><![CDATA[Factors that should be considered when deciding to intubate include:
 <li>Not protecting airway</li><li>Hypoventilation</li><li>Hypoxemia</li><li>Expected decompensation during transport within hospital or to another hospital</li>
-See <a href="../ENLS/flash.html#/AVS" target="_blank"><font color='#0000AA'>Airway, Ventilation and Sedation</font></a>]]></explanation>
+See <a href="#/AVS" target="_blank"><font color='#0000AA'>Airway, Ventilation and Sedation</font></a>]]></explanation>
 		</node>
 	</topic>
 		<notes>

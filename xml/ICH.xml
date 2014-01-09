@@ -118,7 +118,7 @@ Lobar ICH with mass effect should also be considered for surgery.]]></explanatio
 			<options></options>
 			<body><![CDATA[Is the patient developing high ICP?]]></body>
 			<explanation><![CDATA[Consider ICP monitoring if GCS <u>&lt;</u>8 or the patient has symptomatic hydrocephalus.
-See <a href="../ENLS/flash.html#/sICP" target="_blank">Elevated ICP and Herniation</a>&nbsp;for management recommendations.]]></explanation>
+See <a href="#/sICP" target="_blank">Elevated ICP and Herniation</a>&nbsp;for management recommendations.]]></explanation>
 		</node>
 		<node index="AnticoagulantsandDIC" shortTitle="Anticoagulants and DIC">
 			<title><![CDATA[Anticoagulants and DIC]]></title>

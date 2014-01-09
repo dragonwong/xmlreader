@@ -30,7 +30,7 @@ Examiner evaluates response to graded stimulus
 			<title><![CDATA[Structural Cause]]></title>
 			<options>Uncertain</options>
 			<body><![CDATA[CT finding reveal cause]]></body>
-			<explanation><![CDATA[Structural causes of coma include  <a href="../ENLS/flash.html#/TBI" target="_blank"><font color='#0000AA'>trauma </font></a>,  <a href="../ENLS/flash.html#/AIS" target="_blank"><font color='#0000AA'>ischemic stroke </font></a>,  <a href="../ENLS/flash.html#/ICH" target="_blank"><font color='#0000AA'>hemorrhagic stroke</font></a>, brain tumor, and  <a href="../ENLS/flash.html#/ME" target="_blank"><font color='#0000AA'>CNS infections </font></a>. 
+			<explanation><![CDATA[Structural causes of coma include  <a href="#/TBI" target="_blank"><font color='#0000AA'>trauma </font></a>,  <a href="#/AIS" target="_blank"><font color='#0000AA'>ischemic stroke </font></a>,  <a href="#/ICH" target="_blank"><font color='#0000AA'>hemorrhagic stroke</font></a>, brain tumor, and  <a href="#/ME" target="_blank"><font color='#0000AA'>CNS infections </font></a>. 
 Management should be initiated in consultation with Neurology and/or Neurosurgery.]]></explanation>
 		</node>
 		<node index="Image" shortTitle="Image">
@@ -38,7 +38,7 @@ Management should be initiated in consultation with Neurology and/or Neurosurger
 			<options>ConfirmedStructural,Uncertain</options>
 			<body><![CDATA[Head CT]]></body>
 			<explanation><![CDATA[Noncontrast cranial CT should be obtained emergently in unconscious patients with a presumed structural cause and in patients with an unclear cause of coma.
-If an acute ischemic stroke is being considered, cranial CT angiography and CT perfusion may be considered as an alternative to MRI (see <a href="../ENLS/flash.html#/AS" target="_blank">acute stroke algorithm</a>).
+If an acute ischemic stroke is being considered, cranial CT angiography and CT perfusion may be considered as an alternative to MRI (see <a href="#/AS" target="_blank">acute stroke algorithm</a>).
 When a CNS infection is being considered, cranial CT with and without contrast should be obtained to evaluate for abscess, extra-axial fluid collections, hydrocephalus, hemorrhagic transformation, and vasculitic infarcts.]]></explanation>
 		</node>
 		<node index="Metabolic" shortTitle="Metabolic">
@@ -46,8 +46,8 @@ When a CNS infection is being considered, cranial CT with and without contrast s
 			<options>Uncertain</options>
 			<body><![CDATA[Global or metabolic causes]]></body>
 			<explanation><![CDATA[Nonstructural causes of coma include anoxic-ischemic encephalopathy, metabolic alterations, endocrinopathies, systemic infections, over dosage of medications, alcohol and illicit drug use, exposure to nonpharmacologic neurotoxic compounds.
-Treatment is guided by the underlying etiology. Where appropriate, specific antagonists/antidotes should be administered for example<li>Opioid overdose: naloxone</li><li>Acetaminophen overdose: N-acetylcysteine</li><li>In selected cases, such as acute liver failure, an initially metabolic encephalopathy may evolve towards a structural one (cerebral edema, herniation)</li>Seizures and  <a href="../ENLS/flash.html#/SE" target="_blank"><font color='#0000AA'>status epilepticus</font></a>  commonly are not associated with any detectable lesion on CT. However, in patients with new seizures or a change in seizure pattern a structural cause must be excluded.
- <a href="../ENLS/flash.html#/ME" target="_blank"><font color='#0000AA'>CNS infections </font></a> (e.g. bacterial meningitis) may have no structural correlate on noncontrast CT, however this study should be obtained to exclude brain abscess. Remember to initiate antibiotics (&#177; dexamethasone) prior to the head CT if you suspect bacterial meningitis.]]></explanation>
+Treatment is guided by the underlying etiology. Where appropriate, specific antagonists/antidotes should be administered for example<li>Opioid overdose: naloxone</li><li>Acetaminophen overdose: N-acetylcysteine</li><li>In selected cases, such as acute liver failure, an initially metabolic encephalopathy may evolve towards a structural one (cerebral edema, herniation)</li>Seizures and  <a href="#/SE" target="_blank"><font color='#0000AA'>status epilepticus</font></a>  commonly are not associated with any detectable lesion on CT. However, in patients with new seizures or a change in seizure pattern a structural cause must be excluded.
+ <a href="#/ME" target="_blank"><font color='#0000AA'>CNS infections </font></a> (e.g. bacterial meningitis) may have no structural correlate on noncontrast CT, however this study should be obtained to exclude brain abscess. Remember to initiate antibiotics (&#177; dexamethasone) prior to the head CT if you suspect bacterial meningitis.]]></explanation>
 		</node>
 		<node index="Unclear" shortTitle="Unclear">
 			<title><![CDATA[Unclear Etiology]]></title>
@@ -61,7 +61,7 @@ Treatment is guided by the underlying etiology. Where appropriate, specific anta
 			<body><![CDATA[Focal pathology]]></body>
 			<explanation><![CDATA[A structural etiology is suggested by<li>History: trauma, acute onset of symptoms, AIDS, malignancy</li><li>Physical examination: asymmetric cranial nerve findings, asymmetric motor responses</li><li>Absence of an obvious toxic-metabolic etiology</li>
 Until/unless proven otherwise, coma is presumed to be structural in origin and should be immediately assessed with a noncontrast cranial CT, since emergent neurosurgical management may be needed.
-Patients with a new onset of seizures, a change in seizure pattern, or status epilepticus should be evaluated for a possible structural substrate. See  <a href="../ENLS/flash.html#/SE"  target="_blank"><font color='#0000AA'>Status Epilepticus Protocol </font></a>]]></explanation>
+Patients with a new onset of seizures, a change in seizure pattern, or status epilepticus should be evaluated for a possible structural substrate. See  <a href="#/SE"  target="_blank"><font color='#0000AA'>Status Epilepticus Protocol </font></a>]]></explanation>
 		</node>
 		<node index="Nonstructural" shortTitle="Nonstructural">
 			<title><![CDATA[Presumed Nonstructural]]></title>
@@ -101,7 +101,7 @@ The breathing pattern may have localizing value in comatose patients with brains
 			<title><![CDATA[Assess ABCs and C-Spine]]></title>
 			<options>NeuroExam</options>
 			<body><![CDATA[Immobilize C-Spine]]></body>
-			<explanation><![CDATA[<li>Airway, breathing and circulation are assessed and concurrently treated as detailed in <a href="../ENLS/flash.html#/AVS"  target="_blank"><font color='#0000AA'> Airway, Ventilation and Sedation </font></a></li><li>Rapid survey of head and neck, chest, abdomen, and extremities. Cervical spine is immobilized if there is any likelihood of trauma. </li><li>Bedside glucose testing is performed on all unconscious patients. If blood glucose is &lt; 70 mg/Dl administer 25 Ml of 50% dextrose. Thiamine 100 mg IV should be given with dextrose in patients at risk for nutritional deficiency (e.g. chronic alcohol users, bariatric surgery, malabsorptive states) </li><li>If there is suspicion of opioid toxidrome (history of drug use, coma, bradypnea, pupillary constriction), administer naloxone 0.4-0.8 mg IV and repeat as needed </li>]]></explanation>
+			<explanation><![CDATA[<li>Airway, breathing and circulation are assessed and concurrently treated as detailed in <a href="#/AVS"  target="_blank"><font color='#0000AA'> Airway, Ventilation and Sedation </font></a></li><li>Rapid survey of head and neck, chest, abdomen, and extremities. Cervical spine is immobilized if there is any likelihood of trauma. </li><li>Bedside glucose testing is performed on all unconscious patients. If blood glucose is &lt; 70 mg/Dl administer 25 Ml of 50% dextrose. Thiamine 100 mg IV should be given with dextrose in patients at risk for nutritional deficiency (e.g. chronic alcohol users, bariatric surgery, malabsorptive states) </li><li>If there is suspicion of opioid toxidrome (history of drug use, coma, bradypnea, pupillary constriction), administer naloxone 0.4-0.8 mg IV and repeat as needed </li>]]></explanation>
 		</node>
 	</topic>
 		<notes>

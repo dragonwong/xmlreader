@@ -181,10 +181,15 @@
 			function callback(back_data){
 							
 				var data = JSON.parse(back_data);
-				xr.xr_nodes = data.nodes;
 
-				xr.renderStageTree();
-				xr.renderStageNode(node);
+				if(data.nodes){
+					xr.xr_nodes = data.nodes;
+					xr.renderStageTree();
+					xr.renderStageNode(node);
+				}else{
+					console.log('no nodes');
+					xr.showStage('note');
+				}
 				xr.renderStageNote(data.notes, data.checklist);
 				
 				xr.progress_bar.end();
@@ -233,7 +238,7 @@
 
 				//main
 				(function main(node, index){
-
+					console.log(node);
 					var children = node.children,
 						children_len = children.length;
 					

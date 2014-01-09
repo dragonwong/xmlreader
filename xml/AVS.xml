@@ -128,8 +128,8 @@ Rarely, clinicians are forced to employ ventilatory techniques to manage intracr
 			<title><![CDATA[Brain Herniation or High ICP]]></title>
 			<options></options>
 			<body><![CDATA[Should you hyperventilate?]]></body>
-			<explanation><![CDATA[In the setting of clinical or radiographic brain herniation:<li>Minimize the duration of hyperventilation as much as possible by employing other means of ICP control</li><li>Prolonged hyperventilation requires the use of CNS metabolic monitoring to verify the adequacy of cerebral blood flow: jugular venous oximetry (SjvO2), Brain tissue oxygen (PbtO2) monitoring, or cerebral microdialysis</li><li>See <a href="../ENLS/flash.html#/sICP" target="_blank">Brain herniation</a> for additional details.</li>
-Routine hyperventilation for control of elevated ICP is discouraged as it may exacerbate cerebral ischemia:<li>If hyperventilation is used, do not lower PaCO2 below 35 mm Hg, and <a href="../ENLS/flash.html#/sICP" target="_blank">consider other methods for control of ICP</a>.</li>]]></explanation>
+			<explanation><![CDATA[In the setting of clinical or radiographic brain herniation:<li>Minimize the duration of hyperventilation as much as possible by employing other means of ICP control</li><li>Prolonged hyperventilation requires the use of CNS metabolic monitoring to verify the adequacy of cerebral blood flow: jugular venous oximetry (SjvO2), Brain tissue oxygen (PbtO2) monitoring, or cerebral microdialysis</li><li>See <a href="#/sICP" target="_blank">Brain herniation</a> for additional details.</li>
+Routine hyperventilation for control of elevated ICP is discouraged as it may exacerbate cerebral ischemia:<li>If hyperventilation is used, do not lower PaCO2 below 35 mm Hg, and <a href="#/sICP" target="_blank">consider other methods for control of ICP</a>.</li>]]></explanation>
 		</node>
 		<node index="Hemodynamics" shortTitle="Hemodynamics">
 			<title><![CDATA[BP and Cardiac Output]]></title>
