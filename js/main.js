@@ -155,6 +155,8 @@
 
 								//asyn
 								xr.asynLoadJson(this.dataset['json']);
+								xr.xr_history.reset();
+
 								//hide menu in mobile
 								if(xr.body.scrollWidth <= 600){
 									xr.menuToggle('hide');
