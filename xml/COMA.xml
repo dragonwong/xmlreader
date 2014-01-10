@@ -38,7 +38,7 @@ Management should be initiated in consultation with Neurology and/or Neurosurger
 			<options>ConfirmedStructural,Uncertain</options>
 			<body><![CDATA[Head CT]]></body>
 			<explanation><![CDATA[Noncontrast cranial CT should be obtained emergently in unconscious patients with a presumed structural cause and in patients with an unclear cause of coma.
-If an acute ischemic stroke is being considered, cranial CT angiography and CT perfusion may be considered as an alternative to MRI (see <a href="#/AS" target="_blank">acute stroke algorithm</a>).
+If an acute ischemic stroke is being considered, cranial CT angiography and CT perfusion may be considered as an alternative to MRI (see <a href="#/AS911" target="_blank">acute stroke algorithm</a>).
 When a CNS infection is being considered, cranial CT with and without contrast should be obtained to evaluate for abscess, extra-axial fluid collections, hydrocephalus, hemorrhagic transformation, and vasculitic infarcts.]]></explanation>
 		</node>
 		<node index="Metabolic" shortTitle="Metabolic">

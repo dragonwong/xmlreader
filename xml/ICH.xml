@@ -36,7 +36,7 @@ Options include:
 			<options></options>
 			<body><![CDATA[Measure the amount of blood]]></body>
 			<explanation><![CDATA[If the blood is within the brain parenchyma, use the ABC/2 method.  <br>
-<a href="images/content/ENLS_ICH_ABC2.jpg">Open Image in Browser</a><a href="images/content/ENLS_ICH_ABC2.jpg"><img src="images/content/ENLS_ICH_ABC2.jpg" height="200" width="266"></a>]]></explanation>
+<a href="images/content/ENLS_ICH_ABC2.jpg" target="_blank">Open Image in Browser</a><a href="images/content/ENLS_ICH_ABC2.jpg" target="_blank"><img src="images/content/ENLS_ICH_ABC2.jpg" height="200" width="266"></a>]]></explanation>
 		</node>
 		<node index="ICHScore" shortTitle="ICH Score">
 			<title><![CDATA[ICH Score]]></title>

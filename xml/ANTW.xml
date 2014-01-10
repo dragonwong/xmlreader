@@ -61,7 +61,7 @@ After preforming this focused neurological examination, determine the pattern of
 			<title><![CDATA[Acute Stroke]]></title>
 			<options></options>
 			<body><![CDATA[Within the time window?]]></body>
-			<explanation><![CDATA[If the patient has signs and symptoms consistent with acute stroke, especially if the patient is within the time window for thrombolysis, see the emergency evaluation of <a href="#/AS" target="_blank">Acute Stroke</a>]]></explanation>
+			<explanation><![CDATA[If the patient has signs and symptoms consistent with acute stroke, especially if the patient is within the time window for thrombolysis, see the emergency evaluation of <a href="#/AS911" target="_blank">Acute Stroke</a>]]></explanation>
 		</node>
 		<node index="Spinalcord" shortTitle="Spinal Cord">
 			<title><![CDATA[Spinal Cord Compression]]></title>
@@ -134,7 +134,7 @@ Acute spinal cord compression of non-traumatic cause should be suspected if the 
 			<title><![CDATA[Monoparesis]]></title>
 			<options></options>
 			<body><![CDATA[Weakness of a single limb]]></body>
-			<explanation><![CDATA[<li><a href="#/AS" target="_blank">Acute stroke</a></li><li>Intracranial mass</li><li>Postictal Todd's paresis</li><li>Nerve compression syndromes</li><li>Diabetic lumbosacral radiculoplexus neuropathy</li><li>Acute poliomyelitis</li><br>Monoparesis refers to paralysis of a single muscle, muscle group, or limb. Acute paralysis involving a single limb may be caused by a central or a peripheral lesion. Historical and examination factors may help to localize the lesion. For example, sudden onset right arm weakness with an associated dysphasia is most likely to result from a central lesion, whereas wrist drop in the right hand, with hypoesthesia on the back of the hand following falling asleep with the arm over the back of a chair, results from a peripheral nerve compression syndrome. Poliomyelitis is rare, but can occur in the unvaccinated.]]></explanation>
+			<explanation><![CDATA[<li><a href="#/AS911" target="_blank">Acute stroke</a></li><li>Intracranial mass</li><li>Postictal Todd's paresis</li><li>Nerve compression syndromes</li><li>Diabetic lumbosacral radiculoplexus neuropathy</li><li>Acute poliomyelitis</li><br>Monoparesis refers to paralysis of a single muscle, muscle group, or limb. Acute paralysis involving a single limb may be caused by a central or a peripheral lesion. Historical and examination factors may help to localize the lesion. For example, sudden onset right arm weakness with an associated dysphasia is most likely to result from a central lesion, whereas wrist drop in the right hand, with hypoesthesia on the back of the hand following falling asleep with the arm over the back of a chair, results from a peripheral nerve compression syndrome. Poliomyelitis is rare, but can occur in the unvaccinated.]]></explanation>
 		</node>
 		<node index="Distal" shortTitle="Distal">
 			<title><![CDATA[Distal Weakness]]></title>
@@ -158,7 +158,7 @@ Acute spinal cord compression of non-traumatic cause should be suspected if the 
 			<title><![CDATA[Brain]]></title>
 			<options></options>
 			<body><![CDATA[Cerebral cortex, brainstem and spinal cord]]></body>
-			<explanation><![CDATA[Pattern of Weakness<li>Distal &gt; proximal, extensors &gt; flexors, hemiparesis or single limb</li>Sensory Loss<li>May be present depending on whether sensory tracts or cortex are involved</li>Reflexes<li>Elevated during acute brain insult; however, reflexes may be decreased but later increase</li>Acute Etiologies<li><a href="#/AS" target="_blank">Acute stroke</a>, <a href="#/SAH" target="_blank">subarachnoid hemorrhage</a>, <a href="#/SE" target="_blank">seizure</a>, hypertensive encephalopathy</li>]]></explanation>
+			<explanation><![CDATA[Pattern of Weakness<li>Distal &gt; proximal, extensors &gt; flexors, hemiparesis or single limb</li>Sensory Loss<li>May be present depending on whether sensory tracts or cortex are involved</li>Reflexes<li>Elevated during acute brain insult; however, reflexes may be decreased but later increase</li>Acute Etiologies<li><a href="#/AS911" target="_blank">Acute stroke</a>, <a href="#/SAH" target="_blank">subarachnoid hemorrhage</a>, <a href="#/SE" target="_blank">seizure</a>, hypertensive encephalopathy</li>]]></explanation>
 		</node>
 		<node index="Peripheralnerve" shortTitle="Peripheral Nerve">
 			<title><![CDATA[Peripheral Nerve]]></title>
