@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<title>Emergency Neurological Life Support</title>
+<version>
+1.0
+</version>
+<lastupdate>
+5/23/2013
+</lastupdate>
+<comments><![CDATA[This is the first version of ENLS]]></comments>
+	<topic name="Glasgow Coma Scale" abbreviation="sGCS">
+		<node index="Begin" shortTitle="Begin">
+			<title><![CDATA[Glasgow Coma Scale]]></title>
+			<options></options>
+			<body><![CDATA[GCS]]></body>
+			<explanation><![CDATA[Score&nbsp;&nbsp;Response<br>Eye Opening<br>&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;Opens eyes spontaneously<br>&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;Opens eyes in response to speech<br>&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;Opens eyes in response to pain<br>&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;Does not open eyes in response to pain<br>
+Motor response<br>&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;Follows commands<br>&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;Localizes pain<br>&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;Moves to pain but not purposefully<br>&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;Flexes upper extremities to pain<br>&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;Extends all extremities to pain<br>&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;No motor response to pain<br>
+Verbal response<br>&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;Oriented to person, place and time<br>&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;Confused speech<br>&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;Replies with inappropriate words<br>&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;Incomprehensible sounds<br>&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;No verbal response]]></explanation>
+		</node>
+	</topic>
+</module>

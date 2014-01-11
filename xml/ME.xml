@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<title>Emergency Neurological Life Support</title>
+<version>
+1.0
+</version>
+<lastupdate>
+5/23/2013
+</lastupdate>
+<comments><![CDATA[This is the first version of ENLS]]></comments>
+	<topic name="Meningitis and Encephalitis" abbreviation="ME">
+		<node index="Begin" shortTitle="Begin">
+			<title><![CDATA[Suspected Meningitis or Encephalitis]]></title>
+			<options>TempCBCCT</options>
+			<body><![CDATA[Headache and altered mental status]]></body>
+			<explanation><![CDATA[<u>Meningitis and Encephalitis:</u> Patients that have a hyper-acute (hours) and acute (hours to days) onset of headache and altered mental status, should be considered as potentially having meningitis or encephalitis.  Additional symptoms including stiff neck (to flex/extend), fever, new rash, focal neurological finds or new onset seizures, should significantly increase the clinical suspicion of CNS infection.
+As with all acute medical and neurological events, the basics of ABC (airway, breathing and circulation) should be evaluated early in the Emergency Department course.  Patients with altered mental status are at high risk for losing a patent airway and should be monitored closely for the potential of needing intubation.  Likewise, patients with bacterial meningitis are at risk for lung or bloodstream infections with the same pathogen, and as such, vital signs and hemodynamics need to be monitored closely.
+Meningitis is defined as inflammation of the meninges while encephalitis is defined as inflammation of the brain.  If both are inflamed, the patient has meningoencephalitis.  Meningitis causes fever, meningismus, and pain (headache, neck, etc.) but other than depressing a patient&#39;s mental status, does not affect any cortical function.  Encephalitis on the other hand causes typically cortical disturbances (seizures, aphasia, hemiparesis, etc.).  In pure encephalitis, the spinal fluid is free of white cells but protein may be elevated.  Once white cells are found in the spinal fluid, some form of meningitis is present.  
+The two conditions that are most important to recognize in the first hour are bacterial meningitis and herpes encephalitis as these diseases have specific treatments that can improve patient outcome if administered quickly.
+<i>Topic Co-Chairs:</i><br>David Gaieski, MD<br>Bart Nathan, MD<br>]]></explanation>
+		</node>
+		<node index="Immunocompromised" shortTitle="Immunocompromised">
+			<title><![CDATA[Immunocompromised Patient]]></title>
+			<options>SuspicionofInfection</options>
+			<body><![CDATA[Confirmed or suspected]]></body>
+			<explanation><![CDATA[Immunocompromised patients, or patients suspected of being Immunocompromised, may present with less classic signs of meningitis or encephalitis.
+<li>For such patients, lower your pretest probability for these diagnoses and error on the side of a more complete work-up including LP and brain imaging.</li>]]></explanation>
+		</node>
+		<node index="SAH" shortTitle="SAH">
+			<title><![CDATA[Subarachnoid Hemorrhage]]></title>
+			<options></options>
+			<body><![CDATA[Management of SAH]]></body>
+			<explanation><![CDATA[Re-review the head CT to look for subarachnoid blood (this can be negative approximately 5% of the time).
+
+Follow the <a href="#/SAH" target="_blank"><font color='#0000AA'>Subarachnoid Hemorrhage Protocol</font></a> link.]]></explanation>
+		</node>
+		<node index="ViralMeningitis" shortTitle="Viral Meningitis">
+			<title><![CDATA[Viral meningitis or Viral (not Herpes) Encephalitis]]></title>
+			<options></options>
+			<body><![CDATA[Treatment]]></body>
+			<explanation><![CDATA[Treatment of viral meningitis or viral (not herpes) encephalitis:
+<li>Discontinue acyclovir and antibiotics</li><li>Discontinue dexamethasone</li><li>Treat headache</li><li>For West Nile Virus, there is risk of respiratory decompensation from spinal cord involvement so admission to the ICU for observation may be beneficial</li>]]></explanation>
+		</node>
+		<node index="TempCBCCT" shortTitle="Temp CBC CT">
+			<title><![CDATA[Temperature, WBC, CT results]]></title>
+			<options>SuspicionofInfection</options>
+			<body><![CDATA[Fever, leukocytosis, normal head CT?]]></body>
+			<explanation><![CDATA[Assess body temperature, peripheral white count, and head CT results (if there is time).
+
+<u>Temperature</u>
+Oral temperature is adequate.  Both fever (temperature &gt;38&#176;C) or hypothermia (temperature &lt;35&#176;C) are compatible with CNS infection.  If the patient is euthermic, the pretest probability of bacterial meningitis or HIV encephalitis is decreased.  However, newly Immunocompromised patients, patients with viral meningitis, and even a rare patient with bacterial meningitis may present euthermic.  Depending on other signs and symptoms, it may be appropriate to stop here and work-up other causes of headache.
+
+<u>Peripheral white count</u>
+If the white count is not elevated, then bacterial meningitis is unlikely; depending on body temperature and results of the head CT scan, you may stop here and work up non-infections causes of headache and altered mental status with the same caveats mentioned in "Temperature" above.  For example, the patient may still have a viral meningitis without a leukocytosis so LP may still be indicated to establish a diagnosis.
+
+<u>Head CT</u>
+In patients where there is a moderate to high suspicion of CNS infection and the lumbar puncture has not yet been done, parenteral anti-infectives should not be delayed while waiting for a CT scan.  CSF sterilization occurs only after 4-6 hours in the most sensitive organisms.  
+
+A head CT prior to the LP should always be done in the patient with suspected CNS infection  when the presentation includes papilledema/loss of venous pulsations or focal neurological signs.  Other definite indications include patients with known mass lesions.  A head CT is NOT always required prior to an LP, however, in most patients who have a clinical presentation consistent with meningitis or encephalitis, there will be enough uncertainty as to the exact intracranial process, that it is incumbent on the examiner to perform a CT prior to the LP.  A normal head CT does not protect the patient form a herniation syndrome after the LP.
+
+If the head CT shows a mass lesion or other condition that adequately explains the patient's mental status, then stop here and work up that process.]]></explanation>
+		</node>
+		<node index="BacterialMeningitis" shortTitle="Bacterial Meningitis">
+			<title><![CDATA[Bacterial Meningitis]]></title>
+			<options></options>
+			<body><![CDATA[Likely bacterial meningitis]]></body>
+			<explanation><![CDATA[<li>Continue antibiotics</li><li>Stop acyclovir</li><li>Continue dexamethasone</li><li>Adjust antibiotics based on finalized gram stain and culture results and sensitivities</li>
+
+In addition to antibiotics and dexamethasone, supportive care and management of other systems is important in patients with bacterial meningitis.  Some patients may have a concomitant bloodstream infection with the offending pathogen and may require early goal directed therapy for sepsis.  If the lumbar puncture demonstrates elevated intracranial pressure when the opening pressure is measured, the patients should be monitored closely for signs of increased ICP.  There is no evidence that intracranial pressure monitoring devices are safe or helpful in this patient population and the risks, including the potential of a superinfection with the foreign body, must be weighed with the potential benefits.  Likewise, no evidence exists as to the appropriate treatment of increased ICP.  Hyperventilation should probably be avoided as these patients already may suffer from some degree of decrease vessel diameter due to vasculopathy.  Mannitol of hypertonic saline may be reasonable alternatives.
+
+Age factors:
+<li>Children and young adults with suspected BM are at risk for Haemophilus influenzae (if not vaccinated), Neisseria meningitidis, and Streptococcus pneumoniae. As such they should be started on a 3rd generation cephalosporin and vancomycin at doses appropriate for CNS penetration</li><li>Middle aged adults are at highest risk for Streptococcus pneumoniae. As such they should be started on a 3rd generation cephalosporin and vancomycin at doses appropriate for CNS penetration. Vancomycin can be used alone in patients with a severe penicillin allergy.</li><li>The elderly and immunosuppressed are at risk for Streptococcus pneumoniae and Listeria monocytogenes. As such they should be started on a Ampicillin, a 3rd generation cephalosporin and vancomycin at doses appropriate for CNS penetration. Vancomycin and trimethaprimsulfamethoxazole can be used in patients with a severe penicillin allergy.</li>]]></explanation>
+		</node>
+		<node index="HerpesEncephalitis" shortTitle="Herpes Encephalitis">
+			<title><![CDATA[Herpes Encephalitis]]></title>
+			<options></options>
+			<body><![CDATA[Empirical treatment and diagnosis]]></body>
+			<explanation><![CDATA[<li>Continue acyclovir 10 mg/kg every 8 hours IV</li><li>Continue other antibiotics until MRI/PCR negative<li>Send CSF for HSV PCR</li<li>MRI of the brain</li><li>Achieve and maintain euvolemia to prevent acyclovir associated renal failure</li>]]></explanation>
+		</node>
+		<node index="ElevatedWBCnoRBCs" shortTitle="Elevated WBC no RBCs">
+			<title><![CDATA[Elevated WBC no RBCs]]></title>
+			<options>ViralMeningitis</options>
+			<body><![CDATA[Probably viral meningitis]]></body>
+			<explanation><![CDATA[Mild elevation in WBCs without RBCs is  suggestive of viral meningitis or viral (not herpes) encephalitis.  So, if the following is true:
+<li>Normal RBC</li><li>WBCs 10-100s</li><li>Glucose  &gt; two-thirds serum glucose</li><li>Protein &lt; 50 mg/dL </li><li>No organisms seen on gram stain</li>
+Then the patient likely has a viral meningitis or viral (not herpes) encephalitis.
+Seroconversion of HIV is also a consideration here.]]></explanation>
+		</node>
+		<node index="VeryHighWBCs" shortTitle="Very High WBCs">
+			<title><![CDATA[Very High WBCs]]></title>
+			<options>BacterialMeningitis</options>
+			<body><![CDATA[WBCs &gt; 100-1000]]></body>
+			<explanation><![CDATA[Marked elevation in WBCs without RBCs is highly suggestive of bacterial meningitis.  So, if the following is true:
+<li>Normal RBC</li><li>WBCs 100-1000 or higher</li><li>Glucose  &lt; two-thirds serum glucose, but rarely normal</li><li>Protein &gt; 50 mg/dL </li><li>Organisms seen on gram stain</li>
+Then, the patient has bacterial meningitis.]]></explanation>
+		</node>
+		<node index="ElevatedRBCsandWBCs" shortTitle="Elevated RBCs and WBCs">
+			<title><![CDATA[Elevated RBCs and WBCs]]></title>
+			<options>HerpesEncephalitis</options>
+			<body><![CDATA[Consider herpes encephalitis]]></body>
+			<explanation><![CDATA[If the following is true:
+<li>Elevated RBC</li><li>WBCs in the hundreds</li><li>Glucose  &gt; two-thirds serum glucose, or sometimes lower</li><li>Protein &lt; 50 mg/dL or elevated</li><li>No organisms on gram stain</li>
+Then, the patient may have herpes encephalitis.  The presence of seizures is also compatible with this diagnosis.]]></explanation>
+		</node>
+		<node index="ElevatedRBCs" shortTitle="Elevated RBCs">
+			<title><![CDATA[Elevated RBCs no WBCs]]></title>
+			<options>SAH</options>
+			<body><![CDATA[Likely SAH]]></body>
+			<explanation><![CDATA[If the following is true:
+<li>Elevated RBC</li><li>WBC &lt; 5 </li><li>Glucose  &gt; two-thirds serum glucose</li><li>Protein &lt; 50 mg/dL</li><li>No organisms on gram stain</li><li>Xanthochromia</li>
+Then, the patient likely has a subarachnoid hemorrhage that was not detected on the CT scan.  Xanthochromia may be absent if the LP was done within the first few hours of headache onset (and so one typically only sees RBCs).]]></explanation>
+		</node>
+		<node index="NormalLP" shortTitle="Normal LP">
+			<title><![CDATA[Normal LP]]></title>
+			<options></options>
+			<body><![CDATA[Rules out meningitis and encephalitis]]></body>
+			<explanation><![CDATA[An LP is considered normal if 
+<li>No RBCs</li><li>WBCs &lt; 5</li><li>Glucose  &gt; two-thirds serum glucose</li><li>Protein &lt; 50 mg/dL </li><li>No organisms seen on gram stain</li>
+If all of the above are true, meningitis is ruled out as is encephalitis (in most cases).  Work-up the patient from the perspective of fever, elevated WBC count and a normal CT scan without evidence of meningitis or encephalitis.]]></explanation>
+		</node>
+		<node index="LP" shortTitle="LP">
+			<title><![CDATA[Lumbar Puncture]]></title>
+			<options>NormalLP,VeryHighWBCs,ElevatedWBCnoRBCs,ElevatedRBCsandWBCs,ElevatedRBCs</options>
+			<body><![CDATA[Rapid assessment of spinal fluid]]></body>
+			<explanation><![CDATA[An LP is essential for both establishing a diagnosis and tailoring therapy.
+
+The opening pressure should be measured with a manometer prior to the collection of CSF.  CSF should be collected in (at least) 4 tubes.  <li>Send tube 1 and tube 4 for red and white cell counts</li><li>Send tube 2 for protein, glucose and lactic acid</li><li>Send tube 3 for gram stain and culture (and India ink if fungal infection is suspected). </li>
+If there is a suspicion for Herpes encephalitis, a small amount of CSF from tube 2 or 3 should be sent for Herpes PCR. Some laboratories perform bacterial antigen assays, which may be useful in some circumstances.  Additional laboratory tests that may be performed by some centers include bacterial PCR (particularly for Mycobacterium), enterovirus PCR, fungal antigens and viral culture.]]></explanation>
+		</node>
+		<node index="StartAntibiotics" shortTitle="Start Antibiotics">
+			<title><![CDATA[Start Antibiotics]]></title>
+			<options>LP</options>
+			<body><![CDATA[Empirical treatment]]></body>
+			<explanation><![CDATA[Anti-infectives should be started as soon as possible after the patient with a suspected CNS infection presents for medical care.
+
+Empiric anti-infectives are based on the:
+<li>Course of the suspected CNS infection</li><li>Age of the patient</li><li>Other infectious risk factors</li>
+
+For suspected CNS infections that evolve over hours, consider bacterial meningitis (BM) or viral meningitis.
+
+Children and young adults with suspected BM are at risk for Haemophilus influenzae (if not vaccinated), Neisseria meningitidis, and Streptococcus pneumoniae.  As such they should be started on a 3rd generation cephalosporin and vancomycin at doses appropriate for CNS penetration.
+
+Middle aged adults are at highest risk for Streptococcus pneumoniae.  As such they should be started on a 3rd generation cephalosporin and vancomycin at doses appropriate for CNS penetration.  Vancomycin can be used alone in patients with a severe penicillin allergy.
+
+The elderly and immunosuppressed  are at risk for Streptococcus pneumoniae and Listeria monocytogenes. As such they should be started on a Ampicillin, a 3rd generation cephalosporin and vancomycin at doses appropriate for CNS penetration.  Vancomycin and trimethaprim-sulfamethoxazole can be used in patients with a severe penicillin allergy.
+
+For suspected CNS infections that evolve over days consider viral encephalitis, particularly Herpes simplex encephalitis: Treatment should begin with Acyclovir at 10mg/kg every 8 hours.
+Hydration should be sufficient to achieve normovolemia.  This avoids the complication of acyclovir associated renal failure.
+
+For suspected CNS infections that evolve over days in an immunosuppressed patient, consider fungal meningitis.  If there is a high index of suspicion for fungal meningitis such as prior history of the disease or systemic fungal infections, and the patient is progressing rapidly, empiric Amphotericin B, can be considered.  Otherwise, starting anti-fungals after LP is typically prudent.]]></explanation>
+		</node>
+		<node index="SuspicionofInfection" shortTitle="Suspicion of Infection">
+			<title><![CDATA[Suspicion for CNS Infection]]></title>
+			<options>StartAntibiotics</options>
+			<body><![CDATA[Moderate to high suspicion]]></body>
+			<explanation><![CDATA[Based on the head CT scan being negative (if performed), and the presence of fever and white count, along with headache and altered mental status, one should have moderate to high suspicion for meningitis or encephalitis.
+
+There is evidence for the use of dexamethasone in bacterial meningitis, particularly in Streptococcus pneumoniae meningitis. Unless there is clear clinical evidence that the cause is NOT  Streptococcus pneumoniae, dexamethasone is recommended.
+Give:<li>dexamethasone 10 mg now and q 6 hours IV.  Ideally the  steroid should be given prior to or at the start of antibiotic therapy.</li>]]></explanation>
+		</node>
+	</topic>
+		<notes>
+			<title><![CDATA[Tell the consultant]]></title>
+			<content> <li>Presenting signs, symptoms, vital signs on arrival </li><li>Pertinent past medical history and history of the present illness </li><li>Relevant laboratory results including white blood cell count, bicarbonate level, lactate level, and renal function </li><li>Whether head CT was obtained and results if obtained </li><li>Antibiotics given </li><li>IV fluid given, input/output </li><li>Results of LP </li><li>Current vital signs </li><li>Ongoing concerns, active issues, outstanding studies/tests </li><li>Last physical and neurological exam finding prior to transfer </li></content>
+		</notes>
+		<checklist>
+				<title><![CDATA[Checklist]]></title>
+				<list><li>Vital signs,  history, examination </li><li>IV access, draw labs, blood cultures and lactate </li><li>IV fluids, treat shock </li><li>Immediate administration of dexamethasone followed by appropriate antibiotics to treat suspected meningitis. </li><li>Consider acyclovir </li><li>Obtain head CT if altered mental status or focal neurological findings. </li><li>Perform lumbar puncture (after Head CT results available, if CT necessary)</li><li>If meningococcus remember exposure prophylaxis</li></list>
+		</checklist>
+</module>

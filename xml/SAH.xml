@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<title>Emergency Neurological Life Support</title>
+<version>
+1.0
+</version>
+<lastupdate>
+5/23/2013
+</lastupdate>
+<comments><![CDATA[This is the first version of ENLS]]></comments>
+	<topic name="Subarachnoid Hemorrhage" abbreviation="SAH">
+		<node index="Begin" shortTitle="Begin">
+			<title><![CDATA[Subarachnoid Hemorrhage (SAH)]]></title>
+			<options>Prehospital,Airway,ClinicalFeatures</options>
+			<body><![CDATA[Blood within the subarachnoid space]]></body>
+			<explanation><![CDATA[Subarachnoid Hemorrhage (SAH):
+SAH is most commonly produced by trauma and next most common by a ruptured intracranial aneurysm.  For the latter, it is imperative that a timely diagnosis is made because the prevention of aneurysm re-rupture can be life saving.
+<i>Topic Co-Chairs:</i><br>Jonathan A. Edlow, MD<br>Owen Samuels, MD<br>]]></explanation>
+		</node>
+		<node index="Pain" shortTitle="Pain and Anxiety">
+			<title><![CDATA[Treat Pain and Anxiety]]></title>
+			<options></options>
+			<body><![CDATA[An uncomfortable patient can re-rupture their aneurysm]]></body>
+			<explanation><![CDATA[It is important to avoid straining, Valsalva, and writhing as this can cause re-rupture of a tenuous aneurysm.  One must also be careful to not over-sedate the patient as one could mask the symptoms of hydrocephalus (obtundation). 
+<li>Use IV medication with short half-lives (fentanyl for example)</li><li>Liberal use of anti-emetics is justified especially if vomiting occurs</li><li>BP control is enhanced with adequate analgesia.</li><li>If anxiety seems to be the major issue, consider small doses of an anxiolytic such as lorazepam.</li>]]></explanation>
+		</node>
+		<node index="Prehospital" shortTitle="Prehospital">
+			<title><![CDATA[Prehospital Issues Regarding SAH]]></title>
+			<options></options>
+			<body><![CDATA[Prior to hospitalization]]></body>
+			<explanation><![CDATA[See <a href="#/AS911" target="_blank"><font color='#0000AA'>Acute Stroke</font></a> for a prehospital protocol pertaining to SAH and other forms of stroke.]]></explanation>
+		</node>
+		<node index="ClinicalFeatures" shortTitle="Clinical Features">
+			<title><![CDATA[Clinical Diagnosis of SAH]]></title>
+			<options>Imaging</options>
+			<body><![CDATA[Clinical features]]></body>
+			<explanation><![CDATA[The diagnosis of traumatic SAH is based on history and brain imaging.  The protocol for management of traumatic SAH can be found under the <a href="#/TBI" target="_blank"><font color='#0000AA'>Traumatic Brain Injury Protocol</font></a>
+Aneurysmal SAH has a classic and not so classic presentation.  
+Classically:<li>Abrupt onset of a sudden, severe headache; onset is typically less than 1 second</li><li>The headache is a NEW, QUALITATIVELY DIFFERENT  headache for the patient</li><li>May have neck pain, nausea and vomiting</li><li>The patient may transiently lose consciousness, or present in coma</li><li>The nature and onset of the headache is the key distinguishing feature from other forms of stroke, syncope, and seizure.</li>A not-so-classic presentation:<li>Headache is not reported as abrupt (the patient may not remember the event well)</li><li>Headache responds well to non-narcotic analgesics</li><li>Headache goes away on its own within hours</li><li>Approximately 40% of patients with SAH will have a normal neurological examination. They may but may not have meningismus. They do not necessarily appear acutely ill.</li>
+Key Examination Features:<li><a href="#/sGCS" target="_blank">GCS</a></li><li>Pupil exam</li><li>Fundoscopic exam for retinal hemorrhages</li><li>Neck exam for meningismus</li>
+Determine the clinical severity of the subarachnoid hemorrhage using one of the scales below:
+<a href="#/sWFNS" target="_blank">World Federation Neurological Scale (WFNS):</a><li>Grade 1: GCS 15</li><li>Grade 2: GCS 13-15 without neurological deficit</li><li>Grade 3: GCS 13-15 with neurological deficit</li><li>Grade 4: GCS 7-12</li><li>Grade 5: GCS 3-6</li><a href="#/sHHS" target="_blank">Hunt-Hess Grade:</a><li>Grade 1. Asymptomatic, mild headache, slight nuchal rigidity </li><li>Grade 2. Moderate to severe headache, nuchal rigidity, no neurologic deficit other than cranial nerve palsy </li><li>Grade 3. Drowsiness / confusion, mild focal neurologic deficit </li><li>Grade 4. Stupor, moderate-severe hemiparesis </li><li>Grade 5. Coma, decerebrate posturing</li>]]></explanation>
+		</node>
+		<node index="Imaging" shortTitle="Imaging">
+			<title><![CDATA[Brain Imaging for SAH]]></title>
+			<options>CTshowsSAH,CTnegativeLPPositive,SAHConfirmed</options>
+			<body><![CDATA[If you suspect SAH by history head imaging is the next step]]></body>
+			<explanation><![CDATA[Non-contrast CT imaging of the brain is the gold-standard for identifying SAH (Class1, LOE B). <li>However, CT imaging is more sensitive in the first hours following a SAH and becomes progressively less sensitive with the passage of time (so that by 3 days, it is approximately 85% sensitive).  Besides time, other reasons for a false negative CT include anemia, low volume SAH and a technically poor scan.</li><li>Some physicians advocate a CTA at the time of the CT scan to look for an intracranial aneurysm.  Although this is helpful if an aneurysm is seen, the negative predictive value is less clear.  One should not use a negative CTA alone to rule out SAH.</li><li>MRI is useful in patients who are imaged a few days following the SAH; specific sequences can be used to image subarachnoid blood even several days later.</li>
+A CT image of a SAH is shown below:<a href="images/content/ENLS_SAH_CT1.jpg"><img src="images/content/ENLS_SAH_CT1.jpg" width="237" height="300"></a><P>]]></explanation>
+		</node>
+		<node index="CTshowsSAH" shortTitle="CT shows SAH">
+			<title><![CDATA[CT Scan Confirms SAH]]></title>
+			<options></options>
+			<body><![CDATA[Blood is seen on the CT scan]]></body>
+			<explanation><![CDATA[The diagnosis of SAH is confirmed and spinal fluid analysis is not necessary.]]></explanation>
+		</node>
+		<node index="CTnegativeLPPositive" shortTitle="CT negative LP Positive">
+			<title><![CDATA[CT Scan is Negative - Do LP Next]]></title>
+			<options></options>
+			<body><![CDATA[Must do an LP if the CT is negative]]></body>
+			<explanation><![CDATA[The sensitivity of CT for recent SAH is nearly 95%.  However, that means that you can miss 5 out of 100 patients with CT alone.  If the patient&#39;s complaints suggest SAH, you are obligated to perform a lumbar puncture to look for evidence of subarachnoid blood products (Class 1, LOE B). 
+The LP is done to look for xanthochromia.  Xanthochromia is the staining of CSF by heme breakdown products (chiefly bilirubin) by ependymal xanthene oxidase.  It takes several hours for blood in the subarachnoid space to break down, so the presence or absence of xanthochromia is time dependent.
+<li>If the CSF shows xanthochromia, the diagnosis of SAH is confirmed (be careful if the CSF protein exceeds 100 mg/dL as this can be a false positive).</li><li>If the CSF is clear of RBCs and xanthochromia is absent, it is highly unlikely that the patient had a subarachnoid hemorrhage.  However, a rapidly expanding aneurysm without subarachnoid rupture can present with a classic headache, so if you still suspect an aneurysm on clinical grounds, emergent consultation is suggested.</li><li>If the CSF shows RBCs in the 1st and 4th tube of equal amounts, and the LP was done in the first few hours of the onset of headache, SAH is likely.</li>
+Stated otherwise, the typical findings of SAH on spinal fluid analysis are:<li>RBCs</li><li>&lt; 5 WBCs</li><li>WBC:RBC ratio 1:700</li><li>Xanthochromia is present</li><li>Minimal clearing of RBCs between tubes 1 and 4.</li>
+Atypical or inconclusive findings:<li>Clearing of RBCs from tube 1 to 4 (perhaps because the spinal needle caused venous bleeding on the way in: traumatic tap)</li><li>RBCs present in similar number in Tubes 1 and 4 but the LP was done within the first 4 hours of the headache (could be SAH or traumatic tap)</li><li>Xanthochromia is absent, and the LP was done more than 12 hours following the onset of headache (bleed was too small to produce much xanthochromia)</li><li>Excessive WBCs (ratio WBC:RBC &gt; 1:700) suggesting meningitis or encephalitis</li>
+Note:<li>The sensitivity of all tests for SAH are dependent upon the time from the bleed. CT is more sensitive early and less so with time. RBCs in the spinal fluid is also more likely to be seen early and they will clear with time. Xanthochromia is absent early and nearly always present by 12 hours after the bleed.</li>
+Typical appearance of xanthochromia (CSF is spun first to take any RBCs out of solution):
+<a href="images/content/ENLS_SAH_xanthochromia.jpg"><img src="images/content/ENLS_SAH_xanthochromia.jpg" width="230" height="230"></a>]]></explanation>
+		</node>
+		<node index="InitialOrders" shortTitle="Initial Orders">
+			<title><![CDATA[Initial Orders]]></title>
+			<options>BPManagement,Coagulopathy,Hydrocephalus,Pain,Seizures,Antifibrinolytics,Decompensation</options>
+			<body><![CDATA[First steps]]></body>
+			<explanation><![CDATA[Once SAH is diagnosed, take these first steps:
+<li>Bed rest (Class 2B, LOE B)</li><li>Obtain pre-operative labs: CBC, Platelets, PT/PTT, electrolytes, BUN, Cr, cardiac enzymes</li><li>12-lead ECG</li><li>Cardiac telemetry</li><li>Nimodipine 60 mg po/ng (watch for hypotension)</li>]]></explanation>
+		</node>
+		<node index="Decompensation" shortTitle="Decompensation">
+			<title><![CDATA[Neurological Exam has Declined]]></title>
+			<options></options>
+			<body><![CDATA[Worsening neurological examination?]]></body>
+			<explanation><![CDATA[There are several immediate causes of early (within the first hour) neurological decompensation.
+<li>Re-rupture of the aneurysm; repeat head CT is diagnostic</li><li>Worsening hydrocephalus; repeat head CT is diagnostic; need for external ventricular drain is now paramount; give mannitol while arranging for EVD placement</li><li>Seizure- treat with phenytoin load</li><li>Cardiopulmonary cause- neurogenic pulmonary edema, catecholamine cardiomyopathy; worsening hypoxia (get CXR), falling BP consider urgent echocardiogram; cardiovascular collapse may also be a sign of cerebral herniation from re-rupture or untreated hydrocephalus.</li>]]></explanation>
+		</node>
+		<node index="BPManagement" shortTitle="BP Management">
+			<title><![CDATA[BP Management]]></title>
+			<options></options>
+			<body><![CDATA[Avoid hypertension to prevent re-rupture]]></body>
+			<explanation><![CDATA[General principles:
+<li>Precise guidelines for BP management do not exist (see  Bederson <i>et al</i>,Guidelines for the management of aneurysmal SAH; Stroke (2009) 40:994)</li><li>Many specialists recommend SBP &lt; 140 in a patient with no history of hypertension.  SBP &gt; 150 has been associated with aneurysmal re-rupture, and over treatment of BP can lead to brain ischemia (especially if hydrocephalus is present).</li><li>Use short acting, titratable medications such as labetalol or nicardipine</li><li>Avoid long-term nitroprusside due to concern of raising ICP</li>]]></explanation>
+		</node>
+		<node index="Hydrocephalus" shortTitle="Hydrocephalus">
+			<title><![CDATA[Hydrocephalus]]></title>
+			<options></options>
+			<body><![CDATA[Are the ventricles dilated?]]></body>
+			<explanation><![CDATA[Hydrocephalus is caused by blockage of CSF absorption and is diagnosed by interpreting the head CT scan.  If a patient is obtunded or comatose, it is important to provide ventricular drainage by having an external ventricular drain (EVD) placed by a neurosurgeon or neurointensivist.  This both treats the hydrocephalus and provides a monitor of ICP. 
+<li>If you do not have a neurosurgeon and hydrocephalus is present, consider treating the patient with mannitol 1 gm/kg and expediting transfer to a facility with neurosurgical capability within the next hour.</li>]]></explanation>
+		</node>
+		<node index="Coagulopathy" shortTitle="Coagulopathy">
+			<title><![CDATA[Coagulopathy]]></title>
+			<options></options>
+			<body><![CDATA[Elevated INR or low platelets?]]></body>
+			<explanation><![CDATA[For platelet count &lt; 50,000, administer 6-pack platelets.
+For warfarin associated coagulopathy, consider vitamin K antagonist reversal with purified factor concentrates or FFP, followed by Vitamin K 10 mg IV.  <br>To calculate the volume of plasma or IU of prothrombin complex concentrate:<br>1. Decide on target INR<br>2. Convert INR to percent (%) functional prothrombin complex:<br>&nbsp;&nbsp;> 5 = 5%<br>&nbsp;&nbsp;4.0 - 4.9 = 10%<br>&nbsp;&nbsp;2.6 - 3.2 = 15%<br>&nbsp;&nbsp;2.2 - 2.5 = 20%<br>&nbsp;&nbsp;1.9 - 2.1 = 25%<br>&nbsp;&nbsp;1.7 - 1.8 = 30%<br>&nbsp;&nbsp;1.4 - 1.6 = 40%<br>&nbsp;&nbsp;1.0 = 100%<br>
+3. Calculate dose:<br>&nbsp;&nbsp;(Target in %PC - Current level in %PC) X weight (kg) = mL of FFP or IU of prothrombin-complex concentrate (PCC) needed<br><br>Example: a patient with pulmonary embolism 3 months ago now has a SAH and has been taking warfarin:<br>INR on arrival = 7.5, target INR 1.5, body weight = 80 kg;<br>(40-5) X 80 = 2,800. <br>Therefore, the needed dose is 2,800 mL of FFP or 2,800 IU of PCC.<br><br>
+Reference: Schulman, S. Care of patients receiving long-term anticoagulant therapy. NEJM (2003) 349:675]]></explanation>
+		</node>
+		<node index="Antifibrinolytics" shortTitle="Antifibrinolytics">
+			<title><![CDATA[Antifibrinolytic Agents]]></title>
+			<options></options>
+			<body><![CDATA[Stop leak?]]></body>
+			<explanation><![CDATA[Preventing re-rupture of the aneurysm is a major goal of initial therapy.
+<li>Antifibrinolytic agents such as amicar and tranexamic acid can reduce aneurysmal re-rupture.  However, these agents also raise the risk of DVT, PE, and ischemic stroke if they are continued. If the patient is free of recent MI, DVT/PE or any known hypercoagulable state, many centers administer antifibrinolytic agents until the aneurysm can be secured; this strategy appears safe (Hillman et al, J Neursurg (2002) 97:771).</li>]]></explanation>
+		</node>
+		<node index="Seizures" shortTitle="Seizures">
+			<title><![CDATA[Seizure Prophylaxis]]></title>
+			<options></options>
+			<body><![CDATA[Should one prescribe AEDs now?]]></body>
+			<explanation><![CDATA[Use of prophylactic anticonvulsants is controversial.
+<li>Pro: seizures following SAH and before definitive aneurysm treatment have been associated with re-rupture, and can raise ICP.</li><li>Con: Phenytoin use has been associated with worse cognitive outcomes</li>
+One strategy is to administer a loading dose of phenytoin in the ED, and continue it until the aneurysm is secured, then stop the medication unless seizures have occurred (Class 2B, LOE B).]]></explanation>
+		</node>
+		<node index="SAHConfirmed" shortTitle="SAH Confirmed">
+			<title><![CDATA[SAH is confirmed]]></title>
+			<options>InitialOrders</options>
+			<body><![CDATA[CT or LP evidence of SAH]]></body>
+			<explanation><![CDATA[Diagnosis of SAH is confirmed.  The goal is to reduce the chance of aneurysm re-rupture and expedite treatment of the aneurysm while preventing any medical complications.]]></explanation>
+		</node>
+		<node index="Airway" shortTitle="Airway">
+			<title><![CDATA[Intubation]]></title>
+			<options></options>
+			<body><![CDATA[Assess need for intubation]]></body>
+			<explanation><![CDATA[Factors that should be considered when deciding to intubate include:
+<li>Not protecting airway</li><li>Hypoventilation</li><li>Hypoxemia</li><li>Expected decompensation during transport within hospital or to another hospital</li>
+See <a href="#/AVS" target="_blank"><font color='#0000AA'>Airway, Ventilation and Sedation</font></a>]]></explanation>
+		</node>
+	</topic>
+		<notes>
+			<title><![CDATA[Tell the consultant]]></title>
+			<content><li>Clinical presentation (level of consciousness, motor exam, pupil exam)</li>
+<li>WFNS score and Hunt-Hess Grade</li>
+<li>Imaging/LP results</li>
+<li>Hydrocephalus present?</li>
+<li>Airway status</li>
+<li>Sedation and other meds given</li>
+<li>Coordination of other vascular imaging</li></content>
+		</notes>
+		<checklist>
+				<title><![CDATA[Checklist]]></title>
+				<list><li>Brain Imaging</li>
+<li>Labs: PT/PTT, CBC, electrolytes, BUN, Cr, troponin</li>
+<li>12 lead ECG</li></list>
+		</checklist>
+</module>

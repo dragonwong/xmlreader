@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<title>Emergency Neurological Life Support</title>
+<version>
+1.0
+</version>
+<lastupdate>
+5/23/2013
+</lastupdate>
+<comments><![CDATA[This is the first version of ENLS]]></comments>
+	<topic name="World Federation Neurological Scale" abbreviation="sWFNS">
+		<node index="Begin" shortTitle="Begin">
+			<title><![CDATA[World Federation Neurological Scale]]></title>
+			<options></options>
+			<body><![CDATA[Correlates with SAH clinical outcomes]]></body>
+			<explanation><![CDATA[The World Federation Neurological Scale (WFNS) incorporates both the GCS score and features of the neurological exam.  <li>Grade 1: GCS 15</li><li>Grade 2: GCS 13-15 without neurological deficit</li><li>Grade 3: GCS 13-15 with neurological deficit</li><li>Grade 4: GCS 7-12</li><li>Grade 5: GCS 3-6</li>
+Although this score correlates better with clinical outcomes, most people still use the <a href="#/sHH" target="_blank">Hunt-Hess Scale</a>.]]></explanation>
+		</node>
+	</topic>
+</module>
