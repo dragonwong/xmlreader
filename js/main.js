@@ -244,10 +244,9 @@
 
 				//main
 				(function main(node, index){
-					console.log(node);
+
 					var children = node.children,
-						children_len = children.length;
-					
+						children_len = children.length;					
 
 					//开始构建该节点
 					output += '<li class="tree">';
@@ -326,6 +325,8 @@
 			
 			xr.stage_node.innerHTML = html;
 
+			//回到顶部
+			xr.body.scrollTop = 0;
 
 			//add event
 			var dom_children = Array.prototype.slice.call(document.querySelectorAll('#stage-node .next .node'));
