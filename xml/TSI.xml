@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<title>Emergency Neurological Life Support</title>
+<version>
+1.0
+</version>
+<lastupdate>
+5/23/2013
+</lastupdate>
+<comments><![CDATA[This is the first version of ENLS]]></comments>
+	<topic name="Traumatic Spine Injury" abbreviation="TSI">
+		<node index="Begin" shortTitle="Begin">
+			<title><![CDATA[Traumatic Spine Injury]]></title>
+			<options>Airway</options>
+			<body><![CDATA[Cervical Spine Injury]]></body>
+			<explanation><![CDATA[Traumatic Spine Injury (TSI): This topic covers TSI as it relates to the cervical spine; many of the concepts apply to less common thoracic or lumbar spine trauma. One should suspect cervical spine injury when there is
+<li>A worrisome mechanism</li><li>Midline cervical spine tenderness</li><li>Neurological findings consistent with acute spinal cord injury</li>
+Initial management should include:
+<li>Airway</li><li>Breathing</li><li>Circulation</li><li>Immobilization</li><li>Detailed examination</li><li>Imaging, if necessary</li><li>Treatment</li>
+Notes:
+<li>You may put the patient in reverse Trendelenburg if at risk for aspiration.</li><li>Back board may, <u>and should</u>, be removed and used for transport only because of the risk of skin breakdown</li>
+
+<i>Topic Co-Chairs:</i><br>John Marx, MD<br>Deborah Stein, MD
+<br>]]></explanation>
+		</node>
+		<node index="Neckrotation" shortTitle="Neck Rotation">
+			<title><![CDATA[Test Neck Rotation]]></title>
+			<options>Ctcriteria</options>
+			<body><![CDATA[Have patient rotate their own neck]]></body>
+			<explanation><![CDATA[Is the patient able to actively rotate their neck 45 degrees left and right without pain or parathesias?
+
+If NO, consider CT criteria for imaging next.  
+IF YES, one can clear the spine clinically and remove immobilization.]]></explanation>
+		</node>
+		<node index="Immobilize" shortTitle="Immobilize">
+			<title><![CDATA[Maintain Spine Immobilization]]></title>
+			<options></options>
+			<body><![CDATA[Focus on stabilization until injury is confirmed absent]]></body>
+			<explanation><![CDATA[Appropriate care must be taken to provide spinal immobilization on scene. The spinal column should be immobilized until an unstable injury can be excluded. In the prehospital setting, patients are typically fitted with a cervical collar to provide cervical spinal column immobilization, and patients are subsequently transferred to the hospital on a backboard. If the patient is intoxicated and uncooperative with medical evaluation, chemical sedation may be indicated to assure proper protection of the spinal column and, more importantly, the spinal cord.
+
+As a general rule, the diagnosis and treatment of the majority of spine injuries can be deferred to address other life-threatening injuries, such as hemorrhage or intracranial mass lesions, as long as spine immobilization is maintained.]]></explanation>
+		</node>
+		<node index="Spinetenderness" shortTitle="Spine tenderness">
+			<title><![CDATA[Midline Cervical Spine Tenderness]]></title>
+			<options>Ctcriteria</options>
+			<body><![CDATA[On palpation of the spine]]></body>
+			<explanation><![CDATA[Point tenderness over a spinous process may indicate instability of the respective vertebral bone.  Examine the entire spine by palpation or percussion; focal spine injury often produces highly focal tenderness.  
+<li>If focal tenderness is present, the patient may need a CT of the spine</li>]]></explanation>
+		</node>
+		<node index="Ctcriteria" shortTitle="CT criteria">
+			<title><![CDATA[Does the patient meet CT criteria?]]></title>
+			<options>Doesnotmeetcriteria,GetCTspine</options>
+			<body><![CDATA[Based on review of several factors]]></body>
+			<explanation><![CDATA[The decision to perform a CT of the spine to image potential bony injury is as follows:
+Significant associated injuries:<li>Multiple trauma patient needs CT of head, chest, or abdomen/pelvis</li><li>Intubated</li><li>Depressed level of consciousness</li><li>Neurological deficit referable to the spine, or complaints of bilateral parathesias</li><li>Strong clinical suspicion of any spinal fracture</li><li>Multiple fractures</li><li>Pelvis fracture</li><li>Significant hear or facial trauma</li>
+Significant mechanism of injury:<li>Motor vehicle collision with speed exceeding 35 mph</li><li>Ejection from vehicle</li><li>Pedestrian, bicyclist, or motorcyclist struck and thrown</li><li>Axial load injury (vehicle roll-over or diving injury)</li><li>Fall in excess of 10 ft.</li><li>Death at accident scene</li>
+Patient Factors<li>Age &gt; 65 yr.</li><li>DJD, ankylosing spondylitis, rheumatoid arthritis</li><li>Depressed level of consciousness</li><li>Known cervical spine injury</li>]]></explanation>
+		</node>
+		<node index="Doesnotmeetcriteria" shortTitle="Does not meet criteria">
+			<title><![CDATA[Does Not Meet Criteria for CT Imaging]]></title>
+			<options>Clinicalclearance</options>
+			<body></body>
+			<explanation><![CDATA[The patient does not meet criteria for CT imaging per the criteria above.
+<li>Move on to clinical clearance</li>]]></explanation>
+		</node>
+		<node index="Clinicalclearance" shortTitle="Clinical clearance">
+			<title><![CDATA[Clinical clearance]]></title>
+			<options>Unable</options>
+			<body><![CDATA[Can the spine be cleared clinically?]]></body>
+			<explanation><![CDATA[The patient has had either a negative CT scan, or did not meet NEXUS or Canadian Rules criteria that recommend CT imaging.  Depending on the patient's level of consciousness, one may be able to clear the patient clinically.
+<li>Repeat the neurological examination and if normal and the patient is alert and without pain, clear the cervical spine.  This is done by removing the neck collar and have the patient rotate their head 45 degrees to each side.  If they are able to do this without significant pain, the C-Spine can be cleared.  If there is significant pain or the patient cannot perform the entire movement, replace the neck collar</li><li>If the patient has altered mental status that is expected to be transient (e.g. alcohol or drug intoxication), maintain cervical spine immobilization until reliable examination is possible (NEXUS or Canadian C-Spine Rules) and proceed through this algorithm from the beginning.</li>]]></explanation>
+		</node>
+		<node index="GetCTspine" shortTitle="Get CT spine">
+			<title><![CDATA[Image the C-Spine with CT]]></title>
+			<options>Ctnegative,Ctpositive</options>
+			<body><![CDATA[CT is most sensitive for bony injury]]></body>
+			<explanation><![CDATA[The patient meets criteria for CT imaging of the spine.  Maintain C-spine immobilization throughout the imaging and transportation.]]></explanation>
+		</node>
+		<node index="Ctpositive" shortTitle="CT positive">
+			<title><![CDATA[CT Imaging Positive]]></title>
+			<options>Neurologicalexam</options>
+			<body><![CDATA[Reveals a fracture or suspicious Injury]]></body>
+			<explanation><![CDATA[The CT reveals a finding that is definitive (vertebral fracture) or suspicious (soft tissue swelling).
+<li>Maintain C-spine immobilization</li><li>Consult Neurosurgery</li>
+Obtain MRI as indicated:
+<li>If neurological examination is compatible with spinal cord injury (myelopathy) or the patient complains of bilateral parathesias</li><li>If the patient is alert with continued midline cervical spine tenderness or if the patient is expected to require prolonged cervical spinal immobilization (e.g. severe closed head injury), consider MRI for the possibility of anterior -posterior spinal ligamentous injury</li><li>Perform MRI of the known or suspected areas of spinal cord injury</li>]]></explanation>
+		</node>
+		<node index="Ctnegative" shortTitle="CT negative">
+			<title><![CDATA[CT Shows No Fracture]]></title>
+			<options>Clinicalclearance</options>
+			<body><![CDATA[No fracture or soft tissue swelling]]></body>
+			<explanation><![CDATA[The CT shows intact vertebrae and no evidence for soft tissue swelling around the spine.  At this point it is okay to move toward clinical clearance of the cervical spine if possible.]]></explanation>
+		</node>
+		<node index="Neurofindings" shortTitle="Neuro findings">
+			<title><![CDATA[Neurological Signs Present]]></title>
+			<options>Ctcriteria</options>
+			<body><![CDATA[Clinical finding supporting spine injury]]></body>
+			<explanation><![CDATA[Based on a neurological examination, there are findings consistent with a spinal cord injury.  The include:
+<li>weakness below the level of the spine injury</li><li>Sensory loss below the level of spine injury</li><li>loss of anal tone</li><li>hyper-reflexia or a-reflexia</li>
+If present, consider criteria for spine CT.]]></explanation>
+		</node>
+		<node index="Worrisonemechanism" shortTitle="Worrisome mechanism">
+			<title><![CDATA[Worrisome Mechanism]]></title>
+			<options>NEXUS,Canadian Rules</options>
+			<body><![CDATA[Apply NEXUS or Canadian Rules]]></body>
+			<explanation><![CDATA[If the mechanism is worrisome (clear history of neck injury or circumstances that have a reasonable likelihood of causing spinal trauma) one can consider using two validated clinical scales.  These are the NEXUS Rules and the Canadian C-spine Rules.  Each of these systems allows you to either move toward clinical clearance of the C-spine or escalate evaluation to spine imaging.]]></explanation>
+		</node>
+		<node index="NEXUS" shortTitle="NEXUS">
+			<title><![CDATA[NEXUS Rules]]></title>
+			<options>Ctcriteria</options>
+			<body><![CDATA[5 questions]]></body>
+			<explanation><![CDATA[NEXUS Rules: These "rules" apply 5 criteria that used alone can help you clinically clear the cervical spine.  These include the presence of spinal tenderness and presence of focal neurological deficit among other things.  Use of the NEXUS rules is a reasonable protocol to clear the cervical spine; we encourage you to look at the Canadian Rules as well.
+
+The NEXUS rules are:<li>No posterior midline cervical-spine tenderness.</li><li>No evidence of intoxication.</li><li>A normal level of alertness.</li><li>No focal neurological deficit.</li><li>No painful distracting injuries.</li>
+If all of the above are true then you can clinically clear the cervical spine and remove the immobilization device. If any one or more is true, move on to the next step regarding spine imaging.]]></explanation>
+		</node>
+		<node index="Canadian Rules" shortTitle="Canadian Rules">
+			<title><![CDATA[Canadian C-spine Rules]]></title>
+			<options>Neckrotation,Ctcriteria</options>
+			<body><![CDATA[An alternate algorithm]]></body>
+			<explanation><![CDATA[Canadian C-Spine Rules:  These rules help one decide is you need spinal imaging. First consider any <i>high risk features</i>; if none, examine any <i>low risk features</i>.  If after considering all of the features, and none apply, the patient can be cleared clinically and the cervical spine immobilization can be discontinued.<br>
+<b>Canadian High-risk Features</b>
+Are there any high-risk factor that mandates radiography? <li>Age <u>&gt;</u> 65 yrs. or dangerous mechanism (fall from elevation over 3 ft. or 5 stairs)?</li><li>An axial load to the head (e.g. diving)?</li><li>A motor vehicle collision exceeding 100 km/hr. or with roll-over or ejection, or a collision involving a motorized recreational vehicle, or a bicycle collision?</li>
+IF YES to ANY of the above, consider CT criteria for imaging next.
+If NO to ALL of the above, move on to Canadian Low Risk features below.
+<b>Canadian Low-risk Features</b>
+Do any of the following low risk features exist?<li>Simple rear-end motor vehicle collision</li><li>Sitting position in the emergency department</li><li>Ambulatory at any time</li><li>Delayed (not immediate) onset of neck pain</li><li>Absence of midline cervical-spine tenderness</li>
+If YES to ANY of the above, then proceed to testing of neck rotation.  
+If NO to ALL of the above, then consider CT criteria for clearance.]]></explanation>
+		</node>
+		<node index="Canadianlowrisk" shortTitle="Canadian Low Risk">
+			<title><![CDATA[Canadian Low Risk Features]]></title>
+			<options>Neckrotation,Ctcriteria</options>
+			<body></body>
+			<explanation><![CDATA[Do any of the following low risk features exist?<li>Simple rear-end motor vehicle collision</li><li>Sitting position in the emergency department</li><li>Ambulatory at any time</li><li>Delayed (not immediate) onset of neck pain</li><li>Absence of midline cervical-spine tenderness</li>
+If YES to ANY of the above, then proceed to testing of neck rotation.  
+If NO to ALL of the above, then consider CT criteria for clearance.]]></explanation>
+		</node>
+		<node index="Unable" shortTitle="Unable to Clear">
+			<title><![CDATA[Unable to Clear Spine Clinically]]></title>
+			<options></options>
+			<body><![CDATA[May be ligamentous injury]]></body>
+			<explanation><![CDATA[If the action of self-imposed neck rotation 45 degrees to either side proves too painful to complete, ligamentous injury is a possibility; therefore, the C-collar should be left in place and imaging pursued.  See section on Imaging.  If the patient has already had a CT of the spine revealing no fracture, MRI may be of value to investigate ligamentous injury.]]></explanation>
+		</node>
+		<node index="Airway" shortTitle="Airway">
+			<title><![CDATA[Airway]]></title>
+			<options>Intubate,Breathing</options>
+			<body><![CDATA[Who to Intubate]]></body>
+			<explanation><![CDATA[Patients with TSI can be at exceptionally high risk of loss of airway due to a combination of:<li>Airway edema</li><li>Loss of diaphragmatic innervation (C3, C4, and C5 innervate the diaphragm)</li><li>Loss of chest and abdominal wall strength</li>
+All patients with a complete cervical TSI above C5 should be intubated as soon as possible.<br><br>Patients with incomplete or lower injuries will have a high degree of variability in their ability to maintain adequate oxygenation and ventilation.  General parameters for urgent intubation:<li>Complaint of "shortness of breath", inability to "catch my breath", or breathlessness </li><li>Vital Capacity &lt; 10 mL/kg or decreasing vital capacity</li><li>Appearance of "belly breathing" or "quad breathing" (abdomen goes out sharply with inspiration)</li><br>When in doubt, it is better to intubate a patient with a cervical TSI electively rather than wait until it needs to be done emergently.<br><br>Patients will typically develop worsening of their primary injury shortly after admission due to cord edema and progressive loss of muscle strength.<br><br>Patients with very high (above C3) complete TSI will almost invariably suffer a respiratory arrest in the field and, if not intubated by pre hospital providers, typically present in cardiac arrest.]]></explanation>
+		</node>
+		<node index="Intubate" shortTitle="Intubate">
+			<title><![CDATA[How to Intubate]]></title>
+			<options></options>
+			<body></body>
+			<explanation><![CDATA[Generally, patients with cervical TSI who require intubation should be intubated using an awake fiber optic approach by an experienced provider.<br><br>Patients who require urgent or emergent intubation, should be intubated using  <a href="#/AVS" target="_blank">rapid sequence intubation (RSI)</a>. <br><br>Special issues related to intubation in TSI:<li>Aspiration precaution should always be taken as for any emergent intubation.</li><li>The cervical collar can be removed ONLY IF in-line stabilization is carefully maintained.</li><li>Care MUST be taken not to hyperextend the neck.</li><li>No particular RSI regimen is preferred, but these patients will already have loss of vasomotor tone and therefore medications that diminish the catecholamine surge may result in hypotension and bradycardia.</li>]]></explanation>
+		</node>
+		<node index="Breathing" shortTitle="Breathing">
+			<title><![CDATA[Breathing]]></title>
+			<options>Circulation</options>
+			<body></body>
+			<explanation><![CDATA[Patients with TSI are at high risk of inadequate oxygenation and ventilation.  This is due to a combination of factors:<li>Loss of diaphragmatic function</li><li>Loss of ability to cough and deep breathe due to loss of chest wall and abdominal musculature function</li><li>Aspiration</li><li>Retention of secretions</li><li>Atelectasis</li><li>Concomitant injuries (pulmonary contusions, pneumothorax)</li><br>Supplemental oxygen should be supplied to all patients with cervical TSI.<br><br>Hypoxia is extremely detrimental to patients with neurological injury.<br><br>Noninvasive methods of ventilation should be used with caution as the inability to cough and clear secretions may lead to an increased risk of aspiration.]]></explanation>
+		</node>
+		<node index="Circulation" shortTitle="Circulation">
+			<title><![CDATA[Circulation]]></title>
+			<options>Hypotension,Briefneuro</options>
+			<body></body>
+			<explanation><![CDATA[Patients with TSI (above T4) often develop neurogenic shock.  The patient suffers a "sympathectomy" resulting in unopposed vagal tone.  This leads to a distributive shock with hypotension and bradycardia.<li>Patients are generally hypotensive with warm, dry skin. This is due to the loss of sympathetic tone resulting in an inability to redirect blood flow from the periphery to the core circulation.</li><li>Bradycardia is a characteristic finding of neurogenic shock and can help to differentiate from other forms of shock.
+Care should be taken to "assume" that a patient has neurogenic shock because of a lack of tachycardia as young healthy people and patients on premorbid beta-blockers, etc. will often not manifest tachycardia in the setting of hemorrhage.</li><li>As a general rule, the higher and more complete the injury, the more severe and refractory the neurogenic shock.</li><li>These signs can be expected to last from one to three weeks.</li><li>Patients may develop manifestations of neurogenic shock hours to days following injury due to progressive edema and ischemia of the spinal cord resulting in "ascension" of their injury.</li><li>In the patient with traumatic injury, other sources of hypotension (hemorrhage, TBI) MUST be sought and ruled out.</li><br>Pitfall: "Spinal shock" has nothing to do with hemodynamics, but rather refers to the loss of deep tendon stretch reflexes because of the spinal injury.]]></explanation>
+		</node>
+		<node index="Hypotension" shortTitle="Hypotension">
+			<title><![CDATA[Management of Hypotension]]></title>
+			<options></options>
+			<body><![CDATA[Maintain MAP 85-90 mm Hg for the first 7 days]]></body>
+			<explanation><![CDATA[First line treatment of neurogenic shock is always fluid resuscitation to maintain euvolemia.<li>The loss of sympathetic tone leads to vasodilation and the need for in increase in the circulating blood volume ("filling the tank")</li><li>CVP monitoring may be helpful in establishing fluid resuscitation goals.</li><br>Second line therapy once euvolemia is established is pressors and/or inotropes.<li>Norepinephrine - has both alpha and some beta activity thereby improving both blood pressure and bradycardia.  Probably the preferred agent.</li><li>Phenylephrine - pure alpha agonist.  Is very commonly used and easily titratable.  Lacks beta activity so does not treat bradycardia and may actually worsen it through reflexive mechanisms.</li><li>Dopamine - need high doses (&gt; 10 microgram/kg/min) for alpha effect, but does have significant beta effects at lower doses.  May lead to inadvertent diuresis at lower doses exacerbating relative hypovolemia.</li><li>Epinephrine - An alpha and beta agonist.  Causes vasoconstriction and increased cardiac output.  High doses often required leading to inadvertent mucosal ischemia.  Rarely used or needed.</li><li>Dobutamine - Beta agonist that can be useful is the loss of sympathetic tone is causing cardiac dysfunction.  Caution should be used in patient who is not adequately volume loaded as may cause hypotension.  </li>
+Some institutions utilize a protocol based on the American Association of Neurological Surgeons and the Congress of Neurological Surgeons' Guidelines for the Management of Acute Cervical Spine and Spinal Cord Injuries which recommend as an option "Maintenance of mean arterial blood pressure at 85 - 90 mm Hg for the first seven days following acute TSI to improve spinal cord perfusion. . ."]]></explanation>
+		</node>
+		<node index="Whotoimage" shortTitle="Who to image">
+			<title><![CDATA[Who should be imaged]]></title>
+			<options>NEXUS,Canadian Rules</options>
+			<body><![CDATA[How to "clear the cervical spine"]]></body>
+			<explanation><![CDATA[There are two recommended systems that help you determine who you can "clinically clear" from significant spine injury without imaging, and who you should perform CT/MRI to detect fractures or spine misalignment.  These are the NEXUS and Canadian Rules.]]></explanation>
+		</node>
+		<node index="Neurologicalexam" shortTitle="Neurological Exam">
+			<title><![CDATA[Neurological Examination]]></title>
+			<options>Motorexam,Sensoryexam,ASIAscale,Syndromes,Treatment</options>
+			<body><![CDATA[Focus on signs related to spinal cord injury]]></body>
+			<explanation><![CDATA[The neurological examination should focus on motor, sensory and rectal tone findings.  If the patient has abnormality in any of these, the goal is to localize the lesion to the highest spinal level where you see dysfunction.  Here are a few motor and sensory "levels" as a guide (these refer to the myotome and dermatome respectively for these regions of dysfunction):<br>
+Motor:<li>C4 - deltoid</li><li>C5 - biceps</li><li>C6 - wrist extensors</li><li>C7 - triceps</li><li>T1 - finger abduction</li>
+Sensory:<li>C4 - deltoid</li><li>T4 - nipple</li><li>T10 - umbilicus</li>
+Decreased rectal tone:<li>may be the only sign of a spinal cord injury.</li>
+Detailed examinations recommended by the American Spinal Injury Association can be found at the following links: <a href="http://www.asia-spinalinjury.org/publications/Motor_Exam_Guide.pdf" target="_blank">motor</a> and <a href="http://www.asia-spinalinjury.org/publications/Key_Sensory_Points.pdf" target="_blank">sensory</a>.]]></explanation>
+		</node>
+		<node index="Motorexam" shortTitle="Motor Exam">
+			<title><![CDATA[Motor Examination]]></title>
+			<options></options>
+			<body><![CDATA[Is there a motor level?]]></body>
+			<explanation><![CDATA[Ten <u>key muscles</u> that should be tested and documented (grade each as grade 0-5*):<li>C5- biceps</li><li>C6 - Extensor carpi radialis longus</li><li>C7 - Triceps</li><li>C8 - Flexor digitorum profundus (#3)</li><li>T1 - Adductor digiti minimi</li><li>L2 - Iliopsoas</li><li>L3 - Quadriceps</li><li>L4 - Tibialis anterior</li><li>L5 - Extensor hallucis longus</li><li>S1 - Gastrocnemius, soleus</li><li>Sacral: voluntary anal contraction (present/absent)</li>
+*Motor Strength Grading:<li>0 = no active movement</li><li>1 = muscle contraction </li><li>2 = movement thru ROM w/o gravity</li><li>3 = movement thru ROM against gravity </li><li>4 = movement against some resistance </li><li>5 = movement against full resistance</li><br><br>Detailed examinations recommended by the American Spinal Injury Association can be found at the following links: <a href="http://www.asia-spinalinjury.org/publications/Motor_Exam_Guide.pdf">motor</a> and <a href="http://www.asia-spinalinjury.org/publications/Key_Sensory_Points.pdf">sensory</a>.]]></explanation>
+		</node>
+		<node index="Sensoryexam" shortTitle="Sensory Exam">
+			<title><![CDATA[Sensory Examination]]></title>
+			<options></options>
+			<body><![CDATA[Is there a sensory level?]]></body>
+			<explanation><![CDATA[With light touch and/or pin, touch each dermatome beginning with C1 (posterior scalp) and move caudally to see if the patient has normal, diminished or absent sensory function at a particular level and below.  <br><br>Light touch and pain may be separated by a dermatome or two- select the highest (cephalad) level as the sensory level.  <br><br>Test sacral sensory function with a pin; score it as normal, diminished or absent. Score deep anal sensation as present or absent.<br><br>Detailed examinations recommended by the American Spinal Injury Association can be found at the following links: <a href="http://www.asia-spinalinjury.org/publications/Motor_Exam_Guide.pdf">motor</a> and <a href="http://www.asia-spinalinjury.org/publications/Key_Sensory_Points.pdf">sensory</a>.]]></explanation>
+		</node>
+		<node index="ASIAscale" shortTitle="ASIA Scale">
+			<title><![CDATA[ASIA Impairment Scale]]></title>
+			<options></options>
+			<body><![CDATA[Important for prognosis]]></body>
+			<explanation><![CDATA[The American Spinal Injury Association (ASIA) defined a 5-element scale that is prognostic of neurological recovery:<li>A - Complete: No motor or sensory function in the lowest sacral segment.</li><li>B - Incomplete: Sensory but not motor function is preserved in the lowest sacral segment.</li><li>C - Incomplete: Less the one-half of the key muscles below the neurological spinal level have grade 3 or better strength.</li><li>D - Incomplete: at least one-half of the  <a href="#/TSI/Motorexam" target="_blank">key muscles</a> below the neurological level have grade 3 or better strength.</li><li>E - Sensory and motor function are normal.</li>
+Complete injury (no sensory or motor function below a spinal level) has a worse prognosis; however, spinal shock can present this way.  Incomplete injury is better prognostically.]]></explanation>
+		</node>
+		<node index="Syndromes" shortTitle="Syndromes">
+			<title><![CDATA[Specific Syndromes]]></title>
+			<options></options>
+			<body><![CDATA[Depending on the level and nature of injury]]></body>
+			<explanation><![CDATA[There are several spinal cord injury syndromes that if present help indicate the extent and nature of the injury.<li>Anterior Cord Syndrome - Loss of pain/temperature and motor but not light touch; due to contusion of the anterior cord or occlusion of the anterior spinal artery. It is associated with burst fractures of the spinal column with fragment retropulsion by the axial compression.</li><li>Central Cord Syndrome - loss of cervical motor function with relative sparing of lower extremity strength.  This is typically due to hyperextension injury in elderly patients with cervical stenosis.  It is often not associated with a fracture; rather, buckling of the ligamentum flavum contuses the cord causing bleeding with the center of the cord.  The amount of damage to the corticospinal tracts (which lie laterally) is variable and determines the amount of lower extremity weakness.</li><li>Brown-Sequard Syndrome - hemiplegia, loss of ipsilateral light touch, and loss of contralateral pain/temperature sensation due to hemisection of the cord.  Indicates a penetrating cord injury often from missile or knife, or a lateral mass fracture of the spine.</li>]]></explanation>
+		</node>
+		<node index="Treatment" shortTitle="Treatment">
+			<title><![CDATA[Initial Treatment of TSI]]></title>
+			<options></options>
+			<body><![CDATA[The question of steroids]]></body>
+			<explanation><![CDATA[The mainstay of treatment for SCIs is <li>decompression of the spinal cord to minimize additional injury from cord compression</li<li>surgical stabilization of unstable ligamentous and bony injury</li><li>minimizing the effect of secondary complications, such as venous thromboembolic disease, pressure ulcer prevention, respiratory failure, and infections.</li><li>Place Foley catheter</li><li>GI prophylaxis</li><br><br><u>Steroids:</u> The use of steroids following acute traumatic cervical spinal injury is highly controversial and is both institution and practitioner specific.   If steroids are to be used, the recommended regimen is methylprednisolone 30 mg/kg as a bolus, then 5.4 mg/kg/hr for 23 or 47 hours.]]></explanation>
+		</node>
+		<node index="Briefneuro" shortTitle="Brief Neuro Exam">
+			<title><![CDATA[Brief Neurological Examination]]></title>
+			<options>Whotoimage</options>
+			<body><![CDATA[As part of initial trauma survey]]></body>
+			<explanation><![CDATA[In trauma patients during the primary survey, this can be abbreviated to the patient's Glasgow Coma Scale (GCS), pupil size and reactivity, and ability to move all four extremities.]]></explanation>
+		</node>
+		<node index="Canadianhighrisk" shortTitle="Canadian High Risk">
+			<title><![CDATA[Canadian High Risk Features]]></title>
+			<options>Ctcriteria,Canadianlowrisk</options>
+			<body><![CDATA[Are they high risk features?]]></body>
+			<explanation><![CDATA[Are there any high-risk factor that mandates radiography? <li>Age <u>&gt;</u> 65 yrs. or dangerous mechanism (fall from elevation over 3 ft. or 5 stairs)?</li><li>An axial load to the head (e.g. diving)?</li><li>A motor vehicle collision exceeding 100 km/hr. or with roll-over or ejection, or a collision involving a motorized recreational vehicle, or a bicycle collision?</li>
+IF YES to ANY of the above, consider CT criteria for imaging next.
+If NO to ALL of the above, move on to Canadian Low Risk features.]]></explanation>
+		</node>
+	</topic>
+		<notes>
+			<title><![CDATA[Tell the consultant]]></title>
+			<content><li>Age</li><li>Mechanism of injury</li><li>GCS</li><li>Coagulation status</li><li>Other injuries</li><li>Last neuro exam</li><li>Is the spine cleared? If so, by which criteria.  If not, why?</li><li>CT scan results</li></content>
+		</notes>
+		<checklist>
+				<title><![CDATA[Checklist]]></title>
+				<list><li>Immobilize C-Spine until cleared</li><li>Keep SBP &gt; 90 mmHg</li><li>C-Spine precautions (definitively declare if the spine is cleared or not when handing off the patient)</li><li>Head CT</li><li>Treat herniation</li></list>
+		</checklist>
+</module>

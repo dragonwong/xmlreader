@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<title>Emergency Neurological Life Support</title>
+<version>
+1.0
+</version>
+<lastupdate>
+5/23/2013
+</lastupdate>
+<comments><![CDATA[This is the first version of ENLS]]></comments>
+	<topic name="Coma" abbreviation="COMA">
+		<node index="Begin" shortTitle="Begin">
+			<title><![CDATA[Unconscious Patient]]></title>
+			<options>ABCsandSpine</options>
+			<body><![CDATA[Eyes closed, unresponsive]]></body>
+			<explanation><![CDATA[A patient who has eyes closed and is unresponsive is comatose.
+Determine unresponsiveness:<li>Observation: eyes closed, immobility, lack of facial expression, obliviousness to environmental stimuli</li>
+Examiner evaluates response to graded stimulus 
+<li>Verbal stimulus ("are you OK?" or "what is your name?")</li><li>Tactile stimulus (to body parts with large cortical representation: face, hands)</li><li>Noxious stimulus. Noxious stimulus should be intense but not cause tissue injury. Recommended maneuvers include sternal rub, nail-bed pressure, pressure on supraorbital ridge or on posterior aspect of mandibular ramus. </li>
+<i>Topic Co-Chairs:</i><br>J. Stephen Huff, MD<br>Robert Stevens, MD]]></explanation>
+		</node>
+		<node index="Uncertain" shortTitle="Uncertain">
+			<title><![CDATA[Persisting Uncertainty]]></title>
+			<options></options>
+			<body><![CDATA[Next steps]]></body>
+			<explanation><![CDATA[When diagnostic uncertainty persists after the work-up so far, additional test measures include:
+<li>Noncontrast CT is obtained in all comatose patients with an undiagnosed etiology if not done already</li><li>EEG obtained to evaluate for nonconvulsive seizures or status epilepticus, burst suppression, or patterns consistent with metabolic encephalopathy</li><li>Lumbar puncture is obtained if there is suspicion of CNS infection, inflammation, infiltration with lymphoma or malignant cells, or to substantiate a suspicion of aneurysmal subarachnoid hemorrhage in patients with negative CT findings. Prior to LP, space occupying lesions should be ruled out with noncontrast head CT</li><li>MRI is obtained if there is a presumption of hyperacute ischemic stroke or when the cause of coma is not explained by other tests</li><li>Consultation with a specialist</li>]]></explanation>
+		</node>
+		<node index="ConfirmedStructural" shortTitle="Confirmed Structural">
+			<title><![CDATA[Structural Cause]]></title>
+			<options>Uncertain</options>
+			<body><![CDATA[CT finding reveal cause]]></body>
+			<explanation><![CDATA[Structural causes of coma include  <a href="#/TBI" target="_blank"><font color='#0000AA'>trauma </font></a>,  <a href="#/AIS" target="_blank"><font color='#0000AA'>ischemic stroke </font></a>,  <a href="#/ICH" target="_blank"><font color='#0000AA'>hemorrhagic stroke</font></a>, brain tumor, and  <a href="#/ME" target="_blank"><font color='#0000AA'>CNS infections </font></a>. 
+Management should be initiated in consultation with Neurology and/or Neurosurgery.]]></explanation>
+		</node>
+		<node index="Image" shortTitle="Image">
+			<title><![CDATA[Brain Imaging]]></title>
+			<options>ConfirmedStructural,Uncertain</options>
+			<body><![CDATA[Head CT]]></body>
+			<explanation><![CDATA[Noncontrast cranial CT should be obtained emergently in unconscious patients with a presumed structural cause and in patients with an unclear cause of coma.
+If an acute ischemic stroke is being considered, cranial CT angiography and CT perfusion may be considered as an alternative to MRI (see <a href="#/AS911" target="_blank">acute stroke algorithm</a>).
+When a CNS infection is being considered, cranial CT with and without contrast should be obtained to evaluate for abscess, extra-axial fluid collections, hydrocephalus, hemorrhagic transformation, and vasculitic infarcts.]]></explanation>
+		</node>
+		<node index="Metabolic" shortTitle="Metabolic">
+			<title><![CDATA[Metabolic Coma]]></title>
+			<options>Uncertain</options>
+			<body><![CDATA[Global or metabolic causes]]></body>
+			<explanation><![CDATA[Nonstructural causes of coma include anoxic-ischemic encephalopathy, metabolic alterations, endocrinopathies, systemic infections, over dosage of medications, alcohol and illicit drug use, exposure to nonpharmacologic neurotoxic compounds.
+Treatment is guided by the underlying etiology. Where appropriate, specific antagonists/antidotes should be administered for example<li>Opioid overdose: naloxone</li><li>Acetaminophen overdose: N-acetylcysteine</li><li>In selected cases, such as acute liver failure, an initially metabolic encephalopathy may evolve towards a structural one (cerebral edema, herniation)</li>Seizures and  <a href="#/SE" target="_blank"><font color='#0000AA'>status epilepticus</font></a>  commonly are not associated with any detectable lesion on CT. However, in patients with new seizures or a change in seizure pattern a structural cause must be excluded.
+ <a href="#/ME" target="_blank"><font color='#0000AA'>CNS infections </font></a> (e.g. bacterial meningitis) may have no structural correlate on noncontrast CT, however this study should be obtained to exclude brain abscess. Remember to initiate antibiotics (&#177; dexamethasone) prior to the head CT if you suspect bacterial meningitis.]]></explanation>
+		</node>
+		<node index="Unclear" shortTitle="Unclear">
+			<title><![CDATA[Unclear Etiology]]></title>
+			<options>Image</options>
+			<body></body>
+			<explanation><![CDATA[In many patients, the etiology of coma cannot be identified with information collected so far. These patients should undergo emergent noncontrast cranial CT and further testing if CT is negative.]]></explanation>
+		</node>
+		<node index="Structural" shortTitle="Structural">
+			<title><![CDATA[Presumed Structural]]></title>
+			<options>Image</options>
+			<body><![CDATA[Focal pathology]]></body>
+			<explanation><![CDATA[A structural etiology is suggested by<li>History: trauma, acute onset of symptoms, AIDS, malignancy</li><li>Physical examination: asymmetric cranial nerve findings, asymmetric motor responses</li><li>Absence of an obvious toxic-metabolic etiology</li>
+Until/unless proven otherwise, coma is presumed to be structural in origin and should be immediately assessed with a noncontrast cranial CT, since emergent neurosurgical management may be needed.
+Patients with a new onset of seizures, a change in seizure pattern, or status epilepticus should be evaluated for a possible structural substrate. See  <a href="#/SE"  target="_blank"><font color='#0000AA'>Status Epilepticus Protocol </font></a>]]></explanation>
+		</node>
+		<node index="Nonstructural" shortTitle="Nonstructural">
+			<title><![CDATA[Presumed Nonstructural]]></title>
+			<options>Metabolic</options>
+			<body><![CDATA[Metabolic Causes]]></body>
+			<explanation><![CDATA[A nonstructural cause of coma is suggested by
+<li>Progressive, gradual onset of symptoms</li><li>History of medication, alcohol, or illicit drug use, or environmental toxic exposure</li><li>Symmetric cranial nerve and motor findings</li>]]></explanation>
+		</node>
+		<node index="Causes" shortTitle="Causes">
+			<title><![CDATA[Causes of Coma]]></title>
+			<options>Structural,Nonstructural,Unclear</options>
+			<body><![CDATA[Three possibilities]]></body>
+			<explanation><![CDATA[Information accrued so far is used to establish a preliminary impression of either a <u>structural cause</u>, a <u>nonstructural cause</u>, or an <u>unclear cause</u>. <b>Structural and nonstructural causes of coma may coexist.</b>]]></explanation>
+		</node>
+		<node index="Labs" shortTitle="Labs">
+			<title><![CDATA[Stat Labs]]></title>
+			<options>Causes</options>
+			<body><![CDATA[Serum chemistries, CBC, PT/PTT, ABG, urine toxicology, blood EtOH]]></body>
+			<explanation><![CDATA[Unless a readily reversible cause of unresponsiveness has been discovered and corrected, additional laboratory work is obtained emergently.
+<li>Serum chemistries at a minimum Na, K, creatinine, BUN, transaminases</li><li>Hematological panel at a minimum hemoglobin/hematocrit, platelets, white blood cells</li><li>Arterial blood gas</li><li>Blood alcohol level; urine toxicology screen for opioids, benzodiazepines, illicit drugs. (Note: Some toxins that cause unconsciousness are not detectable in common toxicologic screens)</li><li>Urinalysis; cultures of blood, urine</li>]]></explanation>
+		</node>
+		<node index="History" shortTitle="History">
+			<title><![CDATA[HPI/PMH]]></title>
+			<options>Labs</options>
+			<body><![CDATA[Focused history]]></body>
+			<explanation><![CDATA[Patient history is obtained concurrently with resuscitative measures. Potential causes of unconsciousness are sought from witnesses, friends, family, or EMS personnel. Medical and surgical history, medications, alcohol and illicit drug use, and environmental exposures should be systematically queried.]]></explanation>
+		</node>
+		<node index="NeuroExam" shortTitle="Neuro Exam">
+			<title><![CDATA[Neurological Assessment]]></title>
+			<options>History</options>
+			<body><![CDATA[Focused neuro exam]]></body>
+			<explanation><![CDATA[Neurologic assessment of the unconscious patient has 3 parts:<li>Level of consciousness: Glasgow Coma Scale. Assess additional potential signs of arousal including visual fixation, visual pursuit (tracking), forced eye closure resisting the examiner</li><li>Brainstem examination: </li>i. pupillary size, reactivity, and symmetry<br>ii. Corneal reflex<br>iii. Threat response<br>iv. Oculocephalic reflex (Doll&#39;s eyes - <br>&npsp;&nbsp;&nbsp;only if no suspicion of trauma)<br>v. Vestibulo-oculocephalic reflex (cold calorics) <br>vi. Corneal reflex<br>vii. Gag reflex <br>viii. Cough reflex 
+<li>Motor function: spontaneous muscle position/posture, spontaneous movements, response to verbal command, response to noxious stimulus. Examiner should distinguish purposeful from reflexive activity.  Examples of <u>purposeful activity</u> include: patient follows commands, pushes examiner away, reaches for endotracheal tube, localizes to noxious stimulus.  Examples of <u>reflexive activity</u>: withdrawal, flexion, or extension to noxious stimulus</li>
+The breathing pattern may have localizing value in comatose patients with brainstem lesions.<li>Central neurogenic hyperventilation: lesions of the pons or midbrain</li><li>Cluster (Biot&#39;s) breathing: lesions of the pons</li><li>Absence of spontaneous breathing, ataxic breathing, cluster breathing: lesions involving the medulla </li>]]></explanation>
+		</node>
+		<node index="ABCsandSpine" shortTitle="ABCs and Spine">
+			<title><![CDATA[Assess ABCs and C-Spine]]></title>
+			<options>NeuroExam</options>
+			<body><![CDATA[Immobilize C-Spine]]></body>
+			<explanation><![CDATA[<li>Airway, breathing and circulation are assessed and concurrently treated as detailed in <a href="#/AVS"  target="_blank"><font color='#0000AA'> Airway, Ventilation and Sedation </font></a></li><li>Rapid survey of head and neck, chest, abdomen, and extremities. Cervical spine is immobilized if there is any likelihood of trauma. </li><li>Bedside glucose testing is performed on all unconscious patients. If blood glucose is &lt; 70 mg/Dl administer 25 Ml of 50% dextrose. Thiamine 100 mg IV should be given with dextrose in patients at risk for nutritional deficiency (e.g. chronic alcohol users, bariatric surgery, malabsorptive states) </li><li>If there is suspicion of opioid toxidrome (history of drug use, coma, bradypnea, pupillary constriction), administer naloxone 0.4-0.8 mg IV and repeat as needed </li>]]></explanation>
+		</node>
+	</topic>
+		<notes>
+			<title><![CDATA[Tell the consultant:]]></title>
+			<content><li>Current clinical presentation</li><li>Relevant past medical/surgical history</li><li>  Findings on neurological examination</li><li>Relevant labs</li><li>Cranial CT, MRI, LP and/or EEG results if available</li><li>Treatments instituted thus far</li></content>
+		</notes>
+		<checklist>
+				<title><![CDATA[Checklist]]></title>
+				<list><li>Evaluate/treat circulation, airway, breathing and c-spine</li><li>Exclude/treat hypoglycemia or opioid overdose</li><li>Serum chemistries, arterial blood gas, urine toxicology screen</li><li>Emergent cranial CT if structural or uncertain etiology</li></list>
+		</checklist>
+</module>
