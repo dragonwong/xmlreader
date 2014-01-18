@@ -2,10 +2,8 @@
 	document.addEventListener("touchstart",function(){}, true);
 
 //lib
-    function ajaxGet(url, data, callback){
+    function ajaxGet(url, callback){
         var xhr = new XMLHttpRequest();
-
-        url = url + "?" + data;
 
         xhr.open("get", url, true);
         xhr.send(null);
@@ -107,7 +105,7 @@
 		createOnlineFileList: function(){
 
 			xr.progress_bar.start();
-			ajaxGet("json/ENLS_admin.json", '', callback);
+			ajaxGet("json/ENLS_admin.json", callback);
 
 			function callback(back_data){
 				var _list = JSON.parse(back_data),
@@ -180,7 +178,7 @@
 			xr.progress_bar.start();
 
 			var url = 'json/' + json + '.json';
-			ajaxGet(url, '', callback);
+			ajaxGet(url, callback);
 
 			function callback(back_data){
 							
