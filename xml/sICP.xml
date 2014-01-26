@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<title>Emergency Neurological Life Support</title>
+<version>
+1.0
+</version>
+<lastupdate>
+5/23/2013
+</lastupdate>
+<comments><![CDATA[This is the first version of ENLS]]></comments>
+	<topic name="Elevated ICP" abbreviation="sICP">
+		<node index="Begin" shortTitle="Begin">
+			<title><![CDATA[Intracranial Hypertension or Herniation]]></title>
+			<options>Tier0</options>
+			<body><![CDATA[ICP &gt; 20 mm Hg or Clinical Signs]]></body>
+			<explanation><![CDATA[Intracranial hypertension (elevated ICP) or clinical brain herniation are a "brain code" and must be addressed urgently.
+<li>Intracranial hypertension is defined as ICP &gt; 20 mm Hg sustained for more than 5 minutes. </li><li>Cardinal signs of transtentorial herniation are the acute onset of unilateral or bilateral pupillary dilation with loss of light reactivity, and loss of consciousness</li><li>Other clinical changes that indicate herniation include extensor posturing, hypertension, bradycardia and changes in respiratory pattern (Cushing's triad).</li>
+Subtopic written by:<br>Robert Stevens, MD<br>Josh Duckworth, MD<br>Alexander Papangelou, MD<br>J. Stephen Huff, MD]]></explanation>
+		</node>
+		<node index="Tier0" shortTitle="Tier Zero">
+			<title><![CDATA[Tier Zero]]></title>
+			<options>TierOne,AdditionalMonitoring</options>
+			<body><![CDATA[Standard issues to prevent herniation]]></body>
+			<explanation><![CDATA[For sustained ICP elevation or clinical signs of herniation:
+<li>Make sure the head has not been lowered below 30 degrees</li><li>Be sure that the ICP elevation is not associated with tracheal suctioning or other noxious stimulus. </li><li>Is hyponatremia present? If so begin correction</li><li>Is hyperthermia present? If so begin measures to lower body/brain temperature</li><li>Is ICP elevation associated with agitation? If so, treat pain and consider short acting sedation.</li><li>Is vasogenic edema present? If so, high dose corticosteroids should be given when brain code is driven by a brain tumor (primary or metastatic), brain abscess, or the in presence of a progressive neuroinflammatory process (e.g., acute disseminated encephalomyelitis). For brain tumor, typical regimens are dexamethasone 0.1 mg/kg q 6 hrs. or methylprednisolone 0.5 mg/kg q 6hrs</li>
+CPP (MAP-ICP) should be maintained in the 60-70 mmHg range to prevent cerebral ischemia.
+<li>This can be done by lowing ICP or raising MAP with fluids, vasopressors or inotropes.</li>
+If elevated ICP persists or clinical signs of herniation are not rapidly mitigated by the above,  proceed to Tier One treatments.
+Additional monitoring may be useful now based on the specific disease process.]]></explanation>
+		</node>
+		<node index="TierThree" shortTitle="Tier Three">
+			<title><![CDATA[Tier Three]]></title>
+			<options></options>
+			<body><![CDATA[No longer a surgical candidate]]></body>
+			<explanation><![CDATA[Tier Three measures represent the most aggressive level of medical management and carry the highest risk of adverse effects.<li>Pentobarbital dosing: bolus 10 mg/kg IV over 30 min, then 5 mg/kg/hr x 3 hrs.; maintenance 1 - 4 mg/kg/hr, titrated to ICP goal. Infusion is continued for 24 - 96 hrs. while underlying process driving ICP is treated or begins to resolve. Treatment is  associated with respiratory depression, circulatory instability, immune suppression, and paralytic ileus.</li><li>Moderate hypothermia (target core temperature, 32 - 34 degrees C) is induced with external cooling devices or with intravenous infusion of cooled fluids. Treatment is  associated with shivering, cardiac arrhythmia, sepsis, coagulopathy, and electrolytes disturbances.</li><li>Hyperventilation to moderate hypocapnia (PaCO2 25-35 mm Hg) may be considered in selected patients who have failed Tiers One and Two. Hyperventilation should be accomplished in conjunction with a cerebral oxygenation monitor (jugular venous oximetry, brain tissue oxygen probe), in order to minimize the risk of cerebral ischemia. Prolonging hyperventilation for &gt; 6 hours is unlikely to be beneficial and may cause harm.</li><li>CPP manipulation</li>]]></explanation>
+		</node>
+		<node index="RescueSurgery" shortTitle="Rescue Surgery">
+			<title><![CDATA[Rescue Surgery]]></title>
+			<options>TierThree</options>
+			<body><![CDATA[If tier 1 and 2 fail]]></body>
+			<explanation><![CDATA[Consider rescue surgery, i.e. performing procedures described in decompressive surgery above (evacuation of mass lesions or decompressive craniectomy in the absence of mass lesions) in consultation with the neurosurgery.
+If the patient is ineligible for further surgery, proceed to Tier Three.]]></explanation>
+		</node>
+		<node index="TierTwo" shortTitle="Tier Two">
+			<title><![CDATA[Tier Two]]></title>
+			<options>HeadCT,Decompression,TierThree</options>
+			<body><![CDATA[Hypertonic saline, propofol, thiopental]]></body>
+			<explanation><![CDATA[<li>Hypertonic saline bolus may be administered in concentrations ranging from 3% to 23.4% with goal of serum sodium between 140 and 150 meq/L. Evidence supports rapid infusion of hypertonic saline bolus to reverse transtentorial herniation or decrease ICP. Concentrations &gt; 2% must be given through a central venous catheter.</li><li>If ICP is not responsive to sodium infusion, consider propofol 1-3 mg/kg to reduce CMRO2, CBF, and ICP. Administration of propofol may be associated with circulatory depression which should be corrected with a iv fluids or a vasopressor infusion to maintain CPP goal. Propofol may be continued as an infusion 200 micrograms/kg/min.</li>
+If ICP is responsive to Tier Two therapies, and the patient has not been imaged yet, obtain brain imaging.  
+If the patient is unresponsive to Tier One and Tier Two interventions, consider rescue surgery, i.e. performing procedures described in decompressive surgery (evacuation of mass lesions or decompressive craniectomy in the absence of mass lesions) in consultation with the neurosurgery.
+If the patient is ineligible for surgery or too unstable to obtain brain imaging, proceed to Tier Three.]]></explanation>
+		</node>
+		<node index="Decompression" shortTitle="Decompression">
+			<title><![CDATA[Decompressive Surgery]]></title>
+			<options></options>
+			<body><![CDATA[For mass lesion or hemicraniectomy]]></body>
+			<explanation><![CDATA[The decision to proceed with surgical decompression is made in consultation with neurosurgery and prioritizes patients in whom there is a significant likelihood of meaningful recovery.<li>Surgical mass lesion. Surgical evacuation to be considered in selected patients with rapid neurologic deterioration from space-occupying lesions, e.g. brain tumors, brain abscesses, ischemic stroke, traumatic and nontraumatic intraparenchymal hemorrhages.</li><li>Decompressive craniectomy may also be considered in the absence of a focal lesion, i.e. diffuse brain edema associated with aneurysmal subarachnoid hemorrhage, traumatic brain injury, and meningoencephalitis</li>]]></explanation>
+		</node>
+		<node index="HeadCT" shortTitle="Head CT">
+			<title><![CDATA[Non-contrast Head CT]]></title>
+			<options>Decompression</options>
+			<body></body>
+			<explanation><![CDATA[Head imaging should be performed to exclude bleeding, hydrocephalus, cytotoxic edema or other sources of mass effect causing an acute elevation in ICP.
+<li>CT is the preferred method of imaging because of availability and speed of imaging.  The patient needs to lay flat for this study so it is wise to make sure that the patient can tolerate lowering the head of the bed prior to transporting.</li><li>CT results will inform decisions to place or revise an intraventricular drain (hydrocephalus), perform decompressive craniectomy, or remove a mass lesion.</li>]]></explanation>
+		</node>
+		<node index="TierOne" shortTitle="Tier One">
+			<title><![CDATA[Tier One]]></title>
+			<options>HeadCT,TierTwo</options>
+			<body><![CDATA[Airway, hyperventilation, mannitol, CSF drainage]]></body>
+			<explanation><![CDATA[The first interventions should include:
+<li>Ensure airway (endotracheally intubate or use tracheostomy if present)</li><li>Short-term hyperventilation may be instituted either with manual bag-mask technique or mechanically. </li><li>Mannitol is administered as 0.5-1 g/kg IV bolus</li><li>CSF drainage:  If acute obstructive hydrocephalus is contributing to clinical deterioration, place EVD emergently. If external ventricular drainage system is in place, drain 5-10 ml of CSF.</li><li>Begin 2% or 3% IV saline to keep serum sodium between 140 and 150 meq/L.  Check serum electrolytes Q 2-4 hours.</li>
+If ICP is controlled and/or clinical signs of herniation resolve with Tier One interventions, obtain head imaging studies.
+If not, move to Tier Two interventions first.]]></explanation>
+		</node>
+		<node index="ReviseCPPTargets" shortTitle="Revise CPP Targets">
+			<title><![CDATA[Revise CPP Targets]]></title>
+			<options></options>
+			<body></body>
+			<explanation><![CDATA[Consider modifying CPP targets:
+<li>Cerebral hypoxia (brain tissue hypoxia, jugular venous oxygen desaturation) or ischemia (increased lactate/pyruvate) can be treated by controlled increases in CPP, or by other measures which increase cerebral oxygen delivery (transfusion, inotropic agents, increased FIO2).</li><li>In patients with preserved cerebral autoregulation and CPP 60-70 mmHg, controlled increases in CPP may reduce ICP through increases in cerebrovascular resistance leading to reductions in CBV</li><li>In patients with impaired cerebral pressure autoregulation and CPP>60 mmHg, controlled reductions in CPP to the 40-60 mmHg range can effectively reduce ICP (by decreasing CBF and CBV), however such manipulations should only be accomplished with simultaneous cerebral oxygenation/ischemia monitoring.</li>]]></explanation>
+		</node>
+		<node index="AdditionalMonitoring" shortTitle="Additional Monitoring">
+			<title><![CDATA[Consider Additional Monitoring]]></title>
+			<options>ReviseCPPTargets</options>
+			<body></body>
+			<explanation><![CDATA[Consider additional neuromonitoring, including:<li>Brain tissue oxygen or jugular venous oximetry</li><li>Cerebral microdialysis</li><li>Cerebral pressure autoregulation indices</li>
+Treatment based on ICP and CPP may overlook significant information on the physiologic and metabolic state of the brain. Moreover, assumptions regarding CPP may not hold if cerebral pressure autoregulation is impaired (see Box I). Complementary neuromonitoring techniques should be considered to optimize medical management in selected patients with severe brain injury.
+<li>Monitors of cerebral oxygenation: brain tissue oxygen sensors, jugular venous oximetry.</li><li>Cerebral microdialysis. Brain interstitial lactate, lactate/pyruvate ratio, and glutamate are indicative of cerebral ischemia in the region of the microdialysis probe.</li><li>Dynamic indices of cerebral autoregulation. These indices express the correlation between a systemic hemodynamic parameter (arterial blood pressure or CPP) and an intracranial physiological parameter, e.g. ICP (PRx), transcranial Doppler-derived CBF velocity (Mx), or brain tissue PO2 (Orx). High degrees of correlation suggest failure of autoregulation.</li>]]></explanation>
+		</node>
+		<node index="MaintainCPP" shortTitle="Maintain CPP">
+			<title><![CDATA[Maintain CPP 60-70 mm Hg]]></title>
+			<options>AdditionalMonitoring</options>
+			<body><![CDATA[Using fluids and/or vasopressors]]></body>
+			<explanation><![CDATA[CPP (MAP - ICP) should be maintained in the 60-70 mmHg range to prevent cerebral ischemia.
+<li>This can be done by lowering ICP (see above) or can be accomplished by raising MAP with fluids, vasopressors, or inotropes.</li>]]></explanation>
+		</node>
+	</topic>
+		<notes>
+			<title></title>
+			<content></content>
+		</notes>
+		<checklist>
+				<title><![CDATA[Checklist]]></title>
+				<list><li>Tier Zero: HOB &gt; 30 degrees; ensure adequate sedation; correct hyponatremia, hyperthermia, and vasogenic edema; correct hyperthermia; keep CPP &gt; 60-70 mm Hg</li>
+<li>Tier One: secure airway; mannitol 0.5-1 gm/kg IV bolus; CSF drainage; start 3% saline 10-20 cc/hr</li>
+<li>Tier Two: hypertonic saline bolus (3%-23.4%); consider propofol bolus and infusion; consider decompressive craniotomy</li>
+<li>Tier Three:  pentobarbital bolus and infusion titrated for ICP goal; induce hypothermia; hyperventilation if used with cerebral oxygen monitor; raise MAP to improve CPP</li></list>
+		</checklist>
+</module>

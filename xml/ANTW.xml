@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<title>Emergency Neurological Life Support</title>
+<version>
+1.1
+</version>
+<lastupdate>
+5/23/2013
+</lastupdate>
+<comments><![CDATA[This is the first version of ENLS]]></comments>
+	<topic name="Acute Non-Traumatic Weakness" abbreviation="ANTW">
+		<node index="Begin" shortTitle="Begin">
+			<title><![CDATA[Acute Weakness]]></title>
+			<options>Ventilation,EmergencyEtiologies,Localization</options>
+			<body><![CDATA[Patients presenting with any form of new weakness]]></body>
+			<explanation><![CDATA[Acute non-Traumatic Weakness:
+This topic provides an organized approach to the patient with new weakness not associated with or caused by trauma.  If the patient has experienced trauma follow the links to <a href="#/TBI" target="_blank">Traumatic Brain Injury</a> and <a href="#/TSI" target="_blank">Traumatic Spine Injury</a> where appropriate.  
+Based on the pattern of weakness one can decide the degree of urgency, the need for ventilatory support and whether there are time-sensitive treatments necessary to consider.
+<i>Topic Co-Chairs:</i><br>Michael Cadogan, MD<br>Eelco Wijdicks, MD<br><br>Contributors:<br>Chris Nickson, MD<br>Oliver Flower, MD]]></explanation>
+		</node>
+		<node index="Clinicallocal" shortTitle="Clinical Local">
+			<title><![CDATA[Clinical Localization]]></title>
+			<options>Quadpara,Hemiparesis,Distal,Proximal,Monoparesis,Sigfind,NotNeuromuscular</options>
+			<body><![CDATA[Based on the neurological examination]]></body>
+			<explanation><![CDATA[After performing the above neurological examination, consider the pattern of weakness.  Specifically, are all 4 limbs weak and there is sensory loss (quadriparesis), half the body weak (hemiparesis), one limb weak (monoparesis), the distal extremities only are weak (distal weakness), or the proximal muscles are weak (proximal weakness)?  Also, are there any  significant associated findings?
+
+Accurately defining the presenting complaint helps generate a focused differential diagnosis. A good clinical history is essential, as the examination may be difficult or unreliable in the obtunded or confused patient. However, it should be possible to elicit whether the deficit is unilateral or bilateral, which anatomical region is affected, and whether there is a sensory deficit. With a cooperative patient, it should also be possible to establish whether the deficit is symmetrical or asymmetrical, and proximal or distal. Note that it is important to attempt to differentiate between upper motor neuron (UMN) and lower motor neuron (LMN) lesions in the acute setting, though this may be difficult in some situations. In well-established UMN lesions, hyperreflexia (brain and spinal cord), increased tone, and a positive Babinski sign are seen. In comparison, LMN lesions (from the anterior horn cells to the muscles) cause a flaccid, areflexic weakness and, with time, atrophy and fasciculations. However, in the acute phase, UMN lesions may mimic an LMN lesion: flaccid paralysis, normal or reduced tone, and unreliable reflexes. There is often not enough time for atrophy to be evident, and fasciculations are rarely seen.]]></explanation>
+		</node>
+		<node index="Ventilation" shortTitle="Need for Assisted Ventilation">
+			<title><![CDATA[Need for Assisted Ventilation]]></title>
+			<options>Intubate</options>
+			<body><![CDATA[Do you need to intubate this patient?]]></body>
+			<explanation><![CDATA[Assess the patient's airway and potential need for assisted ventilation.  If any of the following general, subjective or objective findings are present, consider intubation.
+General:<li>Increasing generalized weakness?</li><li>Dysphagia?</li><li>Dysphonia?</li><li>Dyspnea on exertion and at rest?</li>
+Subjective:<li>Rapid shallow breathing</li><li>Tachycardia</li><li>Weak cough</li><li>Staccato speech</li><li>Use of accessory muscles</li><li>Abdominal paradox</li><li>Orthopnea</li><li>Weakness of trapezius and neck muscles- inability to lift head</li><li>Single-breath count: count to 20 in single exhalation (FVC 1.0 L is roughly equal to counting from 1 to 10)</li><li>Cough after swallow</li>
+Objective:<li>Vital capacity &lt; 1 L or 15 mL/kg, or 50% drop in VC over course of evaluation</li><li>Negative inspiratory force &lt; 15 mm Hg</li><li>Maximum inspiratory pressure &lt;30 cm H2O</li><li>Maximum expiratory pressure &lt; 40 cm H2O</li><li>Nocturnal desaturation</li><li>Rising PaCO2 (note- this is a late finding)</li><li>Hypoxemia</li><li>Unconscious state</li>]]></explanation>
+		</node>
+		<node index="Intubate" shortTitle="Intubate">
+			<title><![CDATA[Special considerations for Intubation]]></title>
+			<options></options>
+			<body><![CDATA[Consider]]></body>
+			<explanation><![CDATA[Special consideration for Intubation:
+<li>One should use a rapid sequence intubation, however avoid use of succinylcholine if there is evidence of underlying progressive neuromuscular disease (precipitates acute hyperkalemia)</li><li>Consider non-invasive assisted ventilation as a temporizing measure</li><li>Prepare atropine/glycopyrolate, fluids and vasopressors if there is evidence of autonomic instability</li>
+See <a href="#/AVS" target="_blank">Airway, Ventilation and Sedation Protocol</a>]]></explanation>
+		</node>
+		<node index="EmergencyEtiologies" shortTitle="Emergency Etiologies">
+			<title><![CDATA[Emergency Etiologies]]></title>
+			<options>AcuteStroke,Infection,Spinalcord,StatusEpilepticus,Electrolytes,Toxic,AorticDissection,Other</options>
+			<body><![CDATA[Exclude these time-sensitive emergency causes first]]></body>
+			<explanation><![CDATA[There are several time-sensitive causes of acute weakness that should be excluded quickly before moving on to a more comprehensive localization of the cause of weakness.  Consider each of the causes to the right before proceeding to localization.]]></explanation>
+		</node>
+		<node index="Localization" shortTitle="Localization">
+			<title><![CDATA[Localizing the Cause of Acute Weakness]]></title>
+			<options>Clinicallocal,Anatomicalloc</options>
+			<body><![CDATA[This will help determine the cause]]></body>
+			<explanation><![CDATA[Perform a neurological examination on the patient that includes:
+<li>Deep tendon reflexes</li><li>Power testing of proximal versus distal muscles and flexors versus extensor muscles, noting symmetry between sides</li><li>Judge diaphragmatic and chest wall muscle strength to determine if there is any respiratory insufficiency (count to 20 [external intercostal muscles], and negative inspiratory force [diaphragm]</li>
+After preforming this focused neurological examination, determine the pattern of weakness.]]></explanation>
+		</node>
+		<node index="AcuteStroke" shortTitle="Acute Stroke">
+			<title><![CDATA[Acute Stroke]]></title>
+			<options></options>
+			<body><![CDATA[Within the time window?]]></body>
+			<explanation><![CDATA[If the patient has signs and symptoms consistent with acute stroke, especially if the patient is within the time window for thrombolysis, see the emergency evaluation of <a href="#/AS911" target="_blank">Acute Stroke</a>]]></explanation>
+		</node>
+		<node index="Spinalcord" shortTitle="Spinal Cord">
+			<title><![CDATA[Spinal Cord Compression]]></title>
+			<options></options>
+			<body><![CDATA[Non traumatic cause]]></body>
+			<explanation><![CDATA[Pattern of Weakness<li>Distal &gt; proximal, extensors &gt; flexors, paraparesis, quadriparesis, rarely hemiparesis</li>Sensory Loss<li>May be present depending on whether sensory tracts or cortex are involved; loss of sensation below a certain spinal level is diagnostic</li>Reflexes<li>Elevated during acute brain insult; however, reflexes may be decreased but later increase</li>Acute Etiologies<li>Epidural abscess, tumor, spinal cord infarct</li>
+Acute spinal cord compression of non-traumatic cause should be suspected if the patient has weakness of both legs or both arms and legs with intact mental status and cranial nerves, especially if they have a history of cancer or complaint of back or neck pain.  See <a href="#/SCC" target="_blank">Spinal cord compression</a>.  If there is any sign of trauma, see <a href="#/TSI" target="_blank">Traumatic Spine Injury</a>]]></explanation>
+		</node>
+		<node index="Electrolytes" shortTitle="Electrolytes">
+			<title><![CDATA[Electrolyte Disturbance]]></title>
+			<options></options>
+			<body><![CDATA[Glucose, K, PO4]]></body>
+			<explanation><![CDATA[Acute hypoglycemia, hypokalemia, hypophosphatemia or other electrolyte disturbances suggesting other organ dysfunction should be attended to now.]]></explanation>
+		</node>
+		<node index="Toxic" shortTitle="Toxic">
+			<title><![CDATA[Toxic Cause]]></title>
+			<options></options>
+			<body><![CDATA[Any toxin exposure?]]></body>
+			<explanation><![CDATA[Consider organophosphate or carbon monoxide exposure among others.]]></explanation>
+		</node>
+		<node index="AorticDissection" shortTitle="Aortic Dissection">
+			<title><![CDATA[Paraplegia from Aortic Dissection]]></title>
+			<options></options>
+			<body><![CDATA[Spinal cord infarct]]></body>
+			<explanation><![CDATA[Acute aortic dissection can close the artery of Adamkiewicz that supplies the anterior spinal artery to the mid thoracic and lumbar spinal cord.  The patient will have an anterior spinal artery syndrome (paraplegia with loss of pain and temperature sensation below the lesion but preservation of light touch).  Assess distal lower extremity pulses and consider CTA, ultrasound or other techniques to rule out aortic dissection if the patient has an anterior spinal artery syndrome.]]></explanation>
+		</node>
+		<node index="Infection" shortTitle="Infection">
+			<title><![CDATA[CNS Infection]]></title>
+			<options></options>
+			<body></body>
+			<explanation><![CDATA[Consider meningitis or encephalitis as a cause.  See <a href="#/ME" target="_blank">Meningitis and Encephalitis</a>]]></explanation>
+		</node>
+		<node index="Other" shortTitle="Other">
+			<title><![CDATA[Other Urgent Causes]]></title>
+			<options></options>
+			<body></body>
+			<explanation><![CDATA[Consider:<li>Shock</li><li>Myocardial infarct</li><li>Addisonian crisis</li>]]></explanation>
+		</node>
+		<node index="StatusEpilepticus" shortTitle="Status Epilepticus">
+			<title><![CDATA[Status Epilepticus or Seizure]]></title>
+			<options></options>
+			<body><![CDATA[Postictal or non-convulsive status or Todds Paresis]]></body>
+			<explanation><![CDATA[Patients who are comatose, or encephalopathic, may be post-ictal. A patient with focal neurological findings (typically hemiparesis) may have a Todd's paralysis caused by a generalized seizure in a brain with prior injury. Also, a patient may be having non-convulsive status epilepticus. See the protocol <a href="#/SE" target="_blank">Status Epilepticus</a>.]]></explanation>
+		</node>
+		<node index="Muscle" shortTitle="Muscle">
+			<title><![CDATA[Muscle]]></title>
+			<options></options>
+			<body></body>
+			<explanation><![CDATA[Pattern of Weakness<li>Proximal</li>Sensory Loss<li>Absent</li>Reflexes<li>Normal unless muscle severely weak</li>Acute Etiologies<li>Rhabdomyolysis</li>]]></explanation>
+		</node>
+		<node index="Anatomicalloc" shortTitle="Anatomical Loc">
+			<title><![CDATA[Anatomical Localization]]></title>
+			<options>Brain,Peripheralnerve,Spinalcord,Nmj,Ahc,Muscle,NotNeuromuscular</options>
+			<body><![CDATA[Based on the location of nervous system pathology]]></body>
+			<explanation><![CDATA[Understanding the cause of weakness can be aided by localizing anatomically, since diseases are often specific for each anatomic region. The neurological examination greatly aids the localization of weakness by anatomic means. The protocol figure at the beginning of this tutorial breaks down anatomic regions into the brain and spinal cord, the anterior horn cell, the peripheral nerve, neuromuscular junction (NMJ), and muscle. Diseases of the brain and spinal cord produce "UMN weakness," meaning disruption of descending motor axons or cell bodies that innervate the LMN (the anterior horn cell, peripheral nerve, and NMJ). After performing a neurological examination, refer to the table below to ascribe the appropriate anatomic localization. The key features to focus on are the presence or the absence of sensory signs (loss of sensory modality) or symptoms (complaints of numbness or tingling). If sensory signs/symptoms are absent, peripheral nerve is eliminated, and central nervous system processes are reduced in likelihood. Anterior horn cell causes are principally Lou-Gehrig's disease (ALS) and polio, neither of which have acute treatments. Reflexes are helpful to determine among the remaining causes which is most likely to occur. In general, lesions of the brain and spinal cord and the NMJ are the most emergent causes to consider, as there are specific treatments for some of these diseases (acute stroke and spinal cord compression ) or public health concerns (botulism).]]></explanation>
+		</node>
+		<node index="Quadpara" shortTitle="Quad Para">
+			<title><![CDATA[Quadriparesis or Paraparesis with or without Sensory Level]]></title>
+			<options></options>
+			<body><![CDATA[Suggests spinal cord lesion]]></body>
+			<explanation><![CDATA[Quadriparesis/Paraparesis ± Sensory Level<li><a href="#/SCC" target="_blank">Spinal cord compression</a></li><li>Spinal cord infarction</li><li>Transverse myelitis</li><br>Quadriparesis/paraparesis is symmetrical weakness of either all four limbs (quadriparesis) or legs (paraparesis), characteristically with a sensory level. Non-traumatic spinal cord injury may occur from compression (e.g., epidural abscess, hematoma, expanding tumor, prolapsed intervertebral disc), ischemia (spinal cord infarction), or inflammation (transverse myelitis). In the acute phase, a flaccid paralysis below the level of cord injury is typically seen, with an accompanying corresponding sensory level, although there is considerable variation.<br>Neurological examination should localize the lesion in patients with acute paraplegia or quadriplegia. Sensory abnormalities localize in the vertical plane (cervical, lumbar, or sacral) and, when combined with other long tract signs, point to localization in the horizontal plane (extradural, intradural, or intramedullary). Key sensory levels (T4 nipple, T10 navel) should be used.]]></explanation>
+		</node>
+		<node index="Hemiparesis" shortTitle="Hemiparesis">
+			<title><![CDATA[Hemiparesis]]></title>
+			<options></options>
+			<body><![CDATA[Half body weakness]]></body>
+			<explanation><![CDATA[<li>Acute stroke:  <a href="#/AIS" target="_blank">ischemic</a>,  <a href="#/ICH" target="_blank">hemorrhagic</a>, or  <a href="#/SAH" target="_blank">subarachnoid hemorrhage</a></li><li>Intracranial mass</li><li><a href="#/ME" target="_blank">Meningitis/encephalitis</a></li><li>Hypoglycemia/hyperglycemia</li><li>Postictal Todd's paresis</li><li>Hemiplegic migraine</li><li>Brown-Sequard syndrome</li><br>Hemiparesis is acute weakness involving only one side of the body. While acute hemiplegia is most commonly due to an ischemic stroke , other differentials must be considered, as management of these differentials vary.  The history and demographic of the patient is likely to narrow the diagnosis, and examination findings provide further clues. A blood glucose level and a non-contrast head computed tomography are part of the initial workup.]]></explanation>
+		</node>
+		<node index="Monoparesis" shortTitle="Monoparesis">
+			<title><![CDATA[Monoparesis]]></title>
+			<options></options>
+			<body><![CDATA[Weakness of a single limb]]></body>
+			<explanation><![CDATA[<li><a href="#/AS911" target="_blank">Acute stroke</a></li><li>Intracranial mass</li><li>Postictal Todd's paresis</li><li>Nerve compression syndromes</li><li>Diabetic lumbosacral radiculoplexus neuropathy</li><li>Acute poliomyelitis</li><br>Monoparesis refers to paralysis of a single muscle, muscle group, or limb. Acute paralysis involving a single limb may be caused by a central or a peripheral lesion. Historical and examination factors may help to localize the lesion. For example, sudden onset right arm weakness with an associated dysphasia is most likely to result from a central lesion, whereas wrist drop in the right hand, with hypoesthesia on the back of the hand following falling asleep with the arm over the back of a chair, results from a peripheral nerve compression syndrome. Poliomyelitis is rare, but can occur in the unvaccinated.]]></explanation>
+		</node>
+		<node index="Distal" shortTitle="Distal">
+			<title><![CDATA[Distal Weakness]]></title>
+			<options></options>
+			<body></body>
+			<explanation><![CDATA[<li>Vasculitic neuropathy</li><li>Toxin induced peripheral neuropathy</li><li>Nerve compression syndromes</li><br>Distal weakness is weakness mainly affecting the extremities. It is typically caused by peripheral neuropathies that often present along with sensory symptoms. Distal weakness affects the hands and feet, causing the patient to drop objects or develop gait disturbance due to foot drop. The pattern of weakness and history are of great significance. Of the many types of peripheral neuropathy, vasculitic and toxin induced are the most likely to produce an acute weakness. It may also be produced by local nerve compression syndromes (e.g., carpal tunnel syndrome that predominantly affects peripheries, causing both sensory and motor symptoms).]]></explanation>
+		</node>
+		<node index="Proximal" shortTitle="Proximal">
+			<title><![CDATA[Proximal Weakness]]></title>
+			<options></options>
+			<body></body>
+			<explanation><![CDATA[<li>Acute myopathy</li><li>Guillain-Barre syndrome</li><li>Acute diabetic lumbosacral radiculoplexus neuropathy(DLRN)</li><li>Myasthenia gravis</li><li>Acute West Nile virus associated paralysis</li><li>Lambert-Eaton myasthenic syndrome (LEMS)</li><br>Proximal weakness is weakness predominantly affecting the hip or shoulder girdle musculature. Acute proximal weakness classically presents with difficulty rising from a chair or brushing hair. The most common cause is myopathy. Less common causes include LEMS and myasthenia gravis. DLRN may be the presenting feature of diabetes mellitus and is also important to consider.  While poliomyelitis is very rare in western countries, it remains endemic elsewhere. West Nile virus, with similar semiology as acute poliomyelitis, is more common in the United States and Europe.]]></explanation>
+		</node>
+		<node index="Sigfind" shortTitle="Significant Findings">
+			<title><![CDATA[Significant Associated Findings]]></title>
+			<options></options>
+			<body><![CDATA[Other finding that may make the diagnosis clear]]></body>
+			<explanation><![CDATA[Certain constellations of symptoms and signs can make specific, often unusual diagnoses more likely. The Table below lists some of these, and each is elaborated further in separate tables. Stroke syndromes may also have characteristic patterns which are too numerous and varied to discuss here.  However, findings such as aphasia, agnosia, apraxia, and neglect with acute weakness or sensory signs should prompt consideration of acute stroke.<br><br>Acute tetraplegia, facial muscles paralyzed except eyes, clear sensorium<li>Locked-in syndrome (also consider residual neuromuscular blockade)</li><br>Fatigable weakness in eyelids and extra-ocular muscles with variable weakness elsewhere and no sensory symptoms<li>Myasthenia gravis</li><br>History of animal bite, descending paralysis, and possible coagulopathy, rhabdomyolysis, and shock<li>Envenomation</li><br>Severe, refractory hypertension with headache and transient, migratory neurological non-focal deficits<li>Hypertensive encephalopathy</li><br>Ascending paralysis following upper respiratory mild viral illness/infection<li>Guillain-Barre syndrome</li><br>Descending symmetrical paralysis with a clear sensorium and no fever<li>Botulism</li><br>Weakness with prominent cholinergic signs and symptoms<li>Organophosphate toxicity</li><br>Heavy metal exposure, prominent gastrointestinal symptoms, then multi-organ failure<li>Heavy metal toxicity</li><br>Episodic proximal weakness with family history<li>Periodic paralysis</li><br>Heliotrope rash with proximal weakness<li>Dermatomyositis</li><br>Abdominal pain, proximal weakness, psychiatric symptoms, red urine<li>Acute intermittent porphyria</li><br>Tick bite followed by ascending paralysis<li>Tick paralysis</li>]]></explanation>
+		</node>
+		<node index="Brain" shortTitle="Brain">
+			<title><![CDATA[Brain]]></title>
+			<options></options>
+			<body><![CDATA[Cerebral cortex, brainstem and spinal cord]]></body>
+			<explanation><![CDATA[Pattern of Weakness<li>Distal &gt; proximal, extensors &gt; flexors, hemiparesis or single limb</li>Sensory Loss<li>May be present depending on whether sensory tracts or cortex are involved</li>Reflexes<li>Elevated during acute brain insult; however, reflexes may be decreased but later increase</li>Acute Etiologies<li><a href="#/AS911" target="_blank">Acute stroke</a>, <a href="#/SAH" target="_blank">subarachnoid hemorrhage</a>, <a href="#/SE" target="_blank">seizure</a>, hypertensive encephalopathy</li>]]></explanation>
+		</node>
+		<node index="Peripheralnerve" shortTitle="Peripheral Nerve">
+			<title><![CDATA[Peripheral Nerve]]></title>
+			<options></options>
+			<body></body>
+			<explanation><![CDATA[Pattern of Weakness<li>In the distribution of the nerve, or diffusely present as stocking/glove weakness</li>Sensory Loss<li>Present</li>Reflexes<li>Decreased</li>Acute Etiologies<li>Guillain-Barre syndrome, vasculitis</li>]]></explanation>
+		</node>
+		<node index="Nmj" shortTitle="NMJ">
+			<title><![CDATA[Neuromuscular Junction]]></title>
+			<options></options>
+			<body></body>
+			<explanation><![CDATA[Pattern of Weakness<li>First in eye muscles, neck extensors, pharynx, diaphragm, followed by more generalized weakness</li>Sensory Loss<li>Absent</li>Reflexes<li>Normal, decreased if muscle is paralyzed</li>Acute Etiologies<li>Botulism, tick bite, organophosphate</li>]]></explanation>
+		</node>
+		<node index="Ahc" shortTitle="Anterior Horn">
+			<title><![CDATA[Anterior Horn Cell]]></title>
+			<options></options>
+			<body><![CDATA[Alpha motoneuron]]></body>
+			<explanation><![CDATA[Pattern of Weakness<li>Proximal and distal, fasciculations are prominent</li>Sensory Loss<li>Absent</li>Reflexes<li>Decreased if muscle bulk is severely decreased; increased in ALS</li>Acute Etiologies<li>ALS, polio</li>]]></explanation>
+		</node>
+		<node index="NotNeuromuscular" shortTitle="Not Neuromuscular">
+			<title><![CDATA[Not Neuromuscular Weakness]]></title>
+			<options></options>
+			<body><![CDATA[Consider psychiatric cause]]></body>
+			<explanation><![CDATA[Some disease states may produce symptoms of generalized weakness or fatigue that does not have a neuromuscular basis. These may be medical emergencies in their own right meriting urgent specific treatment. <br>Consider:<li>Any severe medical illness can have weakness as a symptom, but generally these will become clinically obvious during the patient's evaluation</li>Diagnoses of exclusion:<li>Malingering</li><li>Conversion disorder</li><li>Chronic fatigue syndrome</li><li>Anxiety disorders</li><li>Fibromyalgia</li>]]></explanation>
+		</node>
+	</topic>
+		<notes>
+			<title><![CDATA[Tell the consultant]]></title>
+			<content><li>Cause of weakness if known; differential diagnosis if not known</li><li>Airway status and any respiratory issues</li><li>Salient history and exam findings</li><li>Relevant labs and imaging (if done)</li><li>Treatments provided</li></content>
+		</notes>
+		<checklist>
+				<title><![CDATA[Checklist]]></title>
+				<list><li>Assess airway, breathing, and circulation</li><li>Characterize the weakness by detailed exam</li><li>Build an initial differential diagnosis</li><li>Consider emergency causes</li><li>Initial labs: glucose, electrolytes, Ca, Mg, PO4, Bun, Cr, LFTs and coags</li><li>Special labs: TFTs, CPK, ESR</li><li>Relevant imaging</li></list>
+		</checklist>
+</module>
