@@ -136,33 +136,31 @@
 				function _addOnlineFileListEvent(){
 
 					// name click
-					(function(){
-						var online_file_names = Array.prototype.slice.call(document.querySelectorAll('#menu .item .name')),
-							online_file_names_cur = -1,
-							class_name = 'h';
+					var online_file_names = Array.prototype.slice.call(document.querySelectorAll('#menu .item .name')),
+						online_file_names_cur = -1,
+						class_name = 'h';
 
-						online_file_names.forEach(function(item, index){
-							item.onclick = function(){
+					online_file_names.forEach(function(item, index){
+						item.onclick = function(){
 
-								//switch class
-								if(online_file_names_cur != -1){
-									online_file_names[online_file_names_cur].removeClass(class_name);
-								}
-								online_file_names_cur = index;
-								this.addClass(class_name);
+							//switch class
+							if(online_file_names_cur != -1){
+								online_file_names[online_file_names_cur].removeClass(class_name);
+							}
+							online_file_names_cur = index;
+							this.addClass(class_name);
 
-								//asyn
-								xr.asynLoadJson(this.dataset['json']);
-								xr.xr_history.reset();
+							//asyn
+							xr.asynLoadJson(this.dataset['json']);
+							xr.xr_history.reset();
 
-								//hide menu in mobile
-								if(xr.body.scrollWidth <= 600){
-									xr.menuToggle('hide');
-								}
-							};
-						});
+							//hide menu in mobile
+							// if(xr.body.scrollWidth <= 600){
+								xr.menuToggle('hide');
+							// }
+						};
+					});
 
-					})();
 
 				}
 			}
@@ -408,7 +406,7 @@
 					xr.renderStageNode(xr.xr_history.pop());
 				}
 			};
-
+			
 			//router init
 			if(location.hash){
 				//asyn

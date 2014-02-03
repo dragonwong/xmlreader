@@ -15,13 +15,11 @@
 
 /* base */
 ul{
-	margin: 0;
-	padding: 0;
+	
 }
 body{
 	margin: 0;
 	font-family: Arial, "SimHei";
-	word-break: break-all;
 }
 a{
 	text-decoration: none;
@@ -64,6 +62,14 @@ header{
 		.hide-menu #bt-list{
 			background: #333;
 		}
+
+		.header h1 img{
+			height: 35px;
+			margin-top: -5px;
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+
 	#progress-bar{
 		height: 3px;
 		background: -webkit-linear-gradient(left, #7ff153, #f1537f, #2980b9);
@@ -123,10 +129,10 @@ header{
 		                background: #fff;
 					}
 					#menu .item:nth-child(even){
-						background: #F5FAFD;
+						background: #ECF8FF;
 					}
 						#menu .name{
-							padding-left: 20px;
+							padding: 0 20px;
 							cursor: pointer;
 							transition: .3s ease;
 							-webkit-transition: .3s ease;	/* safari iphone */
@@ -162,11 +168,13 @@ header{
 			flex: 1;
             -webkit-flex: 1;
 		}
-
 			#page_welcome{
-				text-align: center;
-				padding: 0 10px;
+				background: url("../images/launchPageBG.jpg") no-repeat right top;
+				background-size: 100% auto;
 			}
+				#page_welcome .this{
+					text-align: center;
+				}
 			.show-tree #page_welcome, .show-node #page_welcome, .show-note #page_welcome{
 				display: none;
 			}
@@ -194,6 +202,7 @@ header{
 						border-left: none;
 						width: 30px;
 						text-align: center;
+						color: #000;
 					}
 					.ctr .bt:active{
 						box-shadow: 1px 1px 1px #ccc inset;
@@ -244,7 +253,7 @@ header{
 						display: block;
 					}
 						/* stage-node */
-						#stage-node .node{
+						.node{
 							padding: 10px;
 						}
 						#stage-node .node>.title{
@@ -252,31 +261,35 @@ header{
 						}
 		
 
-						#stage-node .explanation .detail, #stage-note .detail{
+						.explanation .detail, #stage-note .detail{
 							padding: 10px;
-							background: #f7f7f7;
+							background: rgba(223, 223, 223, 0.7);
 							line-height: 1.5em;
 						}
-
-						#stage-node .this{
+						.this{
 							border-bottom: 1px solid #bbb;
+						}
+						#stage-node .this{
 							background: #b6daf2;
 						}
 							#stage-node .this .node>.title{
 								font-size: 20px;
 							}
 
-						#stage-node .explanation{
+						.explanation{
 							border-bottom: 1px solid #bbb;
 						}
+						#stage-node .explanation .detail li{
+							margin-left: 5px;
+						}
 
-						#stage-node .next .node{
+						.next .node{
 							border-bottom: 1px solid #eee;
 							cursor: pointer;
 							position: relative;
 							padding-right: 35px;
 						}
-						#stage-node .next .node:after{
+						.next .node:after{
 							display: block;
 							font-family: 'icomoon';
 							content: "\e6d4";
@@ -289,13 +302,13 @@ header{
 							line-height: 36px;
 							margin-top: -18px;
 						}
-						#stage-node .next .node:nth-child(even){
-							background: #F5FAFD;
+						.next .node:nth-child(even){
+							background: #ECF8FF;
 						}
-							#stage-node .next .node>.title{
+							.next .node>.title{
 								font-size: 15px;
 							}
-							#stage-node .next .node>.body{
+							.next .node>.body{
 								font-size: 13px;
 							}
 
@@ -308,11 +321,14 @@ header{
 							border-bottom: 1px solid #aaa;
 							background: #b6daf2;
 						}
-						.notes ul{
+						.notes ul, .notes ol{
 							padding-left: 20px;
+							margin: 0;
 						}
 						.checklist ul{
 							list-style: none;
+							padding: 0;
+							margin: 0;
 						}
 							.checklist input{
 								margin: 0 6px 0 0;
@@ -324,6 +340,10 @@ header{
 /* #stage-tree */
 #stage-tree ul{
 	list-style: none;
+}
+#stage-tree>ul{
+	margin: 0;
+	padding: 0;
 }
 ul.tree{
 	margin-left: 20px;
@@ -376,6 +396,10 @@ ul.tree{
 	            white-space: nowrap;
 			}
 
+/* about */
+.about .detail p{
+	margin-bottom: 10px;
+}
 
 /* media query */
 
@@ -384,9 +408,14 @@ ul.tree{
 		height: 40px;
 		line-height: 40px;
 	}
-	h1{
-		font-size: 12px;
-	}
+		.header h1{
+			font-size: 12px;
+		}
+			.header h1 img{
+				height: 15px;
+				margin-top: 0;
+			}
+
 	.main{
 		padding-top: 43px;
 	}
@@ -404,9 +433,10 @@ ul.tree{
 	}
 }
 @media (min-width: 601px) and (max-width: 1200px){
-	h1{
+	.header h1{
 		font-size: 25px;
 	}
+
 	#menu{
 		width: 50%;
 	}
